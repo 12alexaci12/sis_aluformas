@@ -13,7 +13,7 @@
 					<tr>
 						<th align="right">Persona (*)</th>
 						<th>:</th>
-						<td> 
+						<td>
 							<select name="id_persona">
 								<option value="">--- Seleccione---</option>
 								{foreach item=r from=$personas}

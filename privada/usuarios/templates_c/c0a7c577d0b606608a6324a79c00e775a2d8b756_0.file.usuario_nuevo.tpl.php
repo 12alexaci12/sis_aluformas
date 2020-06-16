@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2020-06-16 01:10:33
+/* Smarty version 3.1.29, created on 2020-06-16 05:28:30
   from "D:\disenoWeb\www\sis_aluformas\privada\usuarios\templates\usuario_nuevo.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5ee81c0961d064_94995036',
+  'unifunc' => 'content_5ee8587e29a2f0_73779231',
   'file_dependency' => 
   array (
     'c0a7c577d0b606608a6324a79c00e775a2d8b756' => 
     array (
       0 => 'D:\\disenoWeb\\www\\sis_aluformas\\privada\\usuarios\\templates\\usuario_nuevo.tpl',
-      1 => 1585335165,
+      1 => 1592285302,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5ee81c0961d064_94995036 ($_smarty_tpl) {
+function content_5ee8587e29a2f0_73779231 ($_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html>
@@ -41,7 +41,7 @@ function content_5ee81c0961d064_94995036 ($_smarty_tpl) {
 					<tr>
 						<th align="right">Persona (*)</th>
 						<th>:</th>
-						<td> 
+						<td>
 							<select name="id_persona">
 								<option value="">--- Seleccione---</option>
 								<?php
@@ -97,5 +97,6 @@ $_smarty_tpl->tpl_vars['r'] = $__foreach_r_0_saved_item;
 			</form>
 		</center>
 	</body>
-</html><?php }
+</html>
+<?php }
 }

@@ -23,7 +23,6 @@ $smarty = new Smarty;
 	$reg["am"] = $__am;
 	$reg["telefono"] = $__telefono;
 	$reg["direccion"] = $__direccion;
-	$reg["genero"] = $__genero;
 	$reg["fec_insercion"] = date("Y-m-d H:i:s");
 	$reg["estado"] = '1';
 	$reg["usuario"] = $_SESSION["sesion_id_usuario"];

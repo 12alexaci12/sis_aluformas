@@ -6,10 +6,10 @@ require_once("../libreria_menu.php");
 
 $smarty = new Smarty;
 
-$sql = $db->Prepare("SELECT *
-					 FROM personas p
-					 WHERE p.estado <> '0'
-					 ORDER BY p.id_persona DESC 
+$sql = $db->Prepare("	SELECT *
+					FROM personas p
+					WHERE p.estado <> '0'
+					ORDER BY p.id_persona DESC
 					 ");
 $rs = $db->GetAll($sql);
 

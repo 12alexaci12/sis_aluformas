@@ -17,7 +17,7 @@
                          </tr>
                          <tr>
                               <th>Nombres (*)</th><th>:</th>
-                              <td> <input type="text" name="nombres" onkeyup="this.value=this.value.toUpperCase()" value="{$r.nombre}"> </td>
+                              <td> <input type="text" name="nombre" onkeyup="this.value=this.value.toUpperCase()" value="{$r.nombre}"> </td>
                          </tr>
                          <tr>
                               <th>Apellido Paterno (*)</th><th>:</th>
@@ -37,10 +37,10 @@
                          </tr>
                          <tr>
                               <td align="center" colspan="3">
-                                   <input type="hidden" name="accion" value="" ="">
+                                   <input type="hidden" name="accion" value="">
                                    <input type="hidden" name="id_persona" value="{$r.id_persona}">
-                                   <input type="button" name="Aceptar" onclick="validar();">
-                                   <input type="button" name="Cancelar" onclick="javascript:location.href='personas.php';">
+                                   <input type="button" name="Aceptar" value="Aceptar" onclick="validar();">
+                                   <input type="button" name="Cancelar" value="Cancelar" onclick="javascript:location.href='personas.php';">
                               </td>
                          </tr>
                          {/foreach}

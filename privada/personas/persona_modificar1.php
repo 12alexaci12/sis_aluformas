@@ -1,29 +1,27 @@
 <?php
 session_start();
 require_once("../../smarty/Smarty.class.php");
-require_ence("../../conexion.php");
+require_once("../../conexion.php");
 
 $__id_persona = $_REQUEST["id_persona"];
 $__ci = $_POST["ci"];
-
-$__nombres = $_POST["nombres"];
+$__nombre = $_POST["nombre"];
 $__ap = $_POST["ap"];
 $__am = $_POST["am"];
 $__direccion = $_POST["direccion"];
 $__telefono = $_POST["telefono"];
-$__genero = $_POST["genero"];
 //$db->debug-true;
-$smarty - new Smarty;
+$smarty = new Smarty;
 
-$reg array();
-$reg["ci"] = $ ci;
-$reg["nombres"] = $__nombres;
+$reg = array();
+$reg["ci"] = $__ci;
+$reg["nombre"] = $__nombre;
 $reg["ap"] = $__ap;
 $reg["am"] = $__am;
 $reg["direccion"] = $__direccion;
 $reg["telefono"] = $__telefono;
 $reg["_usuario"] = $_SESSION["sesion_id_usuario"];
-$rs1 = $db->AutoExecute("_personas", $reg, "UPDATE", "id_persona='".$__id_persona."'");
+$rs1 = $db->AutoExecute("personas", $reg, "UPDATE", "id_persona='".$__id_persona."'");
 
 if($rs1) {
       header("Location: personas.php");

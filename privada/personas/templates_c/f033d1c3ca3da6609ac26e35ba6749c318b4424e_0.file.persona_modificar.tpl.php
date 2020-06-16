@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2020-06-16 03:54:53
+/* Smarty version 3.1.29, created on 2020-06-16 07:03:17
   from "D:\disenoWeb\www\sis_aluformas\privada\personas\templates\persona_modificar.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5ee8428d10d2d4_72922162',
+  'unifunc' => 'content_5ee86eb51d6ce5_12835579',
   'file_dependency' => 
   array (
     'f033d1c3ca3da6609ac26e35ba6749c318b4424e' => 
     array (
       0 => 'D:\\disenoWeb\\www\\sis_aluformas\\privada\\personas\\templates\\persona_modificar.tpl',
-      1 => 1592279687,
+      1 => 1592290991,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5ee8428d10d2d4_72922162 ($_smarty_tpl) {
+function content_5ee86eb51d6ce5_12835579 ($_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -57,7 +57,7 @@ $__foreach_r_0_saved_local_item = $_smarty_tpl->tpl_vars['r'];
                          </tr>
                          <tr>
                               <th>Nombres (*)</th><th>:</th>
-                              <td> <input type="text" name="nombres" onkeyup="this.value=this.value.toUpperCase()" value="<?php echo $_smarty_tpl->tpl_vars['r']->value['nombre'];?>
+                              <td> <input type="text" name="nombre" onkeyup="this.value=this.value.toUpperCase()" value="<?php echo $_smarty_tpl->tpl_vars['r']->value['nombre'];?>
 "> </td>
                          </tr>
                          <tr>
@@ -82,11 +82,11 @@ $__foreach_r_0_saved_local_item = $_smarty_tpl->tpl_vars['r'];
                          </tr>
                          <tr>
                               <td align="center" colspan="3">
-                                   <input type="hidden" name="accion" value="" ="">
+                                   <input type="hidden" name="accion" value="">
                                    <input type="hidden" name="id_persona" value="<?php echo $_smarty_tpl->tpl_vars['r']->value['id_persona'];?>
 ">
-                                   <input type="button" name="Aceptar" onclick="validar();">
-                                   <input type="button" name="Cancelar" onclick="javascript:location.href='personas.php';">
+                                   <input type="button" name="Aceptar" value="Aceptar" onclick="validar();">
+                                   <input type="button" name="Cancelar" value="Cancelar" onclick="javascript:location.href='personas.php';">
                               </td>
                          </tr>
                          <?php

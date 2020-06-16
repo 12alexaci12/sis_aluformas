@@ -15,7 +15,7 @@ function validar(){
          }
 
         if ((!v1.test(nombre)) || (nombre == "")) {
-            alert("Los nombres son incorrectos o el campo esta vacio");
+            alert("Los nombre son incorrectos o el campo esta vacio");
             document.formu.nombre.focus();
             return;
         }
