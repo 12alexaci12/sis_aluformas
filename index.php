@@ -46,7 +46,7 @@
             <a class="nav-link js-scroll-trigger" href="#contact">contactanos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="formularios/index.html">ADM</a>
+            <a class="nav-link js-scroll-trigger" href="privada/index.php">ADM</a>
           </li>
         </ul>
       </div>

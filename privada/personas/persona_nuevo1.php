@@ -16,7 +16,7 @@ $__genero = $_POST["genero"];
 $smarty = new Smarty;
 
 	$reg = array();
-	$reg["id_internet"] = 1;
+	$reg["id_vidrieria"] = 1;
 	$reg["ci"] = $__ci;
 	$reg["nombre"] = $__nombre;
 	$reg["ap"] = $__ap;

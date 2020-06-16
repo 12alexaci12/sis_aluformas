@@ -6,15 +6,15 @@ require_once("../../conexion.php");
 if((isset($_POST["accion"])) and ($_POST["accion"]=="Ingresar")){
 	$nick = $_POST["nick"];
 	$password = $_POST["password"];
-	$sql = $db->Prepare("SELECT u.*, ur.id_rol, r.rol 
-						FROM usuarios u, usuarios_roles ur, roles r 
+	$sql = $db->Prepare("SELECT u.*, ur.id_rol, r.rol
+						FROM usuarios u, usuarios_roles ur, roles r
 						WHERE u.usuario1 = ?
-						AND u.clave = ? 
+						AND u.clave = ?
 						AND u.id_usuario = ur.id_usuario
 						AND ur.id_rol = r.id_rol
-						AND u.estado <> '0'  
+						AND u.estado <> '0'
 						AND ur.estado <> '0'
-						AND r.estado <> '0'  
+						AND r.estado <> '0'
 						");
 	$rs = $db->GetAll($sql, array($nick, $password));
 
