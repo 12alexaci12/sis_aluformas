@@ -10,6 +10,7 @@ $__ap = $_POST["ap"];
 $__am = $_POST["am"];
 $__direccion = $_POST["direccion"];
 $__telefono = $_POST["telefono"];
+$__genero = $_POST["genero"];
 //$db->debug-true;
 $smarty = new Smarty;
 
@@ -20,6 +21,7 @@ $reg["ap"] = $__ap;
 $reg["am"] = $__am;
 $reg["direccion"] = $__direccion;
 $reg["telefono"] = $__telefono;
+$reg["genero"] = $__genero;
 $reg["_usuario"] = $_SESSION["sesion_id_usuario"];
 $rs1 = $db->AutoExecute("personas", $reg, "UPDATE", "id_persona='".$__id_persona."'");
 

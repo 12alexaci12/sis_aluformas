@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2020-06-16 07:03:17
+/* Smarty version 3.1.29, created on 2020-06-22 19:37:16
   from "D:\disenoWeb\www\sis_aluformas\privada\personas\templates\persona_modificar.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5ee86eb51d6ce5_12835579',
+  'unifunc' => 'content_5ef1086c12c867_76628852',
   'file_dependency' => 
   array (
     'f033d1c3ca3da6609ac26e35ba6749c318b4424e' => 
     array (
       0 => 'D:\\disenoWeb\\www\\sis_aluformas\\privada\\personas\\templates\\persona_modificar.tpl',
-      1 => 1592290991,
+      1 => 1592854628,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5ee86eb51d6ce5_12835579 ($_smarty_tpl) {
+function content_5ef1086c12c867_76628852 ($_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -80,6 +80,11 @@ $__foreach_r_0_saved_local_item = $_smarty_tpl->tpl_vars['r'];
                               <td> <input type="text" name="telefono" onkeyup="this.value=this.value.toUpperCase()" value="<?php echo $_smarty_tpl->tpl_vars['r']->value['telefono'];?>
 "> </td>
                          </tr>
+                         <tr>
+						<th align="right">Genero(*)</th>
+						<th>:</th>
+						<td><input type="radio" name="genero" value="F">Femenino<input type="radio" name="genero" value="M">Masculino</td>
+					</tr>
                          <tr>
                               <td align="center" colspan="3">
                                    <input type="hidden" name="accion" value="">

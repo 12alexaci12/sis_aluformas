@@ -10,7 +10,6 @@ $__ap = $_POST["ap"];
 $__am = $_POST["am"];
 $__telefono = $_POST["telefono"];
 $__direccion = $_POST["direccion"];
-
 $__genero = $_POST["genero"];
 
 $smarty = new Smarty;
@@ -23,6 +22,7 @@ $smarty = new Smarty;
 	$reg["am"] = $__am;
 	$reg["telefono"] = $__telefono;
 	$reg["direccion"] = $__direccion;
+	$reg["genero"] = $__genero;
 	$reg["fec_insercion"] = date("Y-m-d H:i:s");
 	$reg["estado"] = '1';
 	$reg["usuario"] = $_SESSION["sesion_id_usuario"];

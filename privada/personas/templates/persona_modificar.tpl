@@ -36,6 +36,11 @@
                               <td> <input type="text" name="telefono" onkeyup="this.value=this.value.toUpperCase()" value="{$r.telefono}"> </td>
                          </tr>
                          <tr>
+						<th align="right">Genero(*)</th>
+						<th>:</th>
+						<td><input type="radio" name="genero" value="F">Femenino<input type="radio" name="genero" value="M">Masculino</td>
+					</tr>
+                         <tr>
                               <td align="center" colspan="3">
                                    <input type="hidden" name="accion" value="">
                                    <input type="hidden" name="id_persona" value="{$r.id_persona}">

@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2020-06-16 01:03:35
+/* Smarty version 3.1.29, created on 2020-06-22 19:35:47
   from "D:\disenoWeb\www\sis_aluformas\privada\personas\templates\personas.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5ee81a676710f5_80128460',
+  'unifunc' => 'content_5ef108135a5110_46866702',
   'file_dependency' => 
   array (
     'a1449ebc39634631577f1968caeef4db2c7ea72a' => 
     array (
       0 => 'D:\\disenoWeb\\www\\sis_aluformas\\privada\\personas\\templates\\personas.tpl',
-      1 => 1583814752,
+      1 => 1592854542,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5ee81a676710f5_80128460 ($_smarty_tpl) {
+function content_5ef108135a5110_46866702 ($_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html>
@@ -52,7 +52,7 @@ function content_5ee81a676710f5_80128460 ($_smarty_tpl) {
 		<center>
 			<table class="listado">
 				<tr>
-					<th>NRO</th><th>CI</th><th>NOMBRES</th><th>AP</th><th>AM</th>
+					<th>NRO</th><th>CI</th><th>NOMBRES</th><th>AP</th><th>AM</th><th>GENERO</th>
 					<th><img src="../../imagenes/modificar.gif"></th><th><img src="../../imagenes/borrar.jpeg"></th>
 				</tr>
 				<?php $_smarty_tpl->tpl_vars["b"] = new Smarty_Variable("1", null);
@@ -80,18 +80,20 @@ $__foreach_r_0_saved_local_item = $_smarty_tpl->tpl_vars['r'];
 </td>
 					<td align="center"><?php echo $_smarty_tpl->tpl_vars['r']->value['am'];?>
 </td>
+					<td align="center"><?php echo $_smarty_tpl->tpl_vars['r']->value['genero'];?>
+</td>
 					<td align="center">
 						<form name="formModif<?php echo $_smarty_tpl->tpl_vars['r']->value['id_persona'];?>
 " method="post" action="persona_modificar.php">
 						<input type="hidden" name="id_persona" value="<?php echo $_smarty_tpl->tpl_vars['r']->value['id_persona'];?>
 ">
 						<a href="javascript:document.formModif<?php echo $_smarty_tpl->tpl_vars['r']->value['id_persona'];?>
-.submit();" title="Modificar Persona Sistema"> 
+.submit();" title="Modificar Persona Sistema">
 							Modificar>>>
-						</a>	
+						</a>
 						</form>
 					</td>
-					<td>	
+					<td>
 						<form name="formElimi<?php echo $_smarty_tpl->tpl_vars['r']->value['id_persona'];?>
 " method="post" action="persona_eliminar.php">
 						<input type="hidden" name="id_persona" value="<?php echo $_smarty_tpl->tpl_vars['r']->value['id_persona'];?>
@@ -99,7 +101,7 @@ $__foreach_r_0_saved_local_item = $_smarty_tpl->tpl_vars['r'];
 						<a href="javascript:document.formElimi<?php echo $_smarty_tpl->tpl_vars['r']->value['id_persona'];?>
 .submit();" title="Eliminar Persona Sistema" onclick='javascript: return(confirm("Desea realmente Eliminar a la persona..?"));'>
 							Eliminar>>>
-						</a>	
+						</a>
 						</form>
 					</td>
 					<?php $_smarty_tpl->tpl_vars["b"] = new Smarty_Variable(((string)$_smarty_tpl->tpl_vars['b']->value+1), null);
@@ -115,5 +117,6 @@ $_smarty_tpl->tpl_vars['r'] = $__foreach_r_0_saved_item;
 			</table>
 		</center>
 	</body>
-</html><?php }
+</html>
+<?php }
 }
