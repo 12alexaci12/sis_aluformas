@@ -15,7 +15,7 @@
      ");
      $rs = $db->GetAll($sql);
 
-     $smarty->assign("empleados_cotizaciones", $rs);
+     $smarty->assign("RTP_empleados_cotizaciones", $rs);
      $smarty->assign("direc_css", $direc_css);
      $smarty->display("RPT_empleados_cotizaciones1.tpl");
 

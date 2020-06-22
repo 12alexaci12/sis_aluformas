@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2020-06-22 21:02:32
+/* Smarty version 3.1.29, created on 2020-06-22 21:20:05
   from "D:\disenoWeb\www\sis_aluformas\privada\reportes\templates\RPT_empleados_cotizaciones.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5ef11c680596f1_03263570',
+  'unifunc' => 'content_5ef1208549b8f7_84047957',
   'file_dependency' => 
   array (
     '9cc50f2b040c802be60fbe819051e13eac1a5296' => 
     array (
       0 => 'D:\\disenoWeb\\www\\sis_aluformas\\privada\\reportes\\templates\\RPT_empleados_cotizaciones.tpl',
-      1 => 1592859748,
+      1 => 1592860794,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5ef11c680596f1_03263570 ($_smarty_tpl) {
+function content_5ef1208549b8f7_84047957 ($_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -55,7 +55,7 @@ function content_5ef11c680596f1_03263570 ($_smarty_tpl) {
           </table>
           <br>
           <center>
-               <table>
+               <table border="1">
                     <tr>
                          <th>NRO</th>
                          <th>EMPLEADO</th>
@@ -85,7 +85,8 @@ $__foreach_r_0_saved_local_item = $_smarty_tpl->tpl_vars['r'];
 </td>
                          <td><?php echo $_smarty_tpl->tpl_vars['r']->value['nombre_cli'];?>
 </td>
-                         <td>[$r.telefono_cli]</td>
+                         <td><?php echo $_smarty_tpl->tpl_vars['r']->value['telefono'];?>
+</td>
                          <td><?php echo $_smarty_tpl->tpl_vars['r']->value['fecha'];?>
 </td>
                          <td><?php echo $_smarty_tpl->tpl_vars['r']->value['precio_final'];?>

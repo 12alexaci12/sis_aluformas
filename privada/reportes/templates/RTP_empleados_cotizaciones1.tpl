@@ -29,7 +29,7 @@
           </table>
           <br>
           <center>
-               <table>
+               <table border="1">
                     <tr>
                          <th>NRO</th>
                          <th>EMPLEADO</th>
@@ -44,7 +44,7 @@
                          <td align="center">{$b}</td>
                          <td>{$r.nombre_emp}</td>
                          <td>{$r.nombre_cli}</td>
-                         <td>[$r.telefono_cli]</td>
+                         <td>[$r.telefono]</td>
                          <td>{$r.fecha}</td>
                          <td>{$r.precio_final}</td>
                     </tr>
