@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2020-06-16 07:02:27
+/* Smarty version 3.1.29, created on 2020-06-16 07:39:51
   from "D:\disenoWeb\www\sis_aluformas\privada\usuarios\templates\usuario_modificar.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5ee86e836e0260_08139590',
+  'unifunc' => 'content_5ee877475a8bf0_11040856',
   'file_dependency' => 
   array (
     '7c987efbb464994a364a0b3b7fb45ab264508594' => 
     array (
       0 => 'D:\\disenoWeb\\www\\sis_aluformas\\privada\\usuarios\\templates\\usuario_modificar.tpl',
-      1 => 1592290941,
+      1 => 1592293177,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5ee86e836e0260_08139590 ($_smarty_tpl) {
+function content_5ee877475a8bf0_11040856 ($_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -108,7 +108,7 @@ $__foreach_r_2_saved_local_item = $_smarty_tpl->tpl_vars['r'];
 ?>
                          <tr>
                               <th>Usuario (*)</th><th>:</th>
-                              <td><input type="text" name="usuario" value="<?php echo $_smarty_tpl->tpl_vars['r']->value['usuario1'];?>
+                              <td><input type="text" name="usuario1" value="<?php echo $_smarty_tpl->tpl_vars['r']->value['usuario1'];?>
 "></td>
                          </tr>
                          <tr>

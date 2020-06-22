@@ -2,7 +2,7 @@
 
 function validar(){
 	var id_persona = document.formu.id_persona.value;
-	var usuario1 = document.formu.usuario.value;
+	var usuario1 = document.formu.usuario1.value;
 	var clave = document.formu.clave.value;
 
 

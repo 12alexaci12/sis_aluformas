@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="../{$direc_css}">
-		<script type="text/javascript" src="js/expreciones_regulares.js"></script>
+		<script type="text/javascript" src="js/expresiones_regulares.js"></script>
 		<script type="text/javascript" src="js/validar_usuario.js"></script>
 	</head>
 	<body>

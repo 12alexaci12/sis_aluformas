@@ -6,7 +6,7 @@
      $__id_persona = $_REQUEST["id_persona"];
      $__id_usuario = $_REQUEST["id_usuario"];
 
-     $__usuario = $_POST["usuario"];
+     $__usuario = $_POST["usuario1"];
      $__clave = $_POST["clave"];
 
      //$db -> debug true;
