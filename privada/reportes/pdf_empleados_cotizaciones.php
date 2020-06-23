@@ -43,14 +43,11 @@ $codigo_html ='
 										<td>'.$fila['nombre_cli'].'</td>
 										<td>'.$fila['telefono'].'</td>
 										<td>'.$fila['fecha'].'</td>
-										<td>'.$fila['precio_final'].' </td>
-									</tr';
+										<td>'.$fila['precio_final'].'</td>
+									</tr>';
                     }
 			}
 			$codigo_html.='</table>';
-?>
-
-<?php
 
 require_once("../../dompdf/dompdf_config.inc.php");
 
