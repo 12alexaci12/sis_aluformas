@@ -7,7 +7,7 @@
      $smarty = new Smarty;
 
      $sql = $db->Prepare("    SELECT coti.fecha, coti.precio_final, emp.nombre as nombre_emp, cli.nombre as nombre_cli, cli.telefono
-                              FROM cotizaciones coti, empleados emp
+                              FROM cotizaciones coti, empleados emp, clientes cli
                               where coti.id_empleado = emp.id_empleado
                               AND coti.id_cliente = cli.id_cliente
                               AND coti.estado <> '0'
@@ -17,6 +17,6 @@
 
      $smarty->assign("RTP_empleados_cotizaciones", $rs);
      $smarty->assign("direc_css", $direc_css);
-     $smarty->display("RPT_empleados_cotizaciones1.tpl");
+     $smarty->display("RTP_empleados_cotizaciones1.tpl");
 
 ?>

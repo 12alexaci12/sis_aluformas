@@ -35,7 +35,6 @@ if((isset($_POST["accion"])) and ($_POST["accion"]=="Ingresar")){
 } else{
 	$mensage = "CERRANDO LA SESION !!!!!!!!";
 	$mensage1 = "SE ESTA SALIENDO DEL SISTEMA ........";
-	session_unset($_SESSION["sesion_id_usuario"]);
 	session_destroy();
 }
 $smarty = new smarty;

@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
      <head>
           <link rel="stylesheet" href="../{$direc_css}" type="text/css">
           <script type="text/javascript">
                var ventanaCalendario = false;
                function imprimir(){
-                    ventanaCalendario = window.open("empleados_cotizaciones1.php", "calendario", "width=600, height=550, left=100, top=100, scrollbars=YES, menubars=NO, statusbar=NO, status=NO resizable=YES, location=NO");
+                    ventanaCalendario = window.open("RPT_empleados_cotizaciones1.php", "calendario", "width=600, height=550, left=100, top=100, scrollbars=YES, menubars=NO, statusbar=NO, status=NO resizable=YES, location=NO");
                }
                function pdf(){
-                    ventanaCalendario = window.open("pdf.php", "calendario", "width=600, height=550, left=100, top=100, scrollbars=YES, menubars=NO, statusbar=NO, status=NO resizable=YES, location=NO");
+                    ventanaCalendario = window.open("pdf_empleados_cotizaciones.php", "calendario", "width=600, height=550, left=100, top=100, scrollbars=YES, menubars=NO, statusbar=NO, status=NO resizable=YES, location=NO");
                }
           </script>
      </head>
@@ -47,9 +47,9 @@
                          <td>{$r.telefono}</td>
                          <td>{$r.fecha}</td>
                          <td>{$r.precio_final}</td>
-                         {assign var="b" value="`$b+1`"}
-                         {/foreach}
                     </tr>
+                    {assign var="b" value="`$b+1`"}
+                    {/foreach}
                </table>
                <br><br>
                <table align="center" border="1">

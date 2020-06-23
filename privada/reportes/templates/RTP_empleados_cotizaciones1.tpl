@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
      <head>
           <link rel="stylesheet" href="../{$direc_css}" type="text/css">
           <script type="text/javascript">
                var ventanaCalendario = false;
                function imprimir(){
-                    ventanaCalendario = window.open("empleados_cotizaciones1.php", "calendario", "width=600, height=550, left=100, top=100, scrollbars=YES, menubars=NO, statusbar=NO, status=NO resizable=YES, location=NO");
-               }
-               function pdf(){
-                    ventanaCalendario = window.open("pdf.php", "calendario", "width=600, height=550, left=100, top=100, scrollbars=YES, menubars=NO, statusbar=NO, status=NO resizable=YES, location=NO");
+                    if (confirm(' Desea Imprimir ?')) {
+                         window.print();
+                    }
                }
           </script>
      </head>
@@ -44,17 +43,12 @@
                          <td align="center">{$b}</td>
                          <td>{$r.nombre_emp}</td>
                          <td>{$r.nombre_cli}</td>
-                         <td>[$r.telefono]</td>
+                         <td>{$r.telefono}</td>
                          <td>{$r.fecha}</td>
                          <td>{$r.precio_final}</td>
                     </tr>
-               </table>
-               <br><br>
-               <table align="center" border="1">
-                    <tr>
-                         <td> <input type="radio" name="seleccionar" onclick="javascript:imprimir()"> Imprimir </td>
-                         <td> <input type="radio" name="seleccionar" onclick="javascript:pdf()"> Exportar a PDF </td>
-                    </tr>
+                    {assign var="b" value="`$b+1`"}
+                    {/foreach}
                </table>
           </center>
      </body>
