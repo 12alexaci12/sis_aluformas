@@ -19,7 +19,7 @@ $codigo_html ='
 <body>
 	<table width="100%" border="0">
 		<tr>
-			<td align="center">empleados</td>
+			<td align="center">Empleados</td>
 			<td align="center" width="80%"><h1>RPT empleados cotizaciones</h1></td>
 		</tr>
 	</table>
