@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
      <head>
           <link rel="stylesheet" href="../{$direc_css}" type="text/css">

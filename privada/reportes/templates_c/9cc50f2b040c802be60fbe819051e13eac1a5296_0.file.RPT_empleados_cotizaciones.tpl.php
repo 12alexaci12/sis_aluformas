@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2020-06-23 01:30:25
+/* Smarty version 3.1.29, created on 2020-07-13 22:35:13
   from "D:\disenoWeb\www\sis_aluformas\privada\reportes\templates\RPT_empleados_cotizaciones.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5ef15b31836081_22127944',
+  'unifunc' => 'content_5f0ce1a1c1c382_60562724',
   'file_dependency' => 
   array (
     '9cc50f2b040c802be60fbe819051e13eac1a5296' => 
     array (
       0 => 'D:\\disenoWeb\\www\\sis_aluformas\\privada\\reportes\\templates\\RPT_empleados_cotizaciones.tpl',
-      1 => 1592875722,
+      1 => 1594679708,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5ef15b31836081_22127944 ($_smarty_tpl) {
+function content_5f0ce1a1c1c382_60562724 ($_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html>

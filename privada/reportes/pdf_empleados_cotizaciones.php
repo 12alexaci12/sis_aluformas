@@ -19,7 +19,7 @@ $codigo_html ='
 <body>
 	<table width="100%" border="0">
 		<tr>
-			<td>empleados</td>
+			<td align="center">empleados</td>
 			<td align="center" width="80%"><h1>RPT empleados cotizaciones</h1></td>
 		</tr>
 	</table>
@@ -38,25 +38,27 @@ $codigo_html ='
 				$b = 1;
 				foreach($rs as $k => $fila){
 					$codigo_html.='<tr>
-										<td>'.$b++.'</td>
-										<td>'.$fila['nombre_emp'].'</td>
-										<td>'.$fila['nombre_cli'].'</td>
-										<td>'.$fila['telefono'].'</td>
-										<td>'.$fila['fecha'].'</td>
-										<td>'.$fila['precio_final'].'</td>
+										<td>'.$b.'</td>
+										<td>'.$fila["nombre_emp"].'</td>
+										<td>'.$fila["nombre_cli"].'</td>
+										<td>'.$fila["telefono"].'</td>
+										<td>'.$fila["fecha"].'</td>
+										<td>'.$fila["precio_final"].'</td>
 									</tr>';
+                                             $b++;
                     }
 			}
 			$codigo_html.='</table>';
+?>
+<?php
+     require_once("../../dompdf1/autoload.inc.php");
+     use Dompdf\Dompdf;
+     $dompdf = new DOMPDF();
 
-require_once("../../dompdf/dompdf_config.inc.php");
-
-$dompdf = new DOMPDF();
-$codigo_html=utf8_decode($codigo_html);
-$dompdf->load_html($codigo_html);
-$dompdf->render();
-$pdf = $dompdf->output();
-$filename = "ejemplo".date('Y-m-d_H-m-s').".pdf";
-file_put_contents($filename, $pdf);
-$dompdf->stream($pdf);
+     $dompdf->load_html($codigo_html);
+     $dompdf->render();
+     $pdf = $dompdf->output();
+     $filename = "ejemplo".date('Y-m-d_H-m-s').".pdf";
+     file_put_contents($filename, $pdf);
+     $dompdf->stream($pdf);
 ?>
