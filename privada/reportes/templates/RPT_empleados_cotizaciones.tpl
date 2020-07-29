@@ -38,21 +38,21 @@
                                    <th>NRO</th>
                                    <th>EMPLEADO</th>
                                    <th>CLIENTE</th>
-                                   <th>TELEFONO DE CLIENTE</th>
+                                   <th>TELF CLIENTE</th>
                                    <th>FECHA</th>
                                    <th>PRECIO FINAL</th>
                               </tr>
                          </thead>
                          {assign var="b" value="1"}
                          {foreach item=r from=$RTP_empleados_cotizaciones}
-                         <tr>
-                              <td align="center">{$b}</td>
-                              <td>{$r.nombre_emp}</td>
-                              <td>{$r.nombre_cli}</td>
-                              <td>{$r.telefono}</td>
-                              <td>{$r.fecha}</td>
-                              <td>{$r.precio_final}</td>
-                         </tr>
+                              <tr>
+                                   <td align="center">{$b}</td>
+                                   <td>{$r.nombre_emp}</td>
+                                   <td>{$r.nombre_cli}</td>
+                                   <td>{$r.telefono}</td>
+                                   <td>{$r.fecha}</td>
+                                   <td>{$r.precio_final}</td>
+                              </tr>
                          {assign var="b" value="`$b+1`"}
                          {/foreach}
                     </table>

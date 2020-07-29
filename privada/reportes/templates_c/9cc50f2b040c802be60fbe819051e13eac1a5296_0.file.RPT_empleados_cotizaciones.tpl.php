@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2020-07-29 02:33:28
+/* Smarty version 3.1.29, created on 2020-07-29 20:51:55
   from "D:\disenoWeb\www\sis_aluformas\privada\reportes\templates\RPT_empleados_cotizaciones.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5f20dff8a47725_20533073',
+  'unifunc' => 'content_5f21e16b565a01_55864458',
   'file_dependency' => 
   array (
     '9cc50f2b040c802be60fbe819051e13eac1a5296' => 
     array (
       0 => 'D:\\disenoWeb\\www\\sis_aluformas\\privada\\reportes\\templates\\RPT_empleados_cotizaciones.tpl',
-      1 => 1595990004,
+      1 => 1596055910,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5f20dff8a47725_20533073 ($_smarty_tpl) {
+function content_5f21e16b565a01_55864458 ($_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html>
@@ -64,7 +64,7 @@ function content_5f20dff8a47725_20533073 ($_smarty_tpl) {
                                    <th>NRO</th>
                                    <th>EMPLEADO</th>
                                    <th>CLIENTE</th>
-                                   <th>TELEFONO DE CLIENTE</th>
+                                   <th>TELF CLIENTE</th>
                                    <th>FECHA</th>
                                    <th>PRECIO FINAL</th>
                               </tr>
@@ -83,20 +83,20 @@ foreach ($_from as $_smarty_tpl->tpl_vars['r']->value) {
 $_smarty_tpl->tpl_vars['r']->_loop = true;
 $__foreach_r_0_saved_local_item = $_smarty_tpl->tpl_vars['r'];
 ?>
-                         <tr>
-                              <td align="center"><?php echo $_smarty_tpl->tpl_vars['b']->value;?>
+                              <tr>
+                                   <td align="center"><?php echo $_smarty_tpl->tpl_vars['b']->value;?>
 </td>
-                              <td><?php echo $_smarty_tpl->tpl_vars['r']->value['nombre_emp'];?>
+                                   <td><?php echo $_smarty_tpl->tpl_vars['r']->value['nombre_emp'];?>
 </td>
-                              <td><?php echo $_smarty_tpl->tpl_vars['r']->value['nombre_cli'];?>
+                                   <td><?php echo $_smarty_tpl->tpl_vars['r']->value['nombre_cli'];?>
 </td>
-                              <td><?php echo $_smarty_tpl->tpl_vars['r']->value['telefono'];?>
+                                   <td><?php echo $_smarty_tpl->tpl_vars['r']->value['telefono'];?>
 </td>
-                              <td><?php echo $_smarty_tpl->tpl_vars['r']->value['fecha'];?>
+                                   <td><?php echo $_smarty_tpl->tpl_vars['r']->value['fecha'];?>
 </td>
-                              <td><?php echo $_smarty_tpl->tpl_vars['r']->value['precio_final'];?>
+                                   <td><?php echo $_smarty_tpl->tpl_vars['r']->value['precio_final'];?>
 </td>
-                         </tr>
+                              </tr>
                          <?php $_smarty_tpl->tpl_vars["b"] = new Smarty_Variable(((string)$_smarty_tpl->tpl_vars['b']->value+1), null);
 $_smarty_tpl->ext->_updateScope->updateScope($_smarty_tpl, "b", 0);?>
                          <?php

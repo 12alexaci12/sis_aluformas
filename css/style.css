@@ -295,7 +295,7 @@ input[type="text" i], select, option{
 }
 
 .listado th,td{
-	padding: 10px;
+	padding: 5px;
 }
 
 .listado tr:hover td{
