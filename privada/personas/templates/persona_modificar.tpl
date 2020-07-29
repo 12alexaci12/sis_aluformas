@@ -6,10 +6,11 @@
           <script type="text/javascript" src="js/validar_persona.js"></script>
      </head>
      <body>
-          <h1>MODIFICAR PERSONA</h1>
+          <br><br><br><br>
           <center>
+               <h2>MODIFICAR PERSONA</h2>
                <form action="persona_modificar1.php" method="post" name="formu">
-                    <table border="1">
+                    <table>
                          {foreach item=r from=$persona}
                          <tr>
                               <th>CI (*)</th><th>:</th>
@@ -49,8 +50,6 @@
                               </td>
                          </tr>
                          {/foreach}
-                    </table>
-                    <table>
                          <tr>
                               <td colspan="3" align="center"> <b>(*) Campos Obligatorios</b> </td>
                          </tr>

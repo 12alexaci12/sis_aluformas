@@ -1,8 +1,8 @@
 <?php
 require_once("adodb/adodb.inc.php");
 
-$direc_css = "../css/colores.css";
-
+$direc_css = "../css/style.css";
+$icon = "../css/img/bitmap1.svg";
 $conServidor = "localhost";
 $conUsuario = "root";
 $conClave = "";

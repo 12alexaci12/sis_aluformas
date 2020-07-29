@@ -6,10 +6,11 @@
 		<script type="text/javascript" src="js/validar_persona.js"></script>
 	</head>
 	<body>
+		<br><br><br><br>
 		<center>
-			<h1>REGISTRAR PERSONA SISTEMA</h1>
+			<h2>REGISTRAR PERSONA SISTEMA</h2>
 			<form action="persona_nuevo1.php" method="post" name="formu">
-				<table border="1">
+				<table>
 					<tr>
 						<th align="right">CI(*)</th>
 						<th>:</th>
@@ -52,8 +53,6 @@
 							<input type="button" value="Cancelar" onclick="javascript:location.href='personas.php';">
 						</td>
 					</tr>
-				</table>
-				<table>
 					<tr>
 						<td colspan="3" align="center"><b>(*)Campos Obligatorios</b></td>
 					</tr>

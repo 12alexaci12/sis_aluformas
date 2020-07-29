@@ -3,7 +3,7 @@
   <head>
       <link rel="stylesheet" type="text/css" href="{$direc_css}">
   </head>
-  
+
   <body>
     <table border="1" align="center" width="100%" height="100%" cellspacing="0" bordercolor="white">
       <tr>

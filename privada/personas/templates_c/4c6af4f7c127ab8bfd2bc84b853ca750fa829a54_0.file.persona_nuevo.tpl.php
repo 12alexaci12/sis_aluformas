@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2020-06-16 04:40:49
+/* Smarty version 3.1.29, created on 2020-07-29 01:56:03
   from "D:\disenoWeb\www\sis_aluformas\privada\personas\templates\persona_nuevo.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5ee84d51a07932_99063500',
+  'unifunc' => 'content_5f20d733b636b7_81031095',
   'file_dependency' => 
   array (
     '4c6af4f7c127ab8bfd2bc84b853ca750fa829a54' => 
     array (
       0 => 'D:\\disenoWeb\\www\\sis_aluformas\\privada\\personas\\templates\\persona_nuevo.tpl',
-      1 => 1592278151,
+      1 => 1595987750,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5ee84d51a07932_99063500 ($_smarty_tpl) {
+function content_5f20d733b636b7_81031095 ($_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html>
@@ -34,10 +34,11 @@ function content_5ee84d51a07932_99063500 ($_smarty_tpl) {
 >
 	</head>
 	<body>
+		<br><br><br><br>
 		<center>
-			<h1>REGISTRAR PERSONA SISTEMA</h1>
+			<h2>REGISTRAR PERSONA SISTEMA</h2>
 			<form action="persona_nuevo1.php" method="post" name="formu">
-				<table border="1">
+				<table>
 					<tr>
 						<th align="right">CI(*)</th>
 						<th>:</th>
@@ -80,8 +81,6 @@ function content_5ee84d51a07932_99063500 ($_smarty_tpl) {
 							<input type="button" value="Cancelar" onclick="javascript:location.href='personas.php';">
 						</td>
 					</tr>
-				</table>
-				<table>
 					<tr>
 						<td colspan="3" align="center"><b>(*)Campos Obligatorios</b></td>
 					</tr>
