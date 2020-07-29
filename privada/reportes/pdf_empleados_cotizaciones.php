@@ -15,15 +15,19 @@ $codigo_html ='
 <!DOCTYPE html>
 <html>
 <head>
+     <link rel="stylesheet" href="../../{$direc_css}" type="text/css">
 </head>
 <body>
+     <div class="normal">
 	<table width="100%" border="0">
 		<tr>
-			<td align="center">Empleados</td>
+			<td align="left">Empleados</td>
 			<td align="center" width="80%"><h1>RPT empleados cotizaciones</h1></td>
 		</tr>
 	</table>
+     </div>
 	<br>
+     <div class="listado">
 	<center>
 		<table border="1">
 			<tr>
@@ -48,7 +52,7 @@ $codigo_html ='
                                              $b++;
                     }
 			}
-			$codigo_html.='</table>';
+			$codigo_html.='</table></center></div>';
 ?>
 <?php
      require_once("../../dompdf1/autoload.inc.php");
