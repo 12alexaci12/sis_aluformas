@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2020-06-16 07:39:51
+/* Smarty version 3.1.29, created on 2020-07-29 02:19:22
   from "D:\disenoWeb\www\sis_aluformas\privada\usuarios\templates\usuario_modificar.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5ee877475a8bf0_11040856',
+  'unifunc' => 'content_5f20dcaa9b8ea7_01917737',
   'file_dependency' => 
   array (
     '7c987efbb464994a364a0b3b7fb45ab264508594' => 
     array (
       0 => 'D:\\disenoWeb\\www\\sis_aluformas\\privada\\usuarios\\templates\\usuario_modificar.tpl',
-      1 => 1592293177,
+      1 => 1595989153,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5ee877475a8bf0_11040856 ($_smarty_tpl) {
+function content_5f20dcaa9b8ea7_01917737 ($_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -35,10 +35,11 @@ function content_5ee877475a8bf0_11040856 ($_smarty_tpl) {
 >
      </head>
      <body>
-          <h1>MODIFICAR USUARIO</h1>
+          <br><br><br><br>
           <center>
+               <h2>MODIFICAR USUARIO</h2>
                <form action="usuario_modificar1.php" method="post" name="formu">
-                    <table class="listado">
+                    <table>
                          <tr>
                               <th align="right">Persona (*)</th><th align="top">:</th>
                               <td>
@@ -132,8 +133,6 @@ if ($__foreach_r_2_saved_item) {
 $_smarty_tpl->tpl_vars['r'] = $__foreach_r_2_saved_item;
 }
 ?>
-                    </table>
-                    <table>
                          <tr>
                               <td colspan="3" align="center"> <b>(*)Campos Obligatorios</b> </td>
                          </tr>

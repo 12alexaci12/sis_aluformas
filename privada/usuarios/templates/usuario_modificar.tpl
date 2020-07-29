@@ -7,10 +7,11 @@
           <script type="text/javascript" src="js/validar_usuario.js"></script>
      </head>
      <body>
-          <h1>MODIFICAR USUARIO</h1>
+          <br><br><br><br>
           <center>
+               <h2>MODIFICAR USUARIO</h2>
                <form action="usuario_modificar1.php" method="post" name="formu">
-                    <table class="listado">
+                    <table>
                          <tr>
                               <th align="right">Persona (*)</th><th align="top">:</th>
                               <td>
@@ -42,8 +43,6 @@
                               </td>
                          </tr>
                          {/foreach}
-                    </table>
-                    <table>
                          <tr>
                               <td colspan="3" align="center"> <b>(*)Campos Obligatorios</b> </td>
                          </tr>

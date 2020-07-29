@@ -222,6 +222,11 @@ table{
 	border-collapse: collapse;
 	border-radius: 10px;
 }
+
+th{
+	padding: 10px;
+}
+
 input[type="button" i], input[type="reset" i]{
 	font-weight: bold;
 	color: black;

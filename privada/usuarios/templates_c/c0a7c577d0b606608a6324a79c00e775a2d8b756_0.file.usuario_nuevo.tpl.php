@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2020-06-16 07:36:06
+/* Smarty version 3.1.29, created on 2020-07-29 02:13:43
   from "D:\disenoWeb\www\sis_aluformas\privada\usuarios\templates\usuario_nuevo.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5ee87666869264_68202045',
+  'unifunc' => 'content_5f20db57cfcc70_79682881',
   'file_dependency' => 
   array (
     'c0a7c577d0b606608a6324a79c00e775a2d8b756' => 
     array (
       0 => 'D:\\disenoWeb\\www\\sis_aluformas\\privada\\usuarios\\templates\\usuario_nuevo.tpl',
-      1 => 1592292931,
+      1 => 1595988801,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5ee87666869264_68202045 ($_smarty_tpl) {
+function content_5f20db57cfcc70_79682881 ($_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html>
@@ -35,9 +35,9 @@ function content_5ee87666869264_68202045 ($_smarty_tpl) {
 	</head>
 	<body>
 		<center>
-			<h1>REGISTRAR USUARIO</h1>
+			<h2>REGISTRAR USUARIO</h2>
 			<form action="usuario_nuevo1.php" method="post" name="formu">
-				<table border="1">
+				<table>
 					<tr>
 						<th align="right">Persona (*)</th>
 						<th>:</th>
@@ -88,8 +88,6 @@ $_smarty_tpl->tpl_vars['r'] = $__foreach_r_0_saved_item;
 							<input type="button" value="Cancelar" onclick="javascript:location.href='usuarios.php';">
 						</td>
 					</tr>
-				</table>
-				<table>
 					<tr>
 						<td colspan="3" align="center"><b>(*)Campos Obligatorios</b></td>
 					</tr>

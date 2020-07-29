@@ -7,9 +7,9 @@
 	</head>
 	<body>
 		<center>
-			<h1>REGISTRAR USUARIO</h1>
+			<h2>REGISTRAR USUARIO</h2>
 			<form action="usuario_nuevo1.php" method="post" name="formu">
-				<table border="1">
+				<table>
 					<tr>
 						<th align="right">Persona (*)</th>
 						<th>:</th>
@@ -39,8 +39,6 @@
 							<input type="button" value="Cancelar" onclick="javascript:location.href='usuarios.php';">
 						</td>
 					</tr>
-				</table>
-				<table>
 					<tr>
 						<td colspan="3" align="center"><b>(*)Campos Obligatorios</b></td>
 					</tr>
