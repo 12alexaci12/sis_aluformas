@@ -12,12 +12,12 @@ function validar(){
          }
 
         if ((!v1.test(nombre)) || (nombre == "")) {
-            alert("Los nombre son incorrectos o el campo esta vacio");
+            alert("Los nombres son incorrectos o el campo esta vacio");
             document.formu.nombre.focus();
             return;
         }
         if (telefono == "") {
-    	   alert("Por favor introduzca un Apellido");
+    	   alert("Por favor introduzca un telefono");
     	   document.formu.ap.focus();
     	   return;
         }

@@ -29,7 +29,7 @@
                                    <input type="hidden" name="accion" value="">
                                    <input type="hidden" name="id_vidrieria" value="{$r.id_vidrieria}">
                                    <input type="button" name="Aceptar" value="Aceptar" onclick="validar();">
-                                   <input type="button" name="Cancelar" value="Cancelar" onclick="javascript:location.href='vidrieria2.php';">
+                                   <input type="button" name="Cancelar" value="Cancelar" onclick="javascript:location.href='vidrieria.php';">
                               </td>
                          </tr>
                          {/foreach}

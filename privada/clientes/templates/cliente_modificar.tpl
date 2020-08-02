@@ -8,7 +8,7 @@
      <body>
           <br><br><br><br>
           <center>
-               <h2>MODIFICAR cliente</h2>
+               <h2>MODIFICAR CLIENTE</h2>
                <form action="cliente_modificar1.php" method="post" name="formu">
                     <table>
                          {foreach item=r from=$clientes}

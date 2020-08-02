@@ -6,7 +6,7 @@ function validar(){
 	var telefono	= document.formu.telefono.value;
 
     if (direccion == ""){
-	      alert("Por favor ingrese el numero de ci");
+	      alert("Por favor ingrese unda direccion");
 	      document.formu.ci.focus();
 	      return;
          }
@@ -17,7 +17,7 @@ function validar(){
             return;
         }
         if (telefono == "") {
-    	   alert("Por favor introduzca un Apellido");
+    	   alert("Por favor introduzca un telefono");
     	   document.formu.ap.focus();
     	   return;
         }

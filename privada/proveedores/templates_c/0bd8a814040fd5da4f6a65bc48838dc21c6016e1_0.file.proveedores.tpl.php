@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2020-08-02 21:03:19
+/* Smarty version 3.1.29, created on 2020-08-02 22:00:46
   from "D:\disenoWeb\www\sis_aluformas\privada\proveedores\templates\proveedores.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5f272a1712cb12_58056752',
+  'unifunc' => 'content_5f27378e1a6f13_11177948',
   'file_dependency' => 
   array (
     '0bd8a814040fd5da4f6a65bc48838dc21c6016e1' => 
     array (
       0 => 'D:\\disenoWeb\\www\\sis_aluformas\\privada\\proveedores\\templates\\proveedores.tpl',
-      1 => 1596402182,
+      1 => 1596405636,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5f272a1712cb12_58056752 ($_smarty_tpl) {
+function content_5f27378e1a6f13_11177948 ($_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html>
@@ -40,7 +40,7 @@ function content_5f272a1712cb12_58056752 ($_smarty_tpl) {
 						</table>
 					</td>
 					<td align="center" width="33%">
-						<h2>proveedores</h2>
+						<h2>PROVEEDORES</h2>
 					</td>
 					<td align="left" width="33%">
 						<form name="formNuevo" method="post" action="proveedor_nuevo.php">

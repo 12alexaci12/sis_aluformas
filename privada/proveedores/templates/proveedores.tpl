@@ -16,7 +16,7 @@
 						</table>
 					</td>
 					<td align="center" width="33%">
-						<h2>proveedores</h2>
+						<h2>PROVEEDORES</h2>
 					</td>
 					<td align="left" width="33%">
 						<form name="formNuevo" method="post" action="proveedor_nuevo.php">

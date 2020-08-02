@@ -8,7 +8,7 @@
 	<body>
 		<br><br><br><br>
 		<center>
-			<h2>REGISTRAR EMLEADO</h2>
+			<h2>REGISTRAR PROVEEDOR</h2>
 			<form action="proveedor_nuevo1.php" method="post" name="formu">
 				<table>
 	                    <tr>

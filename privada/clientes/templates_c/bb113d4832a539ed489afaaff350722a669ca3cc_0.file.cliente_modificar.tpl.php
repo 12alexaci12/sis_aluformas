@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2020-08-02 20:32:10
+/* Smarty version 3.1.29, created on 2020-08-02 22:03:05
   from "D:\disenoWeb\www\sis_aluformas\privada\clientes\templates\cliente_modificar.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5f2722cae0cf94_80435790',
+  'unifunc' => 'content_5f2738195df709_18851525',
   'file_dependency' => 
   array (
     'bb113d4832a539ed489afaaff350722a669ca3cc' => 
     array (
       0 => 'D:\\disenoWeb\\www\\sis_aluformas\\privada\\clientes\\templates\\cliente_modificar.tpl',
-      1 => 1596400297,
+      1 => 1596405768,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5f2722cae0cf94_80435790 ($_smarty_tpl) {
+function content_5f2738195df709_18851525 ($_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -36,7 +36,7 @@ function content_5f2722cae0cf94_80435790 ($_smarty_tpl) {
      <body>
           <br><br><br><br>
           <center>
-               <h2>MODIFICAR cliente</h2>
+               <h2>MODIFICAR CLIENTE</h2>
                <form action="cliente_modificar1.php" method="post" name="formu">
                     <table>
                          <?php

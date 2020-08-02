@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2020-08-02 21:45:38
+/* Smarty version 3.1.29, created on 2020-08-02 21:52:15
   from "D:\disenoWeb\www\sis_aluformas\privada\vidrieria\templates\vidrieria_modificar.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5f273402817f55_14979287',
+  'unifunc' => 'content_5f27358f67a942_31252804',
   'file_dependency' => 
   array (
     '2718ee9cb9f3ea157bab86348bc159aa23eea51b' => 
     array (
       0 => 'D:\\disenoWeb\\www\\sis_aluformas\\privada\\vidrieria\\templates\\vidrieria_modificar.tpl',
-      1 => 1596404731,
+      1 => 1596405125,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5f273402817f55_14979287 ($_smarty_tpl) {
+function content_5f27358f67a942_31252804 ($_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -72,7 +72,7 @@ $__foreach_r_0_saved_local_item = $_smarty_tpl->tpl_vars['r'];
                                    <input type="hidden" name="id_vidrieria" value="<?php echo $_smarty_tpl->tpl_vars['r']->value['id_vidrieria'];?>
 ">
                                    <input type="button" name="Aceptar" value="Aceptar" onclick="validar();">
-                                   <input type="button" name="Cancelar" value="Cancelar" onclick="javascript:location.href='vidrieria2.php';">
+                                   <input type="button" name="Cancelar" value="Cancelar" onclick="javascript:location.href='vidrieria.php';">
                               </td>
                          </tr>
                          <?php

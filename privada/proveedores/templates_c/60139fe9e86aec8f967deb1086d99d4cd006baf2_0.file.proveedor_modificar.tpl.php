@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2020-08-02 21:03:22
+/* Smarty version 3.1.29, created on 2020-08-02 22:00:57
   from "D:\disenoWeb\www\sis_aluformas\privada\proveedores\templates\proveedor_modificar.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5f272a1ae375c9_87549460',
+  'unifunc' => 'content_5f273799de6f04_13188128',
   'file_dependency' => 
   array (
     '60139fe9e86aec8f967deb1086d99d4cd006baf2' => 
     array (
       0 => 'D:\\disenoWeb\\www\\sis_aluformas\\privada\\proveedores\\templates\\proveedor_modificar.tpl',
-      1 => 1596402182,
+      1 => 1596405614,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5f272a1ae375c9_87549460 ($_smarty_tpl) {
+function content_5f273799de6f04_13188128 ($_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -36,7 +36,7 @@ function content_5f272a1ae375c9_87549460 ($_smarty_tpl) {
      <body>
           <br><br><br><br>
           <center>
-               <h2>MODIFICAR proveedor</h2>
+               <h2>MODIFICAR PROVEEDOR</h2>
                <form action="proveedor_modificar1.php" method="post" name="formu">
                     <table>
                          <?php
