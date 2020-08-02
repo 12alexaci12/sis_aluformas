@@ -316,16 +316,16 @@ CREATE TABLE detalle_cotizaciones(
 	FOREIGN KEY(id_producto) REFERENCES productos(id_producto)
 )ENGINE=INNODB;
 
-INSERT INTO detalle_cotizaciones(id_detalle_cotizacion,ancho,alto,precio,id_cotizacion,id_producto,fec_insercion,fec_modificacion,usuario,estado) VALUES (1,'0.5','0.8','120',1,1,now(),now(),1,1);
-INSERT INTO detalle_cotizaciones(id_detalle_cotizacion,ancho,alto,precio,id_cotizacion,id_producto,fec_insercion,fec_modificacion,usuario,estado) VALUES (2,'1','1.2','360',1,2,now(),now(),1,1);
-INSERT INTO detalle_cotizaciones(id_detalle_cotizacion,ancho,alto,precio,id_cotizacion,id_producto,fec_insercion,fec_modificacion,usuario,estado) VALUES (3,'1.8','0.3','162',1,3,now(),now(),1,1);
-INSERT INTO detalle_cotizaciones(id_detalle_cotizacion,ancho,alto,precio,id_cotizacion,id_producto,fec_insercion,fec_modificacion,usuario,estado) VALUES (4,'0.5','0.8','120',1,4,now(),now(),1,1);
-INSERT INTO detalle_cotizaciones(id_detalle_cotizacion,ancho,alto,precio,id_cotizacion,id_producto,fec_insercion,fec_modificacion,usuario,estado) VALUES (5,'0.8','1','240',1,5,now(),now(),1,1);
-INSERT INTO detalle_cotizaciones(id_detalle_cotizacion,ancho,alto,precio,id_cotizacion,id_producto,fec_insercion,fec_modificacion,usuario,estado) VALUES (6,'1.5','0.82','369',2,6,now(),now(),1,1);
-INSERT INTO detalle_cotizaciones(id_detalle_cotizacion,ancho,alto,precio,id_cotizacion,id_producto,fec_insercion,fec_modificacion,usuario,estado) VALUES (7,'0.5','0.8','120',2,1,now(),now(),1,1);
-INSERT INTO detalle_cotizaciones(id_detalle_cotizacion,ancho,alto,precio,id_cotizacion,id_producto,fec_insercion,fec_modificacion,usuario,estado) VALUES (8,'1','1.2','360',2,2,now(),now(),1,1);
-INSERT INTO detalle_cotizaciones(id_detalle_cotizacion,ancho,alto,precio,id_cotizacion,id_producto,fec_insercion,fec_modificacion,usuario,estado) VALUES (9,'1.8','0.3','162',2,3,now(),now(),1,1);
-INSERT INTO detalle_cotizaciones(id_detalle_cotizacion,ancho,alto,precio,id_cotizacion,id_producto,fec_insercion,fec_modificacion,usuario,estado) VALUES (10,'0.8','1','240',2,2,now(),now(),1,1);
+INSERT INTO detalle_cotizaciones(id_detalle_cotizacion,ancho,alto,precio,id_cotizacion,id_producto,fec_insercion,fec_modificacion,usuario,estado) VALUES (1,'120','100','120',1,1,now(),now(),1,1);
+INSERT INTO detalle_cotizaciones(id_detalle_cotizacion,ancho,alto,precio,id_cotizacion,id_producto,fec_insercion,fec_modificacion,usuario,estado) VALUES (2,'150','120','360',1,2,now(),now(),1,1);
+INSERT INTO detalle_cotizaciones(id_detalle_cotizacion,ancho,alto,precio,id_cotizacion,id_producto,fec_insercion,fec_modificacion,usuario,estado) VALUES (3,'130','100','162',1,3,now(),now(),1,1);
+INSERT INTO detalle_cotizaciones(id_detalle_cotizacion,ancho,alto,precio,id_cotizacion,id_producto,fec_insercion,fec_modificacion,usuario,estado) VALUES (4,'155','124','120',1,4,now(),now(),1,1);
+INSERT INTO detalle_cotizaciones(id_detalle_cotizacion,ancho,alto,precio,id_cotizacion,id_producto,fec_insercion,fec_modificacion,usuario,estado) VALUES (5,'123','90','240',1,5,now(),now(),1,1);
+INSERT INTO detalle_cotizaciones(id_detalle_cotizacion,ancho,alto,precio,id_cotizacion,id_producto,fec_insercion,fec_modificacion,usuario,estado) VALUES (6,'220','119','369',2,6,now(),now(),1,1);
+INSERT INTO detalle_cotizaciones(id_detalle_cotizacion,ancho,alto,precio,id_cotizacion,id_producto,fec_insercion,fec_modificacion,usuario,estado) VALUES (7,'169','110','120',2,1,now(),now(),1,1);
+INSERT INTO detalle_cotizaciones(id_detalle_cotizacion,ancho,alto,precio,id_cotizacion,id_producto,fec_insercion,fec_modificacion,usuario,estado) VALUES (8,'204','150','360',2,2,now(),now(),1,1);
+INSERT INTO detalle_cotizaciones(id_detalle_cotizacion,ancho,alto,precio,id_cotizacion,id_producto,fec_insercion,fec_modificacion,usuario,estado) VALUES (9,'227','100','162',2,3,now(),now(),1,1);
+INSERT INTO detalle_cotizaciones(id_detalle_cotizacion,ancho,alto,precio,id_cotizacion,id_producto,fec_insercion,fec_modificacion,usuario,estado) VALUES (10,'165','123','240',2,2,now(),now(),1,1);
 
 
 CREATE TABLE personas (
