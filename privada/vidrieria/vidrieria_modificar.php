@@ -5,17 +5,17 @@
      require_once("../../conexion.php");
      require_once("../libreria_menu.php");
 
-     $__id_propietario = $_REQUEST["id_cliente"];
+     $__id_propietario = $_REQUEST["id_vidrieria"];
 
      $smarty = new Smarty;
 
      $sql = $db->Prepare("    SELECT *
-                              FROM clientes
-                              WHERE id_cliente = ?
+                              FROM vidrieria
+                              WHERE id_vidrieria = ?
      ");
 
      $rs = $db->GetAll($sql, array($__id_propietario));
-     $smarty->assign("clientes", $rs);
+     $smarty->assign("vidrieria", $rs);
      $smarty->assign("direc_css", $direc_css);
-     $smarty->display("cliente_modificar.tpl");
+     $smarty->display("vidrieria_modificar.tpl");
 ?>

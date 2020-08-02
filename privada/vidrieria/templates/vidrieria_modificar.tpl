@@ -3,15 +3,15 @@
      <head>
           <link rel="stylesheet" href="../{$direc_css}" type="text/css">
           <script type="text/javascript" src="js/expresiones_regulares.js"></script>
-          <script type="text/javascript" src="js/validar_cliente.js"></script>
+          <script type="text/javascript" src="js/validar_vidrieria.js"></script>
      </head>
      <body>
           <br><br><br><br>
           <center>
-               <h2>MODIFICAR cliente</h2>
-               <form action="cliente_modificar1.php" method="post" name="formu">
+               <h2>MODIFICAR VIDRIERIA</h2>
+               <form action="vidrieria_modificar1.php" method="post" name="formu">
                     <table>
-                         {foreach item=r from=$clientes}
+                         {foreach item=r from=$vidrieria}
                          <tr>
                               <th align="left">Nombre</th><th>:</th>
                               <td> <input type="text" name="nombre" onkeyup="this.value=this.value.toUpperCase()" value="{$r.nombre}"> </td>
@@ -27,9 +27,9 @@
                          <tr>
                               <td align="center" colspan="3">
                                    <input type="hidden" name="accion" value="">
-                                   <input type="hidden" name="id_cliente" value="{$r.id_cliente}">
+                                   <input type="hidden" name="id_vidrieria" value="{$r.id_vidrieria}">
                                    <input type="button" name="Aceptar" value="Aceptar" onclick="validar();">
-                                   <input type="button" name="Cancelar" value="Cancelar" onclick="javascript:location.href='clientes.php';">
+                                   <input type="button" name="Cancelar" value="Cancelar" onclick="javascript:location.href='vidrieria2.php';">
                               </td>
                          </tr>
                          {/foreach}
