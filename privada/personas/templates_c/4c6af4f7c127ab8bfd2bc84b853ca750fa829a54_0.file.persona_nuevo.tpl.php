@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2020-07-29 01:56:03
+/* Smarty version 3.1.29, created on 2020-08-02 20:11:31
   from "D:\disenoWeb\www\sis_aluformas\privada\personas\templates\persona_nuevo.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5f20d733b636b7_81031095',
+  'unifunc' => 'content_5f271df36ba009_10893904',
   'file_dependency' => 
   array (
     '4c6af4f7c127ab8bfd2bc84b853ca750fa829a54' => 
     array (
       0 => 'D:\\disenoWeb\\www\\sis_aluformas\\privada\\personas\\templates\\persona_nuevo.tpl',
-      1 => 1595987750,
+      1 => 1596396253,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5f20d733b636b7_81031095 ($_smarty_tpl) {
+function content_5f271df36ba009_10893904 ($_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html>
@@ -40,37 +40,37 @@ function content_5f20d733b636b7_81031095 ($_smarty_tpl) {
 			<form action="persona_nuevo1.php" method="post" name="formu">
 				<table>
 					<tr>
-						<th align="right">CI(*)</th>
+						<th align="left">CI(*)</th>
 						<th>:</th>
 						<td><input type="text" name="ci" onkeyup="this.value=this.value.toUpperCase()"></td>
 					</tr>
 					<tr>
-						<th align="right">Nombres(*)</th>
+						<th align="left">Nombres(*)</th>
 						<th>:</th>
 						<td><input type="text" name="nombre" onkeyup="this.value=this.value.toUpperCase()"></td>
 					</tr>
 					<tr>
-						<th align="right">Apellido Paterno</th>
+						<th align="left">Apellido Paterno</th>
 						<th>:</th>
 						<td><input type="text" name="ap" onkeyup="this.value=this.value.toUpperCase()"></td>
 					</tr>
 					<tr>
-						<th align="right">Apellido Materno</th>
+						<th align="left">Apellido Materno</th>
 						<th>:</th>
 						<td><input type="text" name="am" onkeyup="this.value=this.value.toUpperCase()"></td>
 					</tr>
 					<tr>
-						<th align="right">Direccion</th>
+						<th align="left">Direccion</th>
 						<th>:</th>
 						<td><input type="text" name="direccion" onkeyup="this.value=this.value.toUpperCase()"></td>
 					</tr>
 					<tr>
-						<th align="right">Telefono</th>
+						<th align="left">Telefono</th>
 						<th>:</th>
 						<td><input type="text" name="telefono" onkeyup="this.value=this.value.toUpperCase()" maxlength="9"></td>
 					</tr>
 					<tr>
-						<th align="right">Genero(*)</th>
+						<th align="left">Genero(*)</th>
 						<th>:</th>
 						<td><input type="radio" name="genero" value="F">Femenino<input type="radio" name="genero" value="M">Masculino</td>
 					</tr>

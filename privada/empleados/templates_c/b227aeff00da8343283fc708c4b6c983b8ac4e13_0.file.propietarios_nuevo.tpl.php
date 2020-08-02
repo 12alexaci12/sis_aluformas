@@ -1,9 +1,37 @@
+<?php
+/* Smarty version 3.1.29, created on 2020-08-02 19:28:19
+  from "D:\disenoWeb\www\sis_aluformas\privada\propietarios\templates\propietarios_nuevo.tpl" */
+
+if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
+  'has_nocache_code' => false,
+  'version' => '3.1.29',
+  'unifunc' => 'content_5f2713d3190551_12244508',
+  'file_dependency' => 
+  array (
+    'b227aeff00da8343283fc708c4b6c983b8ac4e13' => 
+    array (
+      0 => 'D:\\disenoWeb\\www\\sis_aluformas\\privada\\propietarios\\templates\\propietarios_nuevo.tpl',
+      1 => 1596396461,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_5f2713d3190551_12244508 ($_smarty_tpl) {
+?>
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="../{$direc_css}">
-		<script type="text/javascript" src="js/expresiones_regulares.js"></script>
-		<script type="text/javascript" src="js/validar_propietario.js"></script>
+		<link rel="stylesheet" type="text/css" href="../<?php echo $_smarty_tpl->tpl_vars['direc_css']->value;?>
+">
+		<?php echo '<script'; ?>
+ type="text/javascript" src="js/expresiones_regulares.js"><?php echo '</script'; ?>
+>
+		<?php echo '<script'; ?>
+ type="text/javascript" src="js/validar_propietario.js"><?php echo '</script'; ?>
+>
 	</head>
 	<body>
 		<br><br><br><br>
@@ -41,3 +69,5 @@
 		</center>
 	</body>
 </html>
+<?php }
+}

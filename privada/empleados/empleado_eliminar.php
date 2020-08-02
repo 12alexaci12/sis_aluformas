@@ -4,27 +4,27 @@
      require_once("../../smarty/Smarty.class.php");
      require_once("../../conexion.php");
 
-     $__id_propietario = $_REQUEST["id_propietario"];
+     $__id_empleado = $_REQUEST["id_empleado"];
 
      $smarty = new Smarty;
 
      $sql = $db->Prepare("    SELECT *
-                              FROM propietarios
-                              WHERE id_propietario = {$_REQUEST["id_propietario"]}
+                              FROM empleados
+                              WHERE id_empleado = {$__id_empleado}
                               AND estado <> '0'
      ");
-     $rs = $db->GetAll($sql, array($__id_propietario));
+     $rs = $db->GetAll($sql, array($__id_empleado));
 
      if(!$rs){
           $reg = array();
           $reg["estado"] = '0';
           $reg["_id_usuario"] = $_SESSION["sesion_id_usuario"];
-          $rs1 = $db->AutoExecute("propietarios", $reg, "UPDATE", "id_propietario='".$__id_propietario."'");
-          header("Location:propietarios.php");
+          $rs1 = $db->AutoExecute("empleados", $reg, "UPDATE", "id_empleado='".$__id_emleado."'");
+          header("Location:empleados.php");
           exit();
      } else {
           $smarty->assign("mensaje", "ERROR: Los datos no se eliminaron!!!!!!");
           $smarty->assign("direc_css", $direc_css);
-          $smarty->display("propietarios_eliminar.tpl");
+          $smarty->display("empleado_eliminar.tpl");
      }
  ?>

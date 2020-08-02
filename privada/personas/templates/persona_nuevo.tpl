@@ -12,37 +12,37 @@
 			<form action="persona_nuevo1.php" method="post" name="formu">
 				<table>
 					<tr>
-						<th align="right">CI(*)</th>
+						<th align="left">CI(*)</th>
 						<th>:</th>
 						<td><input type="text" name="ci" onkeyup="this.value=this.value.toUpperCase()"></td>
 					</tr>
 					<tr>
-						<th align="right">Nombres(*)</th>
+						<th align="left">Nombres(*)</th>
 						<th>:</th>
 						<td><input type="text" name="nombre" onkeyup="this.value=this.value.toUpperCase()"></td>
 					</tr>
 					<tr>
-						<th align="right">Apellido Paterno</th>
+						<th align="left">Apellido Paterno</th>
 						<th>:</th>
 						<td><input type="text" name="ap" onkeyup="this.value=this.value.toUpperCase()"></td>
 					</tr>
 					<tr>
-						<th align="right">Apellido Materno</th>
+						<th align="left">Apellido Materno</th>
 						<th>:</th>
 						<td><input type="text" name="am" onkeyup="this.value=this.value.toUpperCase()"></td>
 					</tr>
 					<tr>
-						<th align="right">Direccion</th>
+						<th align="left">Direccion</th>
 						<th>:</th>
 						<td><input type="text" name="direccion" onkeyup="this.value=this.value.toUpperCase()"></td>
 					</tr>
 					<tr>
-						<th align="right">Telefono</th>
+						<th align="left">Telefono</th>
 						<th>:</th>
 						<td><input type="text" name="telefono" onkeyup="this.value=this.value.toUpperCase()" maxlength="9"></td>
 					</tr>
 					<tr>
-						<th align="right">Genero(*)</th>
+						<th align="left">Genero(*)</th>
 						<th>:</th>
 						<td><input type="radio" name="genero" value="F">Femenino<input type="radio" name="genero" value="M">Masculino</td>
 					</tr>

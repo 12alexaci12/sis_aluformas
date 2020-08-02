@@ -13,31 +13,31 @@
                     <table>
                          {foreach item=r from=$persona}
                          <tr>
-                              <th>CI (*)</th><th>:</th>
+                              <th align="left">CI (*)</th><th>:</th>
                               <td> <input type="text" name="ci" onkeyup="this.value=this.value.toUpperCase()" value="{$r.ci}"> </td>
                          </tr>
                          <tr>
-                              <th>Nombres (*)</th><th>:</th>
+                              <th align="left">Nombres (*)</th><th>:</th>
                               <td> <input type="text" name="nombre" onkeyup="this.value=this.value.toUpperCase()" value="{$r.nombre}"> </td>
                          </tr>
                          <tr>
-                              <th>Apellido Paterno (*)</th><th>:</th>
+                              <th align="left">Apellido Paterno (*)</th><th>:</th>
                               <td> <input type="text" name="ap" onkeyup="this.value=this.value.toUpperCase()" value="{$r.ap}"> </td>
                          </tr>
                          <tr>
-                              <th>Apellido Materno (*)</th><th>:</th>
+                              <th align="left">Apellido Materno (*)</th><th>:</th>
                               <td> <input type="text" name="am" onkeyup="this.value=this.value.toUpperCase()" value="{$r.am}"> </td>
                          </tr>
                          <tr>
-                              <th>Direccion (*)</th><th>:</th>
+                              <th align="left">Direccion (*)</th><th>:</th>
                               <td> <input type="text" name="direccion" onkeyup="this.value=this.value.toUpperCase()" value="{$r.direccion}"> </td>
                          </tr>
                          <tr>
-                              <th>Telefono (*)</th><th>:</th>
+                              <th align="left">Telefono (*)</th><th>:</th>
                               <td> <input type="text" name="telefono" onkeyup="this.value=this.value.toUpperCase()" value="{$r.telefono}"> </td>
                          </tr>
                          <tr>
-						<th align="right">Genero(*)</th>
+						<th align="left">Genero(*)</th>
 						<th>:</th>
 						<td>
                                    <input type="radio" name="genero" value="F" {if $r.genero == 'F'} checked {/if}>Femenino

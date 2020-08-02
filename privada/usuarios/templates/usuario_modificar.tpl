@@ -27,11 +27,11 @@
                          </tr>
                          {foreach item=r from=$usuario}
                          <tr>
-                              <th>Usuario (*)</th><th>:</th>
+                              <th align="left">Usuario (*)</th><th>:</th>
                               <td><input type="text" name="usuario1" value="{$r.usuario1}"></td>
                          </tr>
                          <tr>
-                              <th>Clave (*)</th><th>:</th>
+                              <th align="left">Clave (*)</th><th>:</th>
                               <td><input type="text" name="clave" value="{$r.clave}"></td>
                          </tr>
                          <tr>

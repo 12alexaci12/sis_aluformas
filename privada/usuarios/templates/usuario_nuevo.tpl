@@ -23,12 +23,12 @@
 						</td>
 					</tr>
 					<tr>
-						<th align="right">Usuario (*)</th>
+						<th align="left">Usuario (*)</th>
 						<th>:</th>
 						<td><input type="text" name="usuario1"></td>
 					</tr>
 					<tr>
-						<th align="right">Clave (*)</th>
+						<th align="left">Clave (*)</th>
 						<th>:</th>
 						<td><input type="password" name="clave"></td>
 					</tr>
