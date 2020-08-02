@@ -337,6 +337,7 @@ CREATE TABLE personas (
   am VARCHAR(25) NOT NULL,
   telefono VARCHAR(25)NOT NULL,
   direccion VARCHAR(30) NOT NULL,
+  genero VARCHAR(5) NOT NULL,
   fec_insercion TIMESTAMP NOT NULL,
   fec_modificacion TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   usuario INT NOT NULL,
@@ -345,7 +346,7 @@ CREATE TABLE personas (
   FOREIGN KEY (id_vidrieria) REFERENCES vidrieria(id_vidrieria)
 )ENGINE=INNODB;
 
-INSERT INTO personas VALUES(1,1,'10621948','alex','cardozo','isurza','65823435','Barrio lourdez',now(),now(),1,1);
+INSERT INTO personas VALUES(1,1,'10621948','alex','cardozo','isurza','65823435','Barrio lourdez','M',now(),now(),1,1);
 
 CREATE TABLE usuarios(
   id_usuario INT NOT NULL AUTO_INCREMENT,
