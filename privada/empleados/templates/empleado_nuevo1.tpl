@@ -6,8 +6,7 @@
 <body>
 	<center>
 		<h2>{$mensaje}</h2>
-		<a href="empleados.php"></a>
-		<input type="button" name="Volver" value="Volver>>>>">
+		<a href="empleados.php"<input type="button" name="Volver" value="Volver>>>>">></a>
 	</center>
 </body>
 </html>
