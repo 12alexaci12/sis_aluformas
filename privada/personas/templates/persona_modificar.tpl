@@ -39,7 +39,10 @@
                          <tr>
 						<th align="right">Genero(*)</th>
 						<th>:</th>
-						<td><input type="radio" name="genero" value="F">Femenino<input type="radio" name="genero" value="M">Masculino</td>
+						<td>
+                                   <input type="radio" name="genero" value="F" {if $r.genero == 'F'} checked {/if}>Femenino
+                                   <input type="radio" name="genero" value="M" {if $r.genero == 'M'} checked {/if}>Masculino
+                              </td>
 					</tr>
                          <tr>
                               <td align="center" colspan="3">

@@ -18,7 +18,7 @@
      if(!$rs){
           $reg = array();
           $reg["estado"] = '0';
-          $reg["id_usuario"] = $_SESSION["sesion_id_usuario"];
+          $reg["_id_usuario"] = $_SESSION["sesion_id_usuario"];
           $rs1 = $db->AutoExecute("usuarios", $reg, "UPDATE", "id_usuario='".$__id_usuario."'");
           header("Location:usuarios.php");
           exit();
