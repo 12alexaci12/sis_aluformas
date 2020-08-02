@@ -16,10 +16,10 @@
 						</table>
 					</td>
 					<td align="center" width="33%">
-						<h2>Detalles</h2>
+						<h2>Propietarios</h2>
 					</td>
 					<td align="left" width="33%">
-						<form name="formNuevo" method="post" action="persona_nuevo.php">
+						<form name="formNuevo" method="post" action="propietarios_nuevo.php">
 							<a href="javascript:document.formNuevo.submit();">
 							Nuevo>>>>
 							</a>
@@ -33,23 +33,32 @@
 			<table>
 				<thead>
 					<tr>
-						<th>NRO</th><th>tipo</th><th>alto</th><th>ancho</th><th>precio(bs)</th>
+						<th>NRO</th><th>nombre</th><th>ci</th><th>telefono</th>
 						<th><img src="../../imagenes/modificar.gif"></th><th><img src="../../imagenes/borrar.jpeg"></th>
 					</tr>
 				</thead>
 				{assign var="b" value="1"}
-				{foreach item=r from=$detalles}
+				{foreach item=r from=$propietarios}
 				<tr>
                     <td>{$b}</td>
 					<td>{$r.nombre}</td>
-					<td>{$r.alto}</td>
-					<td>{$r.ancho}</td>
-					<td>{$r.precio}</td>
-					<td>
-                              Modificar>>>
+					<td>{$r.ci}</td>
+					<td>{$r.telefono}</td>
+                    <td>
+						<form name="formModif{$r.id_propietario}" method="post" action="propietarios_modificar.php">
+						<input type="hidden" name="id_propietario" value="{$r.id_propietario}">
+						<a href="javascript:document.formModif{$r.id_propietario}.submit();" title="Modificar propietario Sistema">
+							Modificar>>>
+						</a>
+						</form>
 					</td>
 					<td>
-                              Eliminar>>>
+						<form name="formElimi{$r.id_propietario}" method="post" action="propietarios_eliminar.php">
+						<input type="hidden" name="id_propietario" value="{$r.id_propietario}">
+						<a href="javascript:document.formElimi{$r.id_propietario}.submit();" title="Eliminar propietario Sistema" onclick='javascript: return(confirm("Desea realmente Eliminar al propietario..?"));'>
+							Eliminar>>>
+						</a>
+						</form>
 					</td>
 					{assign var="b" value="`$b+1`"}
 					{/foreach}

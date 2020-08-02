@@ -8,7 +8,7 @@ $idCotizaion = $_GET['id_cotizacion'];
 
 $smarty = new Smarty;
 
-$sql5 = $db->Prepare("   SELECT pro.nombre, det.alto, det.ancho, pro.precio_m2, round((det.alto * det.ancho * pro.precio_m2/10000)) AS precio
+$sql5 = $db->Prepare("   SELECT pro.nombre, det.alto, det.ancho, round((det.alto * det.ancho * pro.precio_m2/10000)) AS precio
                          FROM productos AS pro, detalle_cotizaciones AS det, cotizaciones AS cot
                          WHERE det.estado <> 0
                          AND det.id_cotizacion = {$idCotizaion}
