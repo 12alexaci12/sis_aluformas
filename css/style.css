@@ -60,7 +60,7 @@ body {
 	text-decoration: none;
 	display: block;
 	float:left;
-	padding: 13px;
+	padding: 8px;
 }
 .contenedor ul li a:hover, .contenedor ul li a.active {/*Estado Hover/Activo de los enlaces*/
 	background: #1d1d1d;
@@ -158,6 +158,7 @@ body {
 .contenedor ul li:hover ul.children2{height:170px;opacity:1;}
 .contenedor ul li:hover ul.children3{height:370px;opacity:1;}
 .contenedor ul li:hover ul.children4{height:160px;opacity:1;}
+.contenedor ul li:hover ul.children5{height:90px; width:107px;opacity:1;}
 
 
 .contenedor ul#menu:after {
