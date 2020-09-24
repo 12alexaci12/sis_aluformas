@@ -37,13 +37,16 @@
 						<th><img src="../../imagenes/modificar.gif"></th><th><img src="../../imagenes/borrar.jpeg"></th>
 					</tr>
 				</thead>
-				{assign var="b" value="1"}
-				{foreach item=r from=$personas}
+				{assign var="b" value=0}
+	               {assign var="total" value=$pagina-1}
+	               {assign var="a" value=$numreg*$total}
+	               {assign var="b" value=$b+1+$a}
+	               {foreach item=r from=$personas}
 				<tr>
-					<td >{$b}</td>
+					<td>{$b}</td>
 					<td>{$r.ci}</td>
 					<td>{$r.nombre}</td>
-					<td >{$r.ap}</td>
+					<td>{$r.ap}</td>
 					<td>{$r.am}</td>
 					<td align="center">{$r.genero}</td>
 					<td>
@@ -62,10 +65,34 @@
 						</a>
 						</form>
 					</td>
-					{assign var="b" value="`$b+1`"}
-					{/foreach}
+					{assign var="b" value=$b+1}
+                {/foreach}
 				</tr>
 			</table>
+			<div class="normal">
+				<table>
+					<tr align="center">
+	                        <td>
+	                            {if !empty($urlback)}
+	                            <a onclick="location.href='{$urlback}'" style="font-family: Verdana; font-size: 14px; cursor:pointer;">&laquo;Anterior</a>
+	                            {/if}
+	                            {if !empty($paginas)}
+	                                {foreach from=$paginas item=pag}
+	                                    {if $pag.npag == $pagina}
+	                                    {if $pagina neq '1'} |{/if}
+	                                    <b style="color:#fb992f; font-size:16px;"> {$pag.npag}</b>
+	                                    {else}
+	                                    <a onclick="location.href='{$pag.pagV}'" style="cursor:pointer;"> {$pag.npag}</a>
+	                                    {/if}
+	                                {/foreach}
+	                            {/if}
+	                            {if $numpaginas gt $numbotones and !empty($urlnext) and $pagina lt $numpaginas}
+	                            <a onclick="location.href='{$urlnext}'" style="font-family: Verdana; font-size:14px; cursor:pointer;">Siguiente&laquo; </a>
+	                            {/if}
+	                        </td>
+	                    </tr>
+				</table>
+			</div>
 			</div>
 		</center>
 	</body>

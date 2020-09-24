@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2020-07-29 01:55:31
+/* Smarty version 3.1.29, created on 2020-09-24 03:18:31
   from "D:\disenoWeb\www\sis_aluformas\privada\personas\templates\personas.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5f20d713266e26_18062093',
+  'unifunc' => 'content_5f6c1007cb7d21_09046721',
   'file_dependency' => 
   array (
     'a1449ebc39634631577f1968caeef4db2c7ea72a' => 
     array (
       0 => 'D:\\disenoWeb\\www\\sis_aluformas\\privada\\personas\\templates\\personas.tpl',
-      1 => 1595987728,
+      1 => 1600917507,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5f20d713266e26_18062093 ($_smarty_tpl) {
+function content_5f6c1007cb7d21_09046721 ($_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html>
@@ -61,9 +61,15 @@ function content_5f20d713266e26_18062093 ($_smarty_tpl) {
 						<th><img src="../../imagenes/modificar.gif"></th><th><img src="../../imagenes/borrar.jpeg"></th>
 					</tr>
 				</thead>
-				<?php $_smarty_tpl->tpl_vars["b"] = new Smarty_Variable("1", null);
+				<?php $_smarty_tpl->tpl_vars["b"] = new Smarty_Variable(0, null);
 $_smarty_tpl->ext->_updateScope->updateScope($_smarty_tpl, "b", 0);?>
-				<?php
+	               <?php $_smarty_tpl->tpl_vars["total"] = new Smarty_Variable($_smarty_tpl->tpl_vars['pagina']->value-1, null);
+$_smarty_tpl->ext->_updateScope->updateScope($_smarty_tpl, "total", 0);?>
+	               <?php $_smarty_tpl->tpl_vars["a"] = new Smarty_Variable($_smarty_tpl->tpl_vars['numreg']->value*$_smarty_tpl->tpl_vars['total']->value, null);
+$_smarty_tpl->ext->_updateScope->updateScope($_smarty_tpl, "a", 0);?>
+	               <?php $_smarty_tpl->tpl_vars["b"] = new Smarty_Variable($_smarty_tpl->tpl_vars['b']->value+1+$_smarty_tpl->tpl_vars['a']->value, null);
+$_smarty_tpl->ext->_updateScope->updateScope($_smarty_tpl, "b", 0);?>
+	               <?php
 $_from = $_smarty_tpl->tpl_vars['personas']->value;
 if (!is_array($_from) && !is_object($_from)) {
 settype($_from, 'array');
@@ -76,13 +82,13 @@ $_smarty_tpl->tpl_vars['r']->_loop = true;
 $__foreach_r_0_saved_local_item = $_smarty_tpl->tpl_vars['r'];
 ?>
 				<tr>
-					<td ><?php echo $_smarty_tpl->tpl_vars['b']->value;?>
+					<td><?php echo $_smarty_tpl->tpl_vars['b']->value;?>
 </td>
 					<td><?php echo $_smarty_tpl->tpl_vars['r']->value['ci'];?>
 </td>
 					<td><?php echo $_smarty_tpl->tpl_vars['r']->value['nombre'];?>
 </td>
-					<td ><?php echo $_smarty_tpl->tpl_vars['r']->value['ap'];?>
+					<td><?php echo $_smarty_tpl->tpl_vars['r']->value['ap'];?>
 </td>
 					<td><?php echo $_smarty_tpl->tpl_vars['r']->value['am'];?>
 </td>
@@ -110,9 +116,9 @@ $__foreach_r_0_saved_local_item = $_smarty_tpl->tpl_vars['r'];
 						</a>
 						</form>
 					</td>
-					<?php $_smarty_tpl->tpl_vars["b"] = new Smarty_Variable(((string)$_smarty_tpl->tpl_vars['b']->value+1), null);
+					<?php $_smarty_tpl->tpl_vars["b"] = new Smarty_Variable($_smarty_tpl->tpl_vars['b']->value+1, null);
 $_smarty_tpl->ext->_updateScope->updateScope($_smarty_tpl, "b", 0);?>
-					<?php
+                <?php
 $_smarty_tpl->tpl_vars['r'] = $__foreach_r_0_saved_local_item;
 }
 if ($__foreach_r_0_saved_item) {
@@ -121,6 +127,52 @@ $_smarty_tpl->tpl_vars['r'] = $__foreach_r_0_saved_item;
 ?>
 				</tr>
 			</table>
+			<div class="normal">
+				<table>
+					<tr align="center">
+	                        <td>
+	                            <?php if (!empty($_smarty_tpl->tpl_vars['urlback']->value)) {?>
+	                            <a onclick="location.href='<?php echo $_smarty_tpl->tpl_vars['urlback']->value;?>
+'" style="font-family: Verdana; font-size: 14px; cursor:pointer;">&laquo;Anterior</a>
+	                            <?php }?>
+	                            <?php if (!empty($_smarty_tpl->tpl_vars['paginas']->value)) {?>
+	                                <?php
+$_from = $_smarty_tpl->tpl_vars['paginas']->value;
+if (!is_array($_from) && !is_object($_from)) {
+settype($_from, 'array');
+}
+$__foreach_pag_1_saved_item = isset($_smarty_tpl->tpl_vars['pag']) ? $_smarty_tpl->tpl_vars['pag'] : false;
+$_smarty_tpl->tpl_vars['pag'] = new Smarty_Variable();
+$_smarty_tpl->tpl_vars['pag']->_loop = false;
+foreach ($_from as $_smarty_tpl->tpl_vars['pag']->value) {
+$_smarty_tpl->tpl_vars['pag']->_loop = true;
+$__foreach_pag_1_saved_local_item = $_smarty_tpl->tpl_vars['pag'];
+?>
+	                                    <?php if ($_smarty_tpl->tpl_vars['pag']->value['npag'] == $_smarty_tpl->tpl_vars['pagina']->value) {?>
+	                                    <?php if ($_smarty_tpl->tpl_vars['pagina']->value != '1') {?> |<?php }?>
+	                                    <b style="color:#fb992f; font-size:16px;"> <?php echo $_smarty_tpl->tpl_vars['pag']->value['npag'];?>
+</b>
+	                                    <?php } else { ?>
+	                                    <a onclick="location.href='<?php echo $_smarty_tpl->tpl_vars['pag']->value['pagV'];?>
+'" style="cursor:pointer;"> <?php echo $_smarty_tpl->tpl_vars['pag']->value['npag'];?>
+</a>
+	                                    <?php }?>
+	                                <?php
+$_smarty_tpl->tpl_vars['pag'] = $__foreach_pag_1_saved_local_item;
+}
+if ($__foreach_pag_1_saved_item) {
+$_smarty_tpl->tpl_vars['pag'] = $__foreach_pag_1_saved_item;
+}
+?>
+	                            <?php }?>
+	                            <?php if ($_smarty_tpl->tpl_vars['numpaginas']->value > $_smarty_tpl->tpl_vars['numbotones']->value && !empty($_smarty_tpl->tpl_vars['urlnext']->value) && $_smarty_tpl->tpl_vars['pagina']->value < $_smarty_tpl->tpl_vars['numpaginas']->value) {?>
+	                            <a onclick="location.href='<?php echo $_smarty_tpl->tpl_vars['urlnext']->value;?>
+'" style="font-family: Verdana; font-size:14px; cursor:pointer;">Siguiente&laquo; </a>
+	                            <?php }?>
+	                        </td>
+	                    </tr>
+				</table>
+			</div>
 			</div>
 		</center>
 	</body>

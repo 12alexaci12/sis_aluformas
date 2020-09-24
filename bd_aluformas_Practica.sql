@@ -486,27 +486,24 @@ INSERT INTO accesos VALUES(23,23,1,now(),now(),1,1);
 INSERT INTO accesos VALUES(24,24,1,now(),now(),1,1);
 INSERT INTO accesos VALUES(25,25,1,now(),now(),1,1);
 
-/*EJERCICIO 1
-generar un reporte de las cotizaciones que realizaron los empleados. Tambien se debe mostrar el nombre del cliente, fecha,telefono y precio final*/
-SELECT coti.id_cotizacion, emp.nombre as nombre_emp, cli.nombre as nombre_cli, cli.telefono, coti.fecha, coti.precio_final
-FROM cotizaciones coti
-	INNER JOIN empleados emp ON emp.id_empleado = coti.id_empleado
-     INNER JOIN clientes cli ON cli.id_cliente = coti.id_cliente;
+/*EJERCICIO 1*/
+CREATE VIEW view_empleados_ingresos AS
+SELECT emp.nombre,SUM(cot.precio_final) AS total_generado
+FROM cotizaciones cot, empleados emp
+WHERE emp.id_empleado = cot.id_empleado
+GROUP BY emp.nombre
 
-/*EKERCICIO 2*/
-CREATE VIEW view_detcotizaciones AS
-SELECT det.id_detalle_cotizacion, det.id_cotizacion, prod.nombre,  det.alto, det.ancho, det.precio
-FROM detalle_cotizaciones det, productos prod
-WHERE det.id_producto = prod.id_producto;
-
-
-/*EJERCICIO 3
-Cada vez que se ingresa una nueva cotizacion la cantidad de la columna cantidad_cotizaciones de la tabla empleado aumenta en uno*/
+/*EKERCICIO 2
+cada vez que el precio de un producto en detalle_cotizaciones es cambiado el precio final en la tabla cotizaciones se actualiza
+*/
 DELIMITER //
-CREATE TRIGGER inser_cantcotizaciones
-AFTER INSERT ON cotizaciones
+CREATE TRIGGER upda_precio_coti
+AFTER UPDATE ON detalle_cotizaciones
 FOR EACH ROW
 BEGIN
-	UPDATE empleados SET empleados.cantidad_cotizaciones = IF(empleados.cantidad_cotizaciones = 0, 1, empleados.cantidad_cotizaciones+1)
-     WHERE NEW.id_empleado = empleados.id_empleado;
+	UPDATE cotizaciones SET cotizaciones.precio_final =(SELECT SUM(det.precio)
+    													FROM detalle_cotizaciones det
+                                                        WHERE det.id_cotizacion = OLD.id_cotizacion
+    													GROUP BY det.id_cotizacion)
+     WHERE cotizaciones.id_cotizacion = OLD.id_cotizacion;
 END;//

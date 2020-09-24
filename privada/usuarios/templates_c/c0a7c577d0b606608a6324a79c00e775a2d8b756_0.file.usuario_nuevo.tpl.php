@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2020-07-29 02:13:43
+/* Smarty version 3.1.29, created on 2020-09-24 19:22:25
   from "D:\disenoWeb\www\sis_aluformas\privada\usuarios\templates\usuario_nuevo.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5f20db57cfcc70_79682881',
+  'unifunc' => 'content_5f6cf1f110e841_11674864',
   'file_dependency' => 
   array (
     'c0a7c577d0b606608a6324a79c00e775a2d8b756' => 
     array (
       0 => 'D:\\disenoWeb\\www\\sis_aluformas\\privada\\usuarios\\templates\\usuario_nuevo.tpl',
-      1 => 1595988801,
+      1 => 1596396444,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5f20db57cfcc70_79682881 ($_smarty_tpl) {
+function content_5f6cf1f110e841_11674864 ($_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html>
@@ -72,12 +72,12 @@ $_smarty_tpl->tpl_vars['r'] = $__foreach_r_0_saved_item;
 						</td>
 					</tr>
 					<tr>
-						<th align="right">Usuario (*)</th>
+						<th align="left">Usuario (*)</th>
 						<th>:</th>
 						<td><input type="text" name="usuario1"></td>
 					</tr>
 					<tr>
-						<th align="right">Clave (*)</th>
+						<th align="left">Clave (*)</th>
 						<th>:</th>
 						<td><input type="password" name="clave"></td>
 					</tr>
