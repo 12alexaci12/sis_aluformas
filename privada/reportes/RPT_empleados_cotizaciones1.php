@@ -7,9 +7,9 @@
      $smarty = new Smarty;
 
      $sql = $db->Prepare("    SELECT coti.fecha, coti.precio_final, emp.nombre as nombre_emp, cli.nombre as nombre_cli, cli.telefono
-                              FROM cotizaciones coti, empleados emp, clientes cli
-                              where coti.id_empleado = emp.id_empleado
-                              AND coti.id_cliente = cli.id_cliente
+                              FROM cotizaciones coti
+                              INNER JOIN empleados emp ON coti.id_empleado = emp.id_empleado
+                              INNER JOIN clientes cli ON coti.id_cliente = cli.id_cliente
                               AND coti.estado <> '0'
                               AND emp.estado <> '0'
      ");

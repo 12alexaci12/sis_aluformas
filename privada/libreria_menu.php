@@ -49,16 +49,13 @@
                               <div class='icon123'>
                             <table width=100px height=40px><tr></tr></table>
                            </div>
-                        </li>
-                        <li>
-                            <a href=''../index.html'>Inicio</a>
                         </li>";
                     $grup = "";
                     $numChill=1;
                     foreach ($rs as $r => $fila) {
                          if ($grup != $fila["grupo"]) {
                               echo "<li>";
-                              echo "<a href=''>".$fila["grupo"]."</a>";
+                              echo "<a onclick = location.href=\"'\"'target='cuerpo' style='cursor:pointer;'>".$fila["grupo"]."</a>";
                               $grup = $fila["grupo"];
                               echo "<ul class='children$numChill'>";
 
@@ -68,9 +65,9 @@
                                         $dir_selfx = explode("/", $_SERVER["PHP_SELF"]);
                                         $dir_self = $dir_selfx[3];
                                         if ($dir_self != "cuerpo.php")
-                                             echo "<li><a href='../".$fila2["contenido"]."'>".$fila2["opcion"]."</a></li>";
+                                             echo "<li><a onclick='location.href=\"../".$fila2["contenido"]."\"' target='cuerpo' style='cursor:pointer;'>".$fila2["opcion"]."</a></li>";
                                         else
-                                             echo "<li><a href='".$fila2["contenido"]."'>".$fila2["opcion"]."</a></li>";
+                                             echo "<li><a onclick='location.href=\"".$fila2["contenido"]."\"' target='cuerpo' style='cursor:pointer;'>".$fila2["opcion"]."</a></li>";
                                    }
                               }
                               echo "</ul>";
@@ -82,11 +79,11 @@
                          if ($dir_self != "cuerpo.php") {
 
                               echo "<li>
-                                        <a href = '../claves/'>Cerrar Sesion</a>
+                                        <a onclick='location.href = \"../claves/\"' target='cuerpo' style='cursor:pointer;';>Cerrar Sesion</a>
                                    </li>";
                          }else {
                               echo "<li>
-                                        <a href = 'claves/'>Cerrar Sesion</a>
+                                        <a onclick='location.href = \"claves/\"' target='cuerpo' style='cursor:pointer;'>Cerrar Sesion</a>
                                    </li>";
                          }
 

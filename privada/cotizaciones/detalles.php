@@ -9,11 +9,11 @@ $idCotizaion = $_GET['id_cotizacion'];
 $smarty = new Smarty;
 
 $sql5 = $db->Prepare("   SELECT pro.nombre, det.alto, det.ancho, round((det.alto * det.ancho * pro.precio_m2/10000)) AS precio
-                         FROM productos AS pro, detalle_cotizaciones AS det, cotizaciones AS cot
+                         FROM detalle_cotizaciones det
+                         INNER JOIN productos pro ON det.id_producto = pro.id_producto
+                         INNER JOIN cotizaciones cot ON cot.id_cotizacion = det.id_cotizacion
                          WHERE det.estado <> 0
                          AND det.id_cotizacion = {$idCotizaion}
-                         AND det.id_cotizacion = cot.id_cotizacion
-                         AND pro.id_producto = det.id_producto
 				  ");
 $rs5 = $db->GetAll($sql5);
 
