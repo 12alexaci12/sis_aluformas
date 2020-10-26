@@ -3,6 +3,28 @@
 	<head>
 	<link rel="stylesheet" href="../{$direc_css}" type="text/css" >
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<script type="text/javascript" src="../../ajax.js"></script>
+	<script type="text/javascript">
+		function buscar(){
+			var d1, contenedor, url;
+			contenedor = document.getElementById('personas1');
+			d1 = document.formu1.paterno.value;
+			d2 = document.formu1.materno.value;
+			d3 = document.formu1.nombres.value;
+			d4 = document.formu1.ci.value;
+			ajax = nuevoAjax();
+			url = "ajax_buscar_personas.php";
+			param = "paterno="+d1+"&materno="+d2+"&nombres="+d3+"&ci="+d4;
+			ajax.open("POST", url, true);
+			ajax.setRequestHeader('Content-Type','application/x-www-form-urlencoded')
+			ajax.onreadystatechange = function(){
+				if (ajax.readyState == 4) {
+					contenedor.innerHTML = ajax.responseText;
+				}
+			}
+			ajax.send(param);
+		}
+	</script>
 	</head>
 	<body>
 		<div class="normal">
@@ -27,14 +49,37 @@
 					</td>
 				</tr>
 			</table>
+			<center>
+				<form action="#" method="post" name="formu1">
+					<table width="50%">
+						<tr>
+							<th>
+								<b>Paterno</b>
+								<input type="text" name="paterno" value="" size="10" onkeyup="buscar()">
+							</th>
+							<th>
+								<b>materno</b>
+								<input type="text" name="materno" value="" size="10" onkeyup="buscar()">
+							</th>
+							<th>
+								<b>nombres</b>
+								<input type="text" name="nombres" value="" size="10" onkeyup="buscar()">
+							</th>
+							<th>
+								<b>ci</b>
+								<input type="text" name="ci" value="" size="10" onkeyup="buscar()">
+							</th>
+						</tr>
+					</table>
+				</form>
+			</center>
 		</div>
-		<div class="listado">
+		<div class="listado" id="personas1">
 		<center>
 			<table>
 				<thead>
 					<tr>
-						<th>NRO</th><th>CI</th><th>NOMBRES</th><th>AP</th><th>AM</th><th>GENERO</th>
-						<th><img src="../../imagenes/modificar.gif"></th><th><img src="../../imagenes/borrar.jpeg"></th>
+						<th>NRO</th><th>CI</th><th>NOMBRES</th><th>AP</th><th>AM</th><th>GENERO</th><th>modificar</th><th>borrar</th>
 					</tr>
 				</thead>
 				{assign var="b" value=0}

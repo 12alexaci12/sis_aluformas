@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2020-09-24 03:18:31
+/* Smarty version 3.1.29, created on 2020-10-26 20:12:02
   from "D:\disenoWeb\www\sis_aluformas\privada\personas\templates\personas.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5f6c1007cb7d21_09046721',
+  'unifunc' => 'content_5f972d923fa816_11057050',
   'file_dependency' => 
   array (
     'a1449ebc39634631577f1968caeef4db2c7ea72a' => 
     array (
       0 => 'D:\\disenoWeb\\www\\sis_aluformas\\privada\\personas\\templates\\personas.tpl',
-      1 => 1600917507,
+      1 => 1603743118,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5f6c1007cb7d21_09046721 ($_smarty_tpl) {
+function content_5f972d923fa816_11057050 ($_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html>
@@ -27,6 +27,32 @@ function content_5f6c1007cb7d21_09046721 ($_smarty_tpl) {
 	<link rel="stylesheet" href="../<?php echo $_smarty_tpl->tpl_vars['direc_css']->value;?>
 " type="text/css" >
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<?php echo '<script'; ?>
+ type="text/javascript" src="../../ajax.js"><?php echo '</script'; ?>
+>
+	<?php echo '<script'; ?>
+ type="text/javascript">
+		function buscar(){
+			var d1, contenedor, url;
+			contenedor = document.getElementById('personas1');
+			d1 = document.formu1.paterno.value;
+			d2 = document.formu1.materno.value;
+			d3 = document.formu1.nombres.value;
+			d4 = document.formu1.ci.value;
+			ajax = nuevoAjax();
+			url = "ajax_buscar_personas.php";
+			param = "paterno="+d1+"&materno="+d2+"&nombres="+d3+"&ci="+d4;
+			ajax.open("POST", url, true);
+			ajax.setRequestHeader('Content-Type','application/x-www-form-urlencoded')
+			ajax.onreadystatechange = function(){
+				if (ajax.readyState == 4) {
+					contenedor.innerHTML = ajax.responseText;
+				}
+			}
+			ajax.send(param);
+		}
+	<?php echo '</script'; ?>
+>
 	</head>
 	<body>
 		<div class="normal">
@@ -51,14 +77,37 @@ function content_5f6c1007cb7d21_09046721 ($_smarty_tpl) {
 					</td>
 				</tr>
 			</table>
+			<center>
+				<form action="#" method="post" name="formu1">
+					<table width="50%">
+						<tr>
+							<th>
+								<b>Paterno</b>
+								<input type="text" name="paterno" value="" size="10" onkeyup="buscar()">
+							</th>
+							<th>
+								<b>materno</b>
+								<input type="text" name="materno" value="" size="10" onkeyup="buscar()">
+							</th>
+							<th>
+								<b>nombres</b>
+								<input type="text" name="nombres" value="" size="10" onkeyup="buscar()">
+							</th>
+							<th>
+								<b>ci</b>
+								<input type="text" name="ci" value="" size="10" onkeyup="buscar()">
+							</th>
+						</tr>
+					</table>
+				</form>
+			</center>
 		</div>
-		<div class="listado">
+		<div class="listado" id="personas1">
 		<center>
 			<table>
 				<thead>
 					<tr>
-						<th>NRO</th><th>CI</th><th>NOMBRES</th><th>AP</th><th>AM</th><th>GENERO</th>
-						<th><img src="../../imagenes/modificar.gif"></th><th><img src="../../imagenes/borrar.jpeg"></th>
+						<th>NRO</th><th>CI</th><th>NOMBRES</th><th>AP</th><th>AM</th><th>GENERO</th><th>modificar</th><th>borrar</th>
 					</tr>
 				</thead>
 				<?php $_smarty_tpl->tpl_vars["b"] = new Smarty_Variable(0, null);
