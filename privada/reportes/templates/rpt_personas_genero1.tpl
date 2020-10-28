@@ -35,7 +35,7 @@
                          <td>{$r.nombre}</td>
                          <td>{$r.ap}</td>
                          <td>{$r.am}</td>
-                         <td>{if $r.genero == 'f'}Femenino{else}Masculino{/if}</td>
+                         <td>{if $r.genero == 'F'}Femenino{else}Masculino{/if}</td>
                     {assign var="b" value=$b+1}
                     {/foreach}
                     </tr>

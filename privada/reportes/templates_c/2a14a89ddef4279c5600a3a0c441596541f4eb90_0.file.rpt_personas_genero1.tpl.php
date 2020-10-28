@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2020-10-28 15:36:02
+/* Smarty version 3.1.29, created on 2020-10-28 16:54:46
   from "D:\disenoWeb\www\sis_aluformas\privada\reportes\templates\rpt_personas_genero1.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5f998fe2110148_04253947',
+  'unifunc' => 'content_5f99a256d86568_77574384',
   'file_dependency' => 
   array (
     '2a14a89ddef4279c5600a3a0c441596541f4eb90' => 
     array (
       0 => 'D:\\disenoWeb\\www\\sis_aluformas\\privada\\reportes\\templates\\rpt_personas_genero1.tpl',
-      1 => 1603899351,
+      1 => 1603904079,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5f998fe2110148_04253947 ($_smarty_tpl) {
+function content_5f99a256d86568_77574384 ($_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -76,7 +76,7 @@ $__foreach_r_0_saved_local_item = $_smarty_tpl->tpl_vars['r'];
 </td>
                          <td><?php echo $_smarty_tpl->tpl_vars['r']->value['am'];?>
 </td>
-                         <td><?php if ($_smarty_tpl->tpl_vars['r']->value['genero'] == 'f') {?>Femenino<?php } else { ?>Masculino<?php }?></td>
+                         <td><?php if ($_smarty_tpl->tpl_vars['r']->value['genero'] == 'F') {?>Femenino<?php } else { ?>Masculino<?php }?></td>
                     <?php $_smarty_tpl->tpl_vars["b"] = new Smarty_Variable($_smarty_tpl->tpl_vars['b']->value+1, null);
 $_smarty_tpl->ext->_updateScope->updateScope($_smarty_tpl, "b", 0);?>
                     <?php
