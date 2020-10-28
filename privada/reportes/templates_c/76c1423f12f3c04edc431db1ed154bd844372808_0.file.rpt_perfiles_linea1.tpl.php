@@ -40,7 +40,7 @@ function content_5f99f0ae9ae524_10193865 ($_smarty_tpl) {
           <table width="100%" border="0">
                <tr>
                     <td>
-                         <img src="../../imagenes/easdasd" width="70%">
+                         <img src="../../img/bitmap1.svg" width="70%">
                     </td>
                     <td align="center" width="80%">
                          <h2>perfiles -- linea</h2>

@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2020-10-28 16:54:46
+/* Smarty version 3.1.29, created on 2020-10-28 23:33:22
   from "D:\disenoWeb\www\sis_aluformas\privada\reportes\templates\rpt_personas_genero1.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5f99a256d86568_77574384',
+  'unifunc' => 'content_5f99ffc2006787_26581601',
   'file_dependency' => 
   array (
     '2a14a89ddef4279c5600a3a0c441596541f4eb90' => 
     array (
       0 => 'D:\\disenoWeb\\www\\sis_aluformas\\privada\\reportes\\templates\\rpt_personas_genero1.tpl',
-      1 => 1603904079,
+      1 => 1603927952,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5f99a256d86568_77574384 ($_smarty_tpl) {
+function content_5f99ffc2006787_26581601 ($_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -40,7 +40,7 @@ function content_5f99a256d86568_77574384 ($_smarty_tpl) {
           <table width="100%" border="0">
                <tr>
                     <td>
-                         <img src="../../imagenes/easdasd" width="70%">
+                         <img src="../../img/bitmap1.svg" width="70%">
                     </td>
                     <td align="center" width="80%">
                          <h2>PERSONAS -- GENERO</h2>

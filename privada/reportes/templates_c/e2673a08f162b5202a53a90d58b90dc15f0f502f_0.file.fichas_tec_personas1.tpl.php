@@ -40,7 +40,7 @@ function content_5f99a1177353c3_85174681 ($_smarty_tpl) {
           <table width="100%" border="0">
                <tr>
                     <td>
-                         <img src="../../imagenes/easdasd" width="70%">
+                         <img src="../../img/bitmap1.svg" width="70%">
                     </td>
                     <td align="center" width="80%">
                          <h2>FICHA TECNICA DE PERSONA</h2>
