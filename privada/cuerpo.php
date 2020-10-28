@@ -14,5 +14,4 @@
      $smarty->assign("nick", $nick);
      $smarty->assign("direc_css", $direc_css);
      $smarty->display("cuerpo.tpl");
-
- ?>
+     ?>
