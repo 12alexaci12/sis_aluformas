@@ -259,13 +259,6 @@ input[type="text" i], select, option{
     width: 100px;
 }
 
-.icon123 table {
-	background-image: url(img/bitmap1.svg);
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center;
-}
-
 .normal *{
 	color: white;
 }

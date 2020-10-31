@@ -31,10 +31,18 @@
           $rs2 = "";
           $nick = "";
      }
+     $sql3 = $db->Prepare("	SELECT *
+     					FROM vidrieria
+     					WHERE id_vidrieria = 1
+     					AND estado <> '0'
+     				");
+     $rs3 = $db->GetAll($sql3);
+     $nombre = $rs3[0]["nombre"];
+     $logo_agencia = $rs3[0]["logo_agencia"];
 
      if ($nick != "") {
           echo "    <div class='contenedor'>
-                	<h1>Menu sistema Aluformas</h1>
+                	<h1>Menu sistema $nombre</h1>
                     <div class='normal'>
                          <table align='center' width='100%'' height='20px'' cellspacing='0'>
                            <tr>
@@ -46,9 +54,17 @@
                     </div>
                     <ul id='menu'>
                         <li>
+                              <style type='text/css'>
+                                  .icon123 table {
+                                       background-image: url('../../img/$logo_agencia');
+                                       background-size: contain;
+                                       background-repeat: no-repeat;
+                                       background-position: center;
+                                  }
+                              </style>
                               <div class='icon123'>
-                            <table width=100px height=40px><tr></tr></table>
-                           </div>
+                                   <table width=100px height=40px><tr></tr></table>
+                              </div>
                         </li>";
                     $grup = "";
                     $numChill=1;

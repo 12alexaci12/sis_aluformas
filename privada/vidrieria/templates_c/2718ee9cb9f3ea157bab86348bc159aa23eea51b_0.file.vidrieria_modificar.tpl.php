@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2020-08-02 21:52:15
+/* Smarty version 3.1.29, created on 2020-10-31 02:23:42
   from "D:\disenoWeb\www\sis_aluformas\privada\vidrieria\templates\vidrieria_modificar.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5f27358f67a942_31252804',
+  'unifunc' => 'content_5f9ccaaee05a76_10410132',
   'file_dependency' => 
   array (
     '2718ee9cb9f3ea157bab86348bc159aa23eea51b' => 
     array (
       0 => 'D:\\disenoWeb\\www\\sis_aluformas\\privada\\vidrieria\\templates\\vidrieria_modificar.tpl',
-      1 => 1596405125,
+      1 => 1604111013,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5f27358f67a942_31252804 ($_smarty_tpl) {
+function content_5f9ccaaee05a76_10410132 ($_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -37,7 +37,7 @@ function content_5f27358f67a942_31252804 ($_smarty_tpl) {
           <br><br><br><br>
           <center>
                <h2>MODIFICAR VIDRIERIA</h2>
-               <form action="vidrieria_modificar1.php" method="post" name="formu">
+               <form action="vidrieria_modificar1.php" method="post" name="formu" enctype="multipart/form-data">
                     <table>
                          <?php
 $_from = $_smarty_tpl->tpl_vars['vidrieria']->value;
@@ -65,6 +65,17 @@ $__foreach_r_0_saved_local_item = $_smarty_tpl->tpl_vars['r'];
                               <th align="left">Direccion</th><th>:</th>
                               <td> <input type="text" name="direccion" onkeyup="this.value=this.value.toUpperCase()" value="<?php echo $_smarty_tpl->tpl_vars['r']->value['direccion'];?>
 "> </td>
+                         </tr>
+                         <tr>
+                              <th align="left">Logo</th><th>:</th>
+                              <td>
+                                   <input type="hidden" name="MAX_FILE_SIZE" value="1000000">
+                                   <input type="file" name="logo_agencia">
+                                   <input type="hidden" name="logo_agencia1" value="<?php echo $_smarty_tpl->tpl_vars['r']->value['logo_agencia'];?>
+">
+                                   <br><b><?php echo $_smarty_tpl->tpl_vars['r']->value['logo_agencia'];?>
+</b>
+                              </td>
                          </tr>
                          <tr>
                               <td align="center" colspan="3">

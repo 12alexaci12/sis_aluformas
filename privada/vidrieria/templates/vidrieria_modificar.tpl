@@ -9,7 +9,7 @@
           <br><br><br><br>
           <center>
                <h2>MODIFICAR VIDRIERIA</h2>
-               <form action="vidrieria_modificar1.php" method="post" name="formu">
+               <form action="vidrieria_modificar1.php" method="post" name="formu" enctype="multipart/form-data">
                     <table>
                          {foreach item=r from=$vidrieria}
                          <tr>
@@ -23,6 +23,15 @@
                          <tr>
                               <th align="left">Direccion</th><th>:</th>
                               <td> <input type="text" name="direccion" onkeyup="this.value=this.value.toUpperCase()" value="{$r.direccion}"> </td>
+                         </tr>
+                         <tr>
+                              <th align="left">Logo</th><th>:</th>
+                              <td>
+                                   <input type="hidden" name="MAX_FILE_SIZE" value="1000000">
+                                   <input type="file" name="logo_agencia">
+                                   <input type="hidden" name="logo_agencia1" value="{$r.logo_agencia}">
+                                   <br><b>{$r.logo_agencia}</b>
+                              </td>
                          </tr>
                          <tr>
                               <td align="center" colspan="3">
