@@ -19,9 +19,9 @@
                                         {foreach item=r from=$persona}
                                         <option value="{$r.id_persona}">{$r.ap} - {$r.am} - {$r.nombre}</option>
                                         {/foreach}
-                                        {foreach item=r from=$personas}
+                                        <!--{foreach item=r from=$personas}
                                         <option value="{$r.id_persona}">{$r.ap} - {$r.am} - {$r.nombre}</option>
-                                        {/foreach}
+                                        {/foreach}-->
                                    </select>
                               </td>
                          </tr>

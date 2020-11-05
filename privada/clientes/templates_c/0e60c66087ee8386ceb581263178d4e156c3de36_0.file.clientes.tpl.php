@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2020-09-24 18:17:13
+/* Smarty version 3.1.29, created on 2020-11-05 21:23:19
   from "D:\disenoWeb\www\sis_aluformas\privada\clientes\templates\clientes.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5f6ce2a976c8b8_78659651',
+  'unifunc' => 'content_5fa46d471a9d35_92106102',
   'file_dependency' => 
   array (
     '0e60c66087ee8386ceb581263178d4e156c3de36' => 
     array (
       0 => 'D:\\disenoWeb\\www\\sis_aluformas\\privada\\clientes\\templates\\clientes.tpl',
-      1 => 1600971424,
+      1 => 1604611394,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5f6ce2a976c8b8_78659651 ($_smarty_tpl) {
+function content_5fa46d471a9d35_92106102 ($_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html>
@@ -27,6 +27,31 @@ function content_5f6ce2a976c8b8_78659651 ($_smarty_tpl) {
 	<link rel="stylesheet" href="../<?php echo $_smarty_tpl->tpl_vars['direc_css']->value;?>
 " type="text/css" >
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<?php echo '<script'; ?>
+ type="text/javascript" src="../../ajax.js"><?php echo '</script'; ?>
+>
+	<?php echo '<script'; ?>
+ type="text/javascript">
+		function buscar(){
+			var d1, contenedor, url;
+			contenedor = document.getElementById('clientes1');
+			d1 = document.formu1.nombres.value;
+			d2 = document.formu1.telefono.value;
+			d3 = document.formu1.direccion.value;
+			ajax = nuevoAjax();
+			url = "ajax_buscar_clientes.php";
+			param = "nombres="+d1+"&telefono="+d2+"&direccion="+d3;
+			ajax.open("POST", url, true);
+			ajax.setRequestHeader('Content-Type','application/x-www-form-urlencoded')
+			ajax.onreadystatechange = function(){
+				if (ajax.readyState == 4) {
+					contenedor.innerHTML = ajax.responseText;
+				}
+			}
+			ajax.send(param);
+		}
+	<?php echo '</script'; ?>
+>
 	</head>
 	<body>
 		<div class="normal">
@@ -51,8 +76,28 @@ function content_5f6ce2a976c8b8_78659651 ($_smarty_tpl) {
 					</td>
 				</tr>
 			</table>
+			<center>
+				<form action="#" method="post" name="formu1">
+					<table width="50%">
+						<tr>
+							<th>
+								<b>Nombres</b>
+								<input type="text" name="nombres" value="" size="10" onkeyup="buscar()">
+							</th>
+							<th>
+								<b>telefono</b>
+								<input type="text" name="telefono" value="" size="10" onkeyup="buscar()">
+							</th>
+							<th>
+								<b>direccion</b>
+								<input type="text" name="direccion" value="" size="10" onkeyup="buscar()">
+							</th>
+						</tr>
+					</table>
+				</form>
+			</center>
 		</div>
-		<div class="listado">
+		<div class="listado" id="clientes1">
 		<center>
 			<table>
 				<thead>

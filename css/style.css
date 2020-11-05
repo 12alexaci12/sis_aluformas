@@ -265,3 +265,12 @@ input[type="text" i], select, option{
 	font-weight: bold;
 	color: black;
 }
+
+legend{
+	color: white;
+	font-size:25px;
+	font-weight:bold;
+}
+fieldset{
+	border:solid 2px;
+}

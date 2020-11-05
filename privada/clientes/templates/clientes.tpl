@@ -3,6 +3,27 @@
 	<head>
 	<link rel="stylesheet" href="../{$direc_css}" type="text/css" >
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<script type="text/javascript" src="../../ajax.js"></script>
+	<script type="text/javascript">
+		function buscar(){
+			var d1, contenedor, url;
+			contenedor = document.getElementById('clientes1');
+			d1 = document.formu1.nombres.value;
+			d2 = document.formu1.telefono.value;
+			d3 = document.formu1.direccion.value;
+			ajax = nuevoAjax();
+			url = "ajax_buscar_clientes.php";
+			param = "nombres="+d1+"&telefono="+d2+"&direccion="+d3;
+			ajax.open("POST", url, true);
+			ajax.setRequestHeader('Content-Type','application/x-www-form-urlencoded')
+			ajax.onreadystatechange = function(){
+				if (ajax.readyState == 4) {
+					contenedor.innerHTML = ajax.responseText;
+				}
+			}
+			ajax.send(param);
+		}
+	</script>
 	</head>
 	<body>
 		<div class="normal">
@@ -27,8 +48,28 @@
 					</td>
 				</tr>
 			</table>
+			<center>
+				<form action="#" method="post" name="formu1">
+					<table width="50%">
+						<tr>
+							<th>
+								<b>Nombres</b>
+								<input type="text" name="nombres" value="" size="10" onkeyup="buscar()">
+							</th>
+							<th>
+								<b>telefono</b>
+								<input type="text" name="telefono" value="" size="10" onkeyup="buscar()">
+							</th>
+							<th>
+								<b>direccion</b>
+								<input type="text" name="direccion" value="" size="10" onkeyup="buscar()">
+							</th>
+						</tr>
+					</table>
+				</form>
+			</center>
 		</div>
-		<div class="listado">
+		<div class="listado" id="clientes1">
 		<center>
 			<table>
 				<thead>
