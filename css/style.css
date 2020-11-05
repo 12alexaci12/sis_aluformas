@@ -56,15 +56,22 @@ body {
 }
 .contenedor ul li a {/*Listas primer nivel*/
 	font: bold 14px Tahoma, Geneva, sans-serif;
-	color: #fefefe;
+	color: #ffffff;
 	text-decoration: none;
 	display: block;
 	float:left;
 	padding: 8px;
 }
+
+.contenedor ul li a {/*Estado Hover/Activo de los enlaces*/
+	background: #0b615e;
+	color: #ffffff;
+	font-weight: bold;
+}
+
 .contenedor ul li a:hover, .contenedor ul li a.active {/*Estado Hover/Activo de los enlaces*/
-	background: #1d1d1d;
-	color: #0B615E;
+	background: #2f2f2f;
+	color: #ffffff;
 	font-weight: bold;
 }
 .contenedor ul li ul {/*estilos de la lista secundaria*/
@@ -75,11 +82,11 @@ body {
 	float: left;
 	position: absolute;
 	left: 0px;
-	top: 43px;
+	top: 32px;
 	border: 0;
 	opacity: 0;
 	overflow: hidden;
-	background: #1D1D1D;
+	background: #000000;
 	z-index: 1;
 	border-radius: 0px 0px 5px 5px;
 	-moz-border-radius: 0px 0px 5px 5px;
@@ -99,6 +106,7 @@ body {
 	width: 130px;
 	border-bottom: 1px solid #2f2f2f;
 	font-size: 12px;
+	background-color: #fefefe
 
 	-webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
@@ -106,60 +114,16 @@ body {
 	-o-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 }
-.contenedor ul li ul.children2 li a{
-	color: #fefefe !important;
-	padding: 13px 0 13px 20px;
-	width: 130px;
-	border-bottom: 1px solid #2f2f2f;
-	font-size: 12px;
 
-	-webkit-transition: all 0.3s ease-in-out;
-	-moz-transition: all 0.3s ease-in-out;
-	-ms-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
-}
-.contenedor ul li ul.children3 li a{
-	color: #fefefe !important;
-	padding: 13px 0 13px 20px;
-	width: 130px;
-	border-bottom: 1px solid #2f2f2f;
-	font-size: 12px;
-
-	-webkit-transition: all 0.3s ease-in-out;
-	-moz-transition: all 0.3s ease-in-out;
-	-ms-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
-}
-.contenedor ul li ul.children4 li a{
-	color: #fefefe !important;
-	padding: 13px 0 13px 20px;
-	width: 130px;
-	border-bottom: 1px solid #2f2f2f;
-	background:no-repeat 7px center !important;
-	font-size: 12px;
-
-	-webkit-transition: all 0.3s ease-in-out;
-	-moz-transition: all 0.3s ease-in-out;
-	-ms-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
-}
 .contenedor ul li ul li:last-child a{border-bottom:none !important;}
 .contenedor ul li ul li a:hover{
-	color: #0B615E !important;
+	color: #ffffff !important;
 	font-weight: bold;
 	padding-left:28px;
 }
 
 
-.contenedor ul li:hover ul.children1{height:370px;opacity:1;}
-.contenedor ul li:hover ul.children2{height:370px;opacity:1;}
-.contenedor ul li:hover ul.children3{height:370px;opacity:1;}
-.contenedor ul li:hover ul.children4{height:370px;opacity:1;}
-.contenedor ul li:hover ul.children5{height:90px; width:107px;opacity:1;}
-
+.contenedor ul li:hover ul.children1{overflow:visible;opacity:1;}
 
 .contenedor ul#menu:after {
 	/* Posiciona la sobora por detras del color de la caja*/
@@ -249,6 +213,7 @@ hr{
 input[type="text" i], select, option{
 	color: black;
 }
+
 .logo {
 	width: 100px;
 	margin: 0;

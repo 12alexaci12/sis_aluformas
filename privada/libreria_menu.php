@@ -54,26 +54,19 @@
                     </div>
                     <ul id='menu'>
                         <li>
-                              <style type='text/css'>
-                                  .icon123 table {
-                                       background-image: url('../../img/$logo_agencia');
-                                       background-size: contain;
-                                       background-repeat: no-repeat;
-                                       background-position: center;
-                                  }
-                              </style>
-                              <div class='icon123'>
-                                   <table width=100px height=40px><tr></tr></table>
-                              </div>
+                              <table>
+                                   <tr>
+                                        <img src='../../img/$logo_agencia' onerror=this.src='../img/$logo_agencia';this.onerror=null; width='120px' height='40px'>
+                                   </tr>
+                              </table>
                         </li>";
                     $grup = "";
-                    $numChill=1;
                     foreach ($rs as $r => $fila) {
                          if ($grup != $fila["grupo"]) {
                               echo "<li>";
                               echo "<a onclick = location.href=\"'\"'target='cuerpo' style='cursor:pointer;'>".$fila["grupo"]."</a>";
                               $grup = $fila["grupo"];
-                              echo "<ul class='children$numChill'>";
+                              echo "<ul class='children1'>";
 
                               foreach ($rs2 as $t => $fila2) {
                                    if ($grup == $fila2["grupo"]) {
@@ -88,7 +81,6 @@
                               }
                               echo "</ul>";
                               echo "</li>";
-                              $numChill++;
                          }
                     }
 
