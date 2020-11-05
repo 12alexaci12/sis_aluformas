@@ -4,7 +4,7 @@ session_start();
 require_once("../../smarty/Smarty.class.php");
 require_once("../../conexion.php");
 
-$__tipo_perfil = $_POST["tipo_perfil"];
+$__tipo_perfil = $_POST["id_tipo_perfil"];
 $__color = $_POST["color"];
 $__linea_perfil = $_POST["linea_perfil"];
 $__largo = $_POST["largo"];
