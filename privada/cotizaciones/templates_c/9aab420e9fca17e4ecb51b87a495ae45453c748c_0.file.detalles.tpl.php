@@ -58,7 +58,7 @@ function content_5f261ebd491e60_52993485 ($_smarty_tpl) {
 				<thead>
 					<tr>
 						<th>NRO</th><th>tipo</th><th>alto</th><th>ancho</th><th>precio(bs)</th>
-						<th><img src="../../imagenes/modificar.gif"></th><th><img src="../../imagenes/borrar.jpeg"></th>
+						<th align="center"><img src="../../img/modificar.gif" height="30px"></th><th align="center"><img src="../../img/borrar.gif" height="30px"></th>
 					</tr>
 				</thead>
 				<?php $_smarty_tpl->tpl_vars["b"] = new Smarty_Variable("1", null);

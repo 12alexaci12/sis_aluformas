@@ -53,7 +53,7 @@ function content_5ee69a8fe8c867_45986744 ($_smarty_tpl) {
 			<table class="listado">
 				<tr>
 					<th>NRO</th><th>USUARIO</th><th>CLAVE</th><th>PERSONA</th>
-					<th><img src="../../imagenes/modificar.gif"></th><th><img src="../../imagenes/borrar.jpeg"></th>
+					<th align="center"><img src="../../img/modificar.gif" height="30px"></th><th align="center"><img src="../../img/borrar.gif" height="30px"></th>
 				</tr>
 				<?php $_smarty_tpl->tpl_vars["b"] = new Smarty_Variable("1", null);
 $_smarty_tpl->ext->_updateScope->updateScope($_smarty_tpl, "b", 0);?>

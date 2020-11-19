@@ -103,7 +103,7 @@ function content_5fa46d471a9d35_92106102 ($_smarty_tpl) {
 				<thead>
 					<tr>
 						<th>NRO</th><th>nombre</th><th>telefono</th><th>direccion</th>
-						<th><img src="../../imagenes/modificar.gif"></th><th><img src="../../imagenes/borrar.jpeg"></th>
+						<th align="center"><img src="../../img/modificar.gif" height="30px"></th><th align="center"><img src="../../img/borrar.gif" height="30px"></th>
 					</tr>
 				</thead>
 				<?php $_smarty_tpl->tpl_vars["b"] = new Smarty_Variable(0, null);

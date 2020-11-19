@@ -13,7 +13,7 @@ paginacion("empleados.php?", $smarty);
 
 $sql3 = $db->Prepare("	SELECT *
 					FROM empleados
-					WHERE id_empleado > 1
+					WHERE estado <> '0'
 					ORDER BY id_empleado DESC
 					LIMIT ? OFFSET ?");
 

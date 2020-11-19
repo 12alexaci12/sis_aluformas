@@ -79,7 +79,7 @@
 			<table>
 				<thead>
 					<tr>
-						<th>NRO</th><th>CI</th><th>NOMBRES</th><th>AP</th><th>AM</th><th>GENERO</th><th>modificar</th><th>borrar</th>
+						<th>NRO</th><th>CI</th><th>NOMBRES</th><th>AP</th><th>AM</th><th>GENERO</th><th align="center"><img src="../../img/modificar.gif" height="30px"></th><th align="center"><img src="../../img/borrar.gif" height="30px"></th>
 					</tr>
 				</thead>
 				{assign var="b" value=0}

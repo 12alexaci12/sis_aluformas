@@ -23,7 +23,7 @@ if ($nombres or $telefono or $direccion) {
                			<table class='listado'>
                                    <thead>
                                         <tr>
-                                             <th>NRO</th><th>NOMBRES</th><th>Telefono</th><th>Direccion</th><th>modificar</th><th>borrar</th>
+                                             <th>NRO</th><th>NOMBRES</th><th>Telefono</th><th>Direccion</th><th align='center'><img src='../../img/modificar.gif' height='30px'></th><th align='center'><img src='../../img/borrar.gif' height='30px'></th>
                                         </tr>
                                    </thead>";
                               $num = 1;

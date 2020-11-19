@@ -29,7 +29,7 @@
 				<thead>
 					<tr>
 						<th>NRO</th><th>nombre</th><th>telefono</th><th>direccion</th>
-						<th><img src="../../imagenes/modificar.gif"></th>
+						<th align="center"><img src="../../img/modificar.gif" height="30px"></th>
 					</tr>
 				</thead>
 				{assign var="b" value="1"}

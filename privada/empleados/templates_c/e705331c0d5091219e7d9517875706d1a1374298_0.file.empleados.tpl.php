@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2020-09-24 18:13:43
+/* Smarty version 3.1.29, created on 2020-11-19 01:34:40
   from "D:\disenoWeb\www\sis_aluformas\privada\empleados\templates\empleados.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5f6ce1d7e5c039_52540150',
+  'unifunc' => 'content_5fb5cbb047afd3_37391882',
   'file_dependency' => 
   array (
     'e705331c0d5091219e7d9517875706d1a1374298' => 
     array (
       0 => 'D:\\disenoWeb\\www\\sis_aluformas\\privada\\empleados\\templates\\empleados.tpl',
-      1 => 1600971174,
+      1 => 1605749561,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5f6ce1d7e5c039_52540150 ($_smarty_tpl) {
+function content_5fb5cbb047afd3_37391882 ($_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html>
@@ -27,6 +27,31 @@ function content_5f6ce1d7e5c039_52540150 ($_smarty_tpl) {
 	<link rel="stylesheet" href="../<?php echo $_smarty_tpl->tpl_vars['direc_css']->value;?>
 " type="text/css" >
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<?php echo '<script'; ?>
+ type="text/javascript" src="../../ajax.js"><?php echo '</script'; ?>
+>
+	<?php echo '<script'; ?>
+ type="text/javascript">
+		function buscar(){
+			var d1, contenedor, url;
+			contenedor = document.getElementById('empleados1');
+			d1 = document.formu1.nombres.value;
+			d2 = document.formu1.telefono.value;
+			d3 = document.formu1.ci.value;
+			ajax = nuevoAjax();
+			url = "ajax_buscar_empleados.php";
+			param = "nombres="+d1+"&telefono="+d2+"&ci="+d3;
+			ajax.open("POST", url, true);
+			ajax.setRequestHeader('Content-Type','application/x-www-form-urlencoded')
+			ajax.onreadystatechange = function(){
+				if (ajax.readyState == 4) {
+					contenedor.innerHTML = ajax.responseText;
+				}
+			}
+			ajax.send(param);
+		}
+	<?php echo '</script'; ?>
+>
 	</head>
 	<body>
 		<div class="normal">
@@ -51,14 +76,34 @@ function content_5f6ce1d7e5c039_52540150 ($_smarty_tpl) {
 					</td>
 				</tr>
 			</table>
+			<center>
+				<form action="#" method="post" name="formu1">
+					<table width="50%">
+						<tr>
+							<th>
+								<b>Nombres</b>
+								<input type="text" name="nombres" value="" size="10" onkeyup="buscar()">
+							</th>
+							<th>
+								<b>telefono</b>
+								<input type="text" name="telefono" value="" size="10" onkeyup="buscar()">
+							</th>
+							<th>
+								<b>ci</b>
+								<input type="text" name="ci" value="" size="10" onkeyup="buscar()">
+							</th>
+						</tr>
+					</table>
+				</form>
+			</center>
 		</div>
-		<div class="listado">
+		<div class="listado" id="empleados1">
 		<center>
 			<table>
 				<thead>
 					<tr>
 						<th>NRO</th><th>nombre</th><th>ci</th><th>telefono</th>
-						<th><img src="../../imagenes/modificar.gif"></th><th><img src="../../imagenes/borrar.jpeg"></th>
+						<th align="center"><img src="../../img/modificar.gif" height="30px"></th><th align="center"><img src="../../img/borrar.gif" height="30px"></th>
 					</tr>
 				</thead>
 				<?php $_smarty_tpl->tpl_vars["b"] = new Smarty_Variable(0, null);

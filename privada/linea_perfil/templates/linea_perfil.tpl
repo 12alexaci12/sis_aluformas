@@ -34,7 +34,7 @@
 				<thead>
 					<tr>
 						<th>NRO</th><th>linea de perfil</th>
-						<th><img src="../../imagenes/modificar.gif"></th><th><img src="../../imagenes/borrar.jpeg"></th>
+						<th align="center"><img src="../../img/modificar.gif" height="30px"></th><th align="center"><img src="../../img/borrar.gif" height="30px"></th>
 					</tr>
 				</thead>
 				{assign var="b" value=0}

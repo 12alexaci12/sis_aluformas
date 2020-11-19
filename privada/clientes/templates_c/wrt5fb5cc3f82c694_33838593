@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2020-11-19 01:37:25
-  from "D:\disenoWeb\www\sis_aluformas\privada\proveedores\templates\proveedor_nuevo.tpl" */
+/* Smarty version 3.1.29, created on 2020-11-19 01:37:03
+  from "D:\disenoWeb\www\sis_aluformas\privada\clientes\templates\cliente_nuevo.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5fb5cc550c1de5_26796848',
+  'unifunc' => 'content_5fb5cc3f82b5a9_34341240',
   'file_dependency' => 
   array (
-    'f910bb17d6082c3d6cb4d5a8623755e87696d066' => 
+    '23f8cd323969f5035fcfa3e3a95955aebafccdde' => 
     array (
-      0 => 'D:\\disenoWeb\\www\\sis_aluformas\\privada\\proveedores\\templates\\proveedor_nuevo.tpl',
-      1 => 1596405626,
+      0 => 'D:\\disenoWeb\\www\\sis_aluformas\\privada\\clientes\\templates\\cliente_nuevo.tpl',
+      1 => 1596405753,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5fb5cc550c1de5_26796848 ($_smarty_tpl) {
+function content_5fb5cc3f82b5a9_34341240 ($_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html>
@@ -30,14 +30,14 @@ function content_5fb5cc550c1de5_26796848 ($_smarty_tpl) {
  type="text/javascript" src="js/expresiones_regulares.js"><?php echo '</script'; ?>
 >
 		<?php echo '<script'; ?>
- type="text/javascript" src="js/validar_proveedor.js"><?php echo '</script'; ?>
+ type="text/javascript" src="js/validar_cliente.js"><?php echo '</script'; ?>
 >
 	</head>
 	<body>
 		<br><br><br><br>
 		<center>
-			<h2>REGISTRAR PROVEEDOR</h2>
-			<form action="proveedor_nuevo1.php" method="post" name="formu">
+			<h2>REGISTRAR CLIENTE</h2>
+			<form action="cliente_nuevo1.php" method="post" name="formu">
 				<table>
 	                    <tr>
 	                        <th align="left">Nombres(*)</th>
@@ -58,7 +58,7 @@ function content_5fb5cc550c1de5_26796848 ($_smarty_tpl) {
 						<td align="center" colspan="3">
 							<input type="hidden" name="accion" value="">
 							<input type="button" value="Aceptar" onclick="validar();">
-							<input type="button" value="Cancelar" onclick="javascript:location.href='proveedores.php';">
+							<input type="button" value="Cancelar" onclick="javascript:location.href='clientes.php';">
 						</td>
 					</tr>
 					<tr>
