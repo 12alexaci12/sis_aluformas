@@ -32,7 +32,7 @@
                          </tr>
                          <tr>
                               <th align="left">Clave (*)</th><th>:</th>
-                              <td><input type="text" name="clave" value="{$r.clave}"></td>
+                              <td><input type="password" name="clave"></td>
                          </tr>
                          <tr>
                               <td align="center" colspan="3">

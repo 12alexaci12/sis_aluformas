@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2020-09-24 19:13:08
+/* Smarty version 3.1.29, created on 2020-11-20 00:22:41
   from "D:\disenoWeb\www\sis_aluformas\privada\usuarios\templates\usuarios.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5f6cefc41fcbc8_52248382',
+  'unifunc' => 'content_5fb70c51016370_05939571',
   'file_dependency' => 
   array (
     '71728280fd4457e5c370366e5848cba55926c3f5' => 
     array (
       0 => 'D:\\disenoWeb\\www\\sis_aluformas\\privada\\usuarios\\templates\\usuarios.tpl',
-      1 => 1600974784,
+      1 => 1605830740,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5f6cefc41fcbc8_52248382 ($_smarty_tpl) {
+function content_5fb70c51016370_05939571 ($_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html>
@@ -56,7 +56,7 @@ function content_5f6cefc41fcbc8_52248382 ($_smarty_tpl) {
 				<table>
 					<thead>
 						<tr>
-							<th>NRO</th><th>USUARIO</th><th>CLAVE</th><th>PERSONA</th>
+							<th>NRO</th><th>USUARIO</th><!--<th>CLAVE</th>--><th>PERSONA</th>
 							<th align="center"><img src="../../img/modificar.gif" height="30px"></th><th align="center"><img src="../../img/borrar.gif" height="30px"></th>
 						</tr>
 					</thead>
@@ -85,8 +85,8 @@ $__foreach_r_0_saved_local_item = $_smarty_tpl->tpl_vars['r'];
 </td>
 						<td><?php echo $_smarty_tpl->tpl_vars['r']->value['usuario1'];?>
 </td>
-						<td><?php echo $_smarty_tpl->tpl_vars['r']->value['clave'];?>
-</td>
+						<!--<td><?php echo $_smarty_tpl->tpl_vars['r']->value['clave'];?>
+</td>-->
 						<td><?php echo $_smarty_tpl->tpl_vars['r']->value['ap'];
 echo $_smarty_tpl->tpl_vars['r']->value['am'];
 echo $_smarty_tpl->tpl_vars['r']->value['nombre'];?>

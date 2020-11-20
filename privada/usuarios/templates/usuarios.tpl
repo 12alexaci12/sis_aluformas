@@ -32,7 +32,7 @@
 				<table>
 					<thead>
 						<tr>
-							<th>NRO</th><th>USUARIO</th><th>CLAVE</th><th>PERSONA</th>
+							<th>NRO</th><th>USUARIO</th><!--<th>CLAVE</th>--><th>PERSONA</th>
 							<th align="center"><img src="../../img/modificar.gif" height="30px"></th><th align="center"><img src="../../img/borrar.gif" height="30px"></th>
 						</tr>
 					</thead>
@@ -44,7 +44,7 @@
 					<tr>
 						<td align="center">{$b}</td>
 						<td>{$r.usuario1}</td>
-						<td>{$r.clave}</td>
+						<!--<td>{$r.clave}</td>-->
 						<td>{$r.ap}{$r.am}{$r.nombre}</td>
 						<td align="center">
 							<form name="formModif{$r.id_usuario}" method="post" action="usuario_modificar.php">

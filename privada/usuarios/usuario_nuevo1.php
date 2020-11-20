@@ -8,12 +8,14 @@ $__id_persona = $_POST["id_persona"];
 $__usuario = $_POST["usuario1"];
 $__clave = $_POST["clave"];
 
+$__hash = password_hash($__clave, PASSWORD_DEFAULT);
+
 $smarty = new Smarty;
 
 	$reg = array();
 	$reg["id_persona"] = $__id_persona;
 	$reg["usuario1"] = $__usuario;
-	$reg["clave"] = $__clave;
+	$reg["clave"] = $__hash;
 	$reg["fec_insercion"] = date("Y-m-d H:i:s");
 	$reg["estado"] = '1';
 	$reg["usuario"] = $_SESSION["sesion_id_usuario"];

@@ -9,13 +9,15 @@
      $__usuario = $_POST["usuario1"];
      $__clave = $_POST["clave"];
 
+     $hash = password_hash($__clave, PASSWORD_DEFAULT);
+
      //$db -> debug true;
      $smarty = new Smarty;
 
      $reg = array();
      $reg["id_persona"] = $__id_persona;
      $reg["usuario1"] = $__usuario;
-     $reg["clave"] = $__clave;
+     $reg["clave"] = $hash;
      $reg["usuario"] = $_SESSION["sesion_id_usuario"];
 
      $rs1 = $db->AutoExecute("usuarios", $reg, "UPDATE", "id_usuario='".$__id_usuario."'");
