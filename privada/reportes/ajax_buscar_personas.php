@@ -48,7 +48,7 @@ if ($paterno or $materno or $nombres or $ci) {
                echo "		</table>
                		</center>";
      } else {
-          echo "<center><b> LA PERSONA NO EXISTE!!</b></center>";
+          echo "<center><h2> LA PERSONA NO EXISTE!!</h2></center>";
      }
 }
 

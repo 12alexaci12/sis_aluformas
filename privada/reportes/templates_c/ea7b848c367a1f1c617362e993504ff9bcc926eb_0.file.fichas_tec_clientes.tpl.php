@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2020-11-20 01:54:05
+/* Smarty version 3.1.29, created on 2020-11-20 02:03:15
   from "D:\disenoWeb\www\sis_aluformas\privada\reportes\templates\fichas_tec_clientes.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5fb721bdbe8ed4_17222533',
+  'unifunc' => 'content_5fb723e303dcd1_47235778',
   'file_dependency' => 
   array (
     'ea7b848c367a1f1c617362e993504ff9bcc926eb' => 
     array (
       0 => 'D:\\disenoWeb\\www\\sis_aluformas\\privada\\reportes\\templates\\fichas_tec_clientes.tpl',
-      1 => 1605837144,
+      1 => 1605837787,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5fb721bdbe8ed4_17222533 ($_smarty_tpl) {
+function content_5fb723e303dcd1_47235778 ($_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -60,7 +60,7 @@ function content_5fb721bdbe8ed4_17222533 ($_smarty_tpl) {
      <body>
           <br><br><br>
           <center>
-               <h2> FICHAS TECNICAS DE clientes</h2>
+               <h2> FICHAS TECNICAS DE CLIENTES</h2>
                <form action="#" method="post" name="formu1">
                     <table width="50%">
                          <tr>

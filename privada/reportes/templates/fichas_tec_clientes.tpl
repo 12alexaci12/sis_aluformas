@@ -32,7 +32,7 @@
      <body>
           <br><br><br>
           <center>
-               <h2> FICHAS TECNICAS DE clientes</h2>
+               <h2> FICHAS TECNICAS DE CLIENTES</h2>
                <form action="#" method="post" name="formu1">
                     <table width="50%">
                          <tr>

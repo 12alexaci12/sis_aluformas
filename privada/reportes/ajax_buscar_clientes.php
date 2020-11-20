@@ -23,7 +23,7 @@ if ($nombre or $direccion or $telefono) {
                			<table class='listado'>
                                    <thead>
                                         <tr>
-                                             <th>NRO</th><th>NOMBRES</th><th>direccion</th><th>TELEFONO</th><th>selecdireccionone</th>
+                                             <th>NRO</th><th>NOMBRES</th><th>direccion</th><th>TELEFONO</th><th>seleccione</th>
                                         </tr>
                                    </thead>";
                               $num = 1;
@@ -36,14 +36,14 @@ if ($nombre or $direccion or $telefono) {
                					<td align='center'>".resaltar($nombre,$str)."</td>
                					<td>".resaltar($direccion, $str1)."</td>
                					<td>".resaltar($telefono, $str2)."</td>
-                                        <td align='center'><input type='radio' name='selecdireccionone' value='".$fila['id_cliente']."' onclick='mostrar(".$fila['id_cliente'].")'></td>
+                                        <td align='center'><input type='radio' name='seleccione' value='".$fila['id_cliente']."' onclick='mostrar(".$fila['id_cliente'].")'></td>
                				</tr>";
                               $num++;
                			}
                echo "		</table>
                		</center>";
      } else {
-          echo "<center><b> EL cliente NO EXISTE!!</b></center>";
+          echo "<h2> EL cliente NO EXISTE!!</h2>";
      }
 }
 

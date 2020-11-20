@@ -43,7 +43,7 @@ if ($nombre or $ci or $telefono) {
                echo "		</table>
                		</center>";
      } else {
-          echo "<center><b> EL EMPLEADO NO EXISTE!!</b></center>";
+          echo "<center><h2> EL EMPLEADO NO EXISTE!!</h2></center>";
      }
 }
 
