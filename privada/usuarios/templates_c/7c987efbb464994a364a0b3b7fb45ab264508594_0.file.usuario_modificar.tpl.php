@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2020-10-01 19:49:17
+/* Smarty version 3.1.29, created on 2020-11-20 00:53:23
   from "D:\disenoWeb\www\sis_aluformas\privada\usuarios\templates\usuario_modificar.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5f7632bd5adaf1_29837458',
+  'unifunc' => 'content_5fb71383eca4b0_59664252',
   'file_dependency' => 
   array (
     '7c987efbb464994a364a0b3b7fb45ab264508594' => 
     array (
       0 => 'D:\\disenoWeb\\www\\sis_aluformas\\privada\\usuarios\\templates\\usuario_modificar.tpl',
-      1 => 1601581750,
+      1 => 1605833595,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5f7632bd5adaf1_29837458 ($_smarty_tpl) {
+function content_5fb71383eca4b0_59664252 ($_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -68,11 +68,8 @@ if ($__foreach_r_0_saved_item) {
 $_smarty_tpl->tpl_vars['r'] = $__foreach_r_0_saved_item;
 }
 ?>
-                                   </select>
-                              </td>
-                         </tr>
-                         <?php
-$_from = $_smarty_tpl->tpl_vars['usuario']->value;
+                                        <!--<?php
+$_from = $_smarty_tpl->tpl_vars['personas']->value;
 if (!is_array($_from) && !is_object($_from)) {
 settype($_from, 'array');
 }
@@ -83,6 +80,33 @@ foreach ($_from as $_smarty_tpl->tpl_vars['r']->value) {
 $_smarty_tpl->tpl_vars['r']->_loop = true;
 $__foreach_r_1_saved_local_item = $_smarty_tpl->tpl_vars['r'];
 ?>
+                                        <option value="<?php echo $_smarty_tpl->tpl_vars['r']->value['id_persona'];?>
+"><?php echo $_smarty_tpl->tpl_vars['r']->value['ap'];?>
+ - <?php echo $_smarty_tpl->tpl_vars['r']->value['am'];?>
+ - <?php echo $_smarty_tpl->tpl_vars['r']->value['nombre'];?>
+</option>
+                                        <?php
+$_smarty_tpl->tpl_vars['r'] = $__foreach_r_1_saved_local_item;
+}
+if ($__foreach_r_1_saved_item) {
+$_smarty_tpl->tpl_vars['r'] = $__foreach_r_1_saved_item;
+}
+?>-->
+                                   </select>
+                              </td>
+                         </tr>
+                         <?php
+$_from = $_smarty_tpl->tpl_vars['usuario']->value;
+if (!is_array($_from) && !is_object($_from)) {
+settype($_from, 'array');
+}
+$__foreach_r_2_saved_item = isset($_smarty_tpl->tpl_vars['r']) ? $_smarty_tpl->tpl_vars['r'] : false;
+$_smarty_tpl->tpl_vars['r'] = new Smarty_Variable();
+$_smarty_tpl->tpl_vars['r']->_loop = false;
+foreach ($_from as $_smarty_tpl->tpl_vars['r']->value) {
+$_smarty_tpl->tpl_vars['r']->_loop = true;
+$__foreach_r_2_saved_local_item = $_smarty_tpl->tpl_vars['r'];
+?>
                          <tr>
                               <th align="left">Usuario (*)</th><th>:</th>
                               <td><input type="text" name="usuario1" value="<?php echo $_smarty_tpl->tpl_vars['r']->value['usuario1'];?>
@@ -90,8 +114,7 @@ $__foreach_r_1_saved_local_item = $_smarty_tpl->tpl_vars['r'];
                          </tr>
                          <tr>
                               <th align="left">Clave (*)</th><th>:</th>
-                              <td><input type="text" name="clave" value="<?php echo $_smarty_tpl->tpl_vars['r']->value['clave'];?>
-"></td>
+                              <td><input type="passwordas" name="clave"></td>
                          </tr>
                          <tr>
                               <td align="center" colspan="3">
@@ -103,10 +126,10 @@ $__foreach_r_1_saved_local_item = $_smarty_tpl->tpl_vars['r'];
                               </td>
                          </tr>
                          <?php
-$_smarty_tpl->tpl_vars['r'] = $__foreach_r_1_saved_local_item;
+$_smarty_tpl->tpl_vars['r'] = $__foreach_r_2_saved_local_item;
 }
-if ($__foreach_r_1_saved_item) {
-$_smarty_tpl->tpl_vars['r'] = $__foreach_r_1_saved_item;
+if ($__foreach_r_2_saved_item) {
+$_smarty_tpl->tpl_vars['r'] = $__foreach_r_2_saved_item;
 }
 ?>
                          <tr>
