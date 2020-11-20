@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2020-11-20 00:53:23
+/* Smarty version 3.1.29, created on 2020-11-20 00:54:54
   from "D:\disenoWeb\www\sis_aluformas\privada\usuarios\templates\usuario_modificar.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5fb71383eca4b0_59664252',
+  'unifunc' => 'content_5fb713de99e307_95421690',
   'file_dependency' => 
   array (
     '7c987efbb464994a364a0b3b7fb45ab264508594' => 
     array (
       0 => 'D:\\disenoWeb\\www\\sis_aluformas\\privada\\usuarios\\templates\\usuario_modificar.tpl',
-      1 => 1605833595,
+      1 => 1605833616,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5fb71383eca4b0_59664252 ($_smarty_tpl) {
+function content_5fb713de99e307_95421690 ($_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -114,7 +114,7 @@ $__foreach_r_2_saved_local_item = $_smarty_tpl->tpl_vars['r'];
                          </tr>
                          <tr>
                               <th align="left">Clave (*)</th><th>:</th>
-                              <td><input type="passwordas" name="clave"></td>
+                              <td><input type="password" name="clave"></td>
                          </tr>
                          <tr>
                               <td align="center" colspan="3">
