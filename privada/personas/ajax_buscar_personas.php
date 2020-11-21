@@ -25,21 +25,21 @@ if ($paterno or $materno or $nombres or $ci) {
                			<table class='listado'>
                                    <thead>
                                         <tr>
-                                             <th>NRO</th><th>CI</th><th>NOMBRES</th><th>AP</th><th>AM</th><th>GENERO</th><th align='center'><img src='../../img/modificar.gif' height='30px'></th><th align='center'><img src='../../img/borrar.gif' height='30px'></th>
+                                             <th>NRO</th><th>CI</th><th>Nombres</th><th>AP</th><th>AM</th><th>GENERO</th><th align='center'><img src='../../img/modificar.gif' height='30px'></th><th align='center'><img src='../../img/borrar.gif' height='30px'></th>
                                         </tr>
                                    </thead>";
                               $num = 1;
                			foreach ($rs3 as $k => $fila){
                				$str = $fila["ci"];
-               				$str1 = $fila["ap"];
-               				$str2 = $fila["am"];
-               				$str3 = $fila["nombre"];
+               				$str1 = $fila["nombre"];
+               				$str2 = $fila["ap"];
+               				$str3 = $fila["am"];
                echo "			<tr>
                                         <td>".$num."</td>
                					<td align='center'>".resaltar($ci,$str)."</td>
-               					<td>".resaltar($paterno, $str1)."</td>
-               					<td>".resaltar($materno, $str2)."</td>
-               					<td>".resaltar($nombres, $str3)."</td>
+                                        <td>".resaltar($nombres, $str1)."</td>
+               					<td>".resaltar($paterno, $str2)."</td>
+               					<td>".resaltar($materno, $str3)."</td>
                                         <td align='center'>".$fila["genero"]."</td>
 
                					<td align='center'>
