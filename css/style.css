@@ -268,8 +268,7 @@ input[type="text" i], select, option{
 
 legend{
 	color: white;
-	font-size:25px;
-	font-weight:bold;
+	font-size:18px;
 }
 fieldset{
 	border:solid 2px;

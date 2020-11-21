@@ -145,11 +145,81 @@
      			ajax.send(param);
 			}
      	</script>
+		<script type="text/javascript">
+     		function buscar2(){
+     			var d1, contenedor, url;
+     			contenedor = document.getElementById('lineas');
+                    contenedor2 = document.getElementById('linea_seleccionado');
+                    contenedor3 = document.getElementById('linea_insertado');
+     			d1 = document.formu.linea.value;
+     			ajax = nuevoAjax();
+     			url = "ajax_buscar_lineas.php";
+     			param = "nombre="+d1;
+     			ajax.open("POST", url, true);
+     			ajax.setRequestHeader('Content-Type','application/x-www-form-urlencoded');
+     			ajax.onreadystatechange = function(){
+     				if (ajax.readyState == 4) {
+     					contenedor.innerHTML = ajax.responseText;
+                              contenedor2.innerHTML = "";
+                              contenedor3.innerHTML = "";
+     				}
+     			}
+     			ajax.send(param);
+     		}
+
+               function buscar_linea(id_linea){
+				var d1, contenedor, url;
+				contenedor = document.getElementById('linea_seleccionado');
+                    contenedor2 = document.getElementById('lineas');
+				document.formu.id_linea.value = id_linea;
+
+				d1 = id_linea;
+
+				ajax = nuevoAjax();
+     			url = "ajax_buscar_lineas1.php";
+				param = "id_linea="+d1;
+				ajax.open("POST", url, true);
+     			ajax.setRequestHeader('Content-Type','application/x-www-form-urlencoded');
+     			ajax.onreadystatechange = function(){
+     				if (ajax.readyState == 4) {
+     					contenedor.innerHTML = ajax.responseText;
+                              contenedor2.innerHTML = "";
+     				}
+     			}
+     			ajax.send(param);
+			}
+
+			function insertar_linea(){
+				var d1, contenedor, url;
+     			contenedor = document.getElementById('linea_seleccionado');
+                    contenedor2 = document.getElementById('lineas');
+                    contenedor3 = document.getElementById('linea_insertado');
+     			d1 = document.formu.linea1.value;
+				if (d1 == "") {
+					alert("El nombre es incorrecto o el campo esta vacio");
+					document.formu.linea1.focus();
+					return;
+				}
+				ajax = nuevoAjax();
+     			url = "ajax_inserta_linea.php";
+				param = "linea1="+d1;
+				ajax.open("POST", url, true);
+     			ajax.setRequestHeader('Content-Type','application/x-www-form-urlencoded');
+     			ajax.onreadystatechange = function(){
+     				if (ajax.readyState == 4) {
+						contenedor.innerHTML = "";
+                              contenedor2.innerHTML = "";
+                              contenedor3.innerHTML = ajax.responseText;
+     				}
+     			}
+     			ajax.send(param);
+			}
+     	</script>
 	</head>
 	<body>
 		<br><br><br><br>
 		<center>
-			<h2>REGISTRAR EMLEADO</h2>
+			<h2>REGISTRAR PERFIL</h2>
 			<form action="perfil_nuevo1.php" method="post" name="formu">
 				<table>
 					<tr>
@@ -210,7 +280,7 @@
 					<tr>
 						<td>
 							<fieldset border="2">
-								<legend>Seleccione el Tipo de perfil</legend>
+								<legend>Seleccione el Color</legend>
 								<table align="center">
 									<tr>
 										<td>
@@ -264,19 +334,62 @@
 					</tr>
 					<tr>
 						<td>
+							<fieldset border="2">
+								<legend>Seleccione la Linea de perfil</legend>
+								<table align="center">
+									<tr>
+										<td>
+											<table>
+												<tr>
+													<td>
+														<b>Linea</b>
+														<input type="text" name="linea" value="" size="10" onKeyup="buscar2()">
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="6">
+											<table width="100%">
+												<tr>
+													<td colspan="3">
+														<div id="lineas" class="listado"></div>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="6">
+											<table width="100%">
+												<tr>
+													<td colspan="3">
+														<div id="linea_seleccionado"></div>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="6">
+											<table width="100%">
+												<tr>
+													<td colspan="3">
+														<input type="hidden" name="id_linea">
+														<div id="linea_insertado" class="listado"></div>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</fieldset>
+						</td>
+					</tr>
+					<tr>
+						<td>
 							<table>
-								<tr>
-									<th align="right">Linea de Perfil (*)</th>
-									<th>:</th>
-									<td>
-										<select name="linea_perfil">
-											<option value="">--- Seleccione---</option>
-											{foreach item=r from=$linea_perfil}
-											<option value="{$r.id_linea_perfil}">{$r.linea}</option>
-											{/foreach}
-										</select>
-									</td>
-								</tr>
 				                    <tr>
 				                        <th align="left">largo(*)</th>
 				                        <th>:</th>

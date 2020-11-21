@@ -6,7 +6,7 @@ require_once("../../conexion.php");
 
 $__tipo_perfil = $_POST["id_tipo_perfil"];
 $__color = $_POST["id_color"];
-$__linea_perfil = $_POST["linea_perfil"];
+$__linea_perfil = $_POST["id_linea"];
 $__largo = $_POST["largo"];
 $__precio = $_POST["precio"];
 $smarty = new Smarty;
