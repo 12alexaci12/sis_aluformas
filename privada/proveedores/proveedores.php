@@ -13,7 +13,7 @@ paginacion("proveedores.php?", $smarty);
 
 $sql3 = $db->Prepare("	SELECT *
 					FROM proveedores
-					WHERE id_proveedor > 1
+					WHERE estado <> '0'
 					ORDER BY id_proveedor DESC
 					LIMIT ? OFFSET ?");
 

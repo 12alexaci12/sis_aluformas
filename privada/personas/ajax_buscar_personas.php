@@ -25,7 +25,7 @@ if ($paterno or $materno or $nombres or $ci) {
                			<table class='listado'>
                                    <thead>
                                         <tr>
-                                             <th>NRO</th><th>CI</th><th>NOMBRES</th><th>AP</th><th>AM</th><th>GENERO</th><th align="center"><img src="../../img/modificar.gif" height="30px"></th><th align="center"><img src="../../img/borrar.gif" height="30px"></th>
+                                             <th>NRO</th><th>CI</th><th>NOMBRES</th><th>AP</th><th>AM</th><th>GENERO</th><th align='center'><img src='../../img/modificar.gif' height='30px'></th><th align='center'><img src='../../img/borrar.gif' height='30px'></th>
                                         </tr>
                                    </thead>";
                               $num = 1;
