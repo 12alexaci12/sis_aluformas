@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2020-11-05 21:01:09
+/* Smarty version 3.1.29, created on 2021-04-20 02:29:30
   from "D:\disenoWeb\www\sis_aluformas\privada\usuarios\templates\usuario_nuevo.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5fa46815c28907_85218185',
+  'unifunc' => 'content_607e3c8abb4a30_83403740',
   'file_dependency' => 
   array (
     'c0a7c577d0b606608a6324a79c00e775a2d8b756' => 
     array (
       0 => 'D:\\disenoWeb\\www\\sis_aluformas\\privada\\usuarios\\templates\\usuario_nuevo.tpl',
-      1 => 1604610065,
+      1 => 1618885766,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5fa46815c28907_85218185 ($_smarty_tpl) {
+function content_607e3c8abb4a30_83403740 ($_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html>
@@ -149,26 +149,24 @@ function content_5fa46815c28907_85218185 ($_smarty_tpl) {
 						<td>
 							<fieldset border="2">
 								<legend>Seleccione persona</legend>
-								<table>
+								<table width = "100%">
 									<tr>
 										<td>
-											<table>
+											<table align = "center">
+												<tr>
+													<td width = "50%">
+														<input type="text" name="ap" value="" size="15" onKeyup="buscar()" placeholder="ap. Paterno">
+													</td>
+													<td width = "50%">
+														<input type="text" name="am" value="" size="15" onkeyup="buscar()" placeholder="ap. Materno">
+													</td>
+												</tr>
 												<tr>
 													<td>
-														<b>Paterno</b>
-														<input type="text" name="ap" value="" size="10" onKeyup="buscar()">
+														<input type="text" name="nombres" value="" size="15" onkeyup="buscar()" placeholder="Nombres">
 													</td>
 													<td>
-														<b>Materno</b>
-														<input type="text" name="am" value="" size="10" onkeyup="buscar()">
-													</td>
-													<td>
-														<b>Nombres</b>
-														<input type="text" name="nombres" value="" size="10" onkeyup="buscar()">
-													</td>
-													<td>
-														<b>CI</b>
-														<input type="text" name="ci" value="" size="10" onkeyup="buscar()">
+														<input type="text" name="ci" value="" size="15" onkeyup="buscar()" placeholder="Cedula de identidad">
 													</td>
 												</tr>
 											</table>
@@ -219,9 +217,7 @@ function content_5fa46815c28907_85218185 ($_smarty_tpl) {
 									<td align="center" colspan="3">
 										<table>
 											<tr>
-												<th align="left">Usuario (*)</th>
-												<th>:</th>
-												<td><input type="text" name="usuario1"></td>
+												<th><input type="text" name="usuario1" placeholder="Usuario">(*)</th>
 											</tr>
 										</table>
 									</td>
@@ -230,9 +226,7 @@ function content_5fa46815c28907_85218185 ($_smarty_tpl) {
 									<td align="center" colspan="3">
 										<table>
 											<tr>
-												<th align="left">Clave (*)</th>
-												<th>:</th>
-												<td><input type="password" name="clave"></td>
+												<th><input type="password" name="clave" placeholder="clave">(*)</th>
 											</tr>
 										</table>
 									</td>

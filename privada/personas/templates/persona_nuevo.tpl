@@ -12,39 +12,28 @@
 			<form action="persona_nuevo1.php" method="post" name="formu">
 				<table>
 					<tr>
-						<th align="left">CI(*)</th>
-						<th>:</th>
-						<td><input type="text" name="ci" onkeyup="this.value=this.value.toUpperCase()"></td>
+						<th><input type="text" name="ci" onkeyup="this.value=this.value.toUpperCase()" placeholder="carnet de identidad">(*)</th>
 					</tr>
 					<tr>
-						<th align="left">Nombres(*)</th>
-						<th>:</th>
-						<td><input type="text" name="nombre" onkeyup="this.value=this.value.toUpperCase()"></td>
+						<th><input type="text" name="nombre" onkeyup="this.value=this.value.toUpperCase()" placeholder="nomnbre">(*)</th>
 					</tr>
 					<tr>
-						<th align="left">Apellido Paterno</th>
-						<th>:</th>
-						<td><input type="text" name="ap" onkeyup="this.value=this.value.toUpperCase()"></td>
+						<th><input type="text" name="ap" onkeyup="this.value=this.value.toUpperCase()" placeholder="apellido paterno"></th>
 					</tr>
 					<tr>
-						<th align="left">Apellido Materno</th>
-						<th>:</th>
-						<td><input type="text" name="am" onkeyup="this.value=this.value.toUpperCase()"></td>
+						<th><input type="text" name="am" onkeyup="this.value=this.value.toUpperCase()" placeholder="aperllido materno"></th>
 					</tr>
 					<tr>
-						<th align="left">Direccion</th>
-						<th>:</th>
-						<td><input type="text" name="direccion" onkeyup="this.value=this.value.toUpperCase()"></td>
+						<th><input type="text" name="direccion" onkeyup="this.value=this.value.toUpperCase()" placeholder="direccion">(*)</th>
 					</tr>
 					<tr>
-						<th align="left">Telefono</th>
-						<th>:</th>
-						<td><input type="text" name="telefono" onkeyup="this.value=this.value.toUpperCase()" maxlength="9"></td>
+						<th><input type="text" name="telefono" onkeyup="this.value=this.value.toUpperCase()" maxlength="9" placeholder="telefono">(*)</th>
 					</tr>
 					<tr>
-						<th align="left">Genero(*)</th>
-						<th>:</th>
-						<td><input type="radio" name="genero" value="F">Femenino<input type="radio" name="genero" value="M">Masculino</td>
+						<th align="center">Genero(*)</th>
+					</tr>
+					<tr>
+						<th><input type="radio" name="genero" value="F">Femenino<input type="radio" name="genero" value="M">Masculino</th>
 					</tr>
 					<tr>
 						<td align="center" colspan="3">

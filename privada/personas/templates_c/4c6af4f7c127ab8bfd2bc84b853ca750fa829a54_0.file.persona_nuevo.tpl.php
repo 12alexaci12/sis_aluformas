@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2020-08-02 20:11:31
+/* Smarty version 3.1.29, created on 2021-04-20 02:14:08
   from "D:\disenoWeb\www\sis_aluformas\privada\personas\templates\persona_nuevo.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5f271df36ba009_10893904',
+  'unifunc' => 'content_607e38f01b3e03_58193924',
   'file_dependency' => 
   array (
     '4c6af4f7c127ab8bfd2bc84b853ca750fa829a54' => 
     array (
       0 => 'D:\\disenoWeb\\www\\sis_aluformas\\privada\\personas\\templates\\persona_nuevo.tpl',
-      1 => 1596396253,
+      1 => 1618884843,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5f271df36ba009_10893904 ($_smarty_tpl) {
+function content_607e38f01b3e03_58193924 ($_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html>
@@ -40,39 +40,28 @@ function content_5f271df36ba009_10893904 ($_smarty_tpl) {
 			<form action="persona_nuevo1.php" method="post" name="formu">
 				<table>
 					<tr>
-						<th align="left">CI(*)</th>
-						<th>:</th>
-						<td><input type="text" name="ci" onkeyup="this.value=this.value.toUpperCase()"></td>
+						<th><input type="text" name="ci" onkeyup="this.value=this.value.toUpperCase()" placeholder="carnet de identidad">(*)</th>
 					</tr>
 					<tr>
-						<th align="left">Nombres(*)</th>
-						<th>:</th>
-						<td><input type="text" name="nombre" onkeyup="this.value=this.value.toUpperCase()"></td>
+						<th><input type="text" name="nombre" onkeyup="this.value=this.value.toUpperCase()" placeholder="nomnbre">(*)</th>
 					</tr>
 					<tr>
-						<th align="left">Apellido Paterno</th>
-						<th>:</th>
-						<td><input type="text" name="ap" onkeyup="this.value=this.value.toUpperCase()"></td>
+						<th><input type="text" name="ap" onkeyup="this.value=this.value.toUpperCase()" placeholder="apellido paterno"></th>
 					</tr>
 					<tr>
-						<th align="left">Apellido Materno</th>
-						<th>:</th>
-						<td><input type="text" name="am" onkeyup="this.value=this.value.toUpperCase()"></td>
+						<th><input type="text" name="am" onkeyup="this.value=this.value.toUpperCase()" placeholder="aperllido materno"></th>
 					</tr>
 					<tr>
-						<th align="left">Direccion</th>
-						<th>:</th>
-						<td><input type="text" name="direccion" onkeyup="this.value=this.value.toUpperCase()"></td>
+						<th><input type="text" name="direccion" onkeyup="this.value=this.value.toUpperCase()" placeholder="direccion">(*)</th>
 					</tr>
 					<tr>
-						<th align="left">Telefono</th>
-						<th>:</th>
-						<td><input type="text" name="telefono" onkeyup="this.value=this.value.toUpperCase()" maxlength="9"></td>
+						<th><input type="text" name="telefono" onkeyup="this.value=this.value.toUpperCase()" maxlength="9" placeholder="telefono">(*)</th>
 					</tr>
 					<tr>
-						<th align="left">Genero(*)</th>
-						<th>:</th>
-						<td><input type="radio" name="genero" value="F">Femenino<input type="radio" name="genero" value="M">Masculino</td>
+						<th align="center">Genero(*)</th>
+					</tr>
+					<tr>
+						<th><input type="radio" name="genero" value="F">Femenino<input type="radio" name="genero" value="M">Masculino</th>
 					</tr>
 					<tr>
 						<td align="center" colspan="3">

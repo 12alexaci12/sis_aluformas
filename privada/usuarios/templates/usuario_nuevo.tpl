@@ -117,26 +117,24 @@
 						<td>
 							<fieldset border="2">
 								<legend>Seleccione persona</legend>
-								<table>
+								<table width = "100%">
 									<tr>
 										<td>
-											<table>
+											<table align = "center">
+												<tr>
+													<td width = "50%">
+														<input type="text" name="ap" value="" size="15" onKeyup="buscar()" placeholder="ap. Paterno">
+													</td>
+													<td width = "50%">
+														<input type="text" name="am" value="" size="15" onkeyup="buscar()" placeholder="ap. Materno">
+													</td>
+												</tr>
 												<tr>
 													<td>
-														<b>Paterno</b>
-														<input type="text" name="ap" value="" size="10" onKeyup="buscar()">
+														<input type="text" name="nombres" value="" size="15" onkeyup="buscar()" placeholder="Nombres">
 													</td>
 													<td>
-														<b>Materno</b>
-														<input type="text" name="am" value="" size="10" onkeyup="buscar()">
-													</td>
-													<td>
-														<b>Nombres</b>
-														<input type="text" name="nombres" value="" size="10" onkeyup="buscar()">
-													</td>
-													<td>
-														<b>CI</b>
-														<input type="text" name="ci" value="" size="10" onkeyup="buscar()">
+														<input type="text" name="ci" value="" size="15" onkeyup="buscar()" placeholder="Cedula de identidad">
 													</td>
 												</tr>
 											</table>
@@ -187,9 +185,7 @@
 									<td align="center" colspan="3">
 										<table>
 											<tr>
-												<th align="left">Usuario (*)</th>
-												<th>:</th>
-												<td><input type="text" name="usuario1"></td>
+												<th><input type="text" name="usuario1" placeholder="Usuario">(*)</th>
 											</tr>
 										</table>
 									</td>
@@ -198,9 +194,7 @@
 									<td align="center" colspan="3">
 										<table>
 											<tr>
-												<th align="left">Clave (*)</th>
-												<th>:</th>
-												<td><input type="password" name="clave"></td>
+												<th><input type="password" name="clave" placeholder="clave">(*)</th>
 											</tr>
 										</table>
 									</td>
