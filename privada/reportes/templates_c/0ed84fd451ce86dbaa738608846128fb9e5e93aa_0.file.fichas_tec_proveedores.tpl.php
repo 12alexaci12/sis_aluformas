@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2020-11-21 13:50:15
+/* Smarty version 3.1.29, created on 2020-11-21 19:13:24
   from "D:\disenoWeb\www\sis_aluformas\privada\reportes\templates\fichas_tec_proveedores.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5fb91b17ac8873_71420421',
+  'unifunc' => 'content_5fb966d4be9ff3_50784823',
   'file_dependency' => 
   array (
     '0ed84fd451ce86dbaa738608846128fb9e5e93aa' => 
     array (
       0 => 'D:\\disenoWeb\\www\\sis_aluformas\\privada\\reportes\\templates\\fichas_tec_proveedores.tpl',
-      1 => 1605966374,
+      1 => 1605983824,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5fb91b17ac8873_71420421 ($_smarty_tpl) {
+function content_5fb966d4be9ff3_50784823 ($_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -60,7 +60,7 @@ function content_5fb91b17ac8873_71420421 ($_smarty_tpl) {
      <body>
           <br><br><br>
           <center>
-               <h2> FICHAS TECNICAS DE proveedores</h2>
+               <h2> FICHAS TECNICAS DE PROVEEDORES</h2>
                <form action="#" method="post" name="formu1">
                     <table width="50%">
                          <tr>

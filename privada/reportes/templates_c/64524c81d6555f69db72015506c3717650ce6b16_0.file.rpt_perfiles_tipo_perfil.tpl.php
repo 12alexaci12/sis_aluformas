@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2020-11-21 15:40:30
+/* Smarty version 3.1.29, created on 2020-11-21 19:18:02
   from "D:\disenoWeb\www\sis_aluformas\privada\reportes\templates\rpt_perfiles_tipo_perfil.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5fb934eea29450_62600961',
+  'unifunc' => 'content_5fb967ea204f94_92083006',
   'file_dependency' => 
   array (
     '64524c81d6555f69db72015506c3717650ce6b16' => 
     array (
       0 => 'D:\\disenoWeb\\www\\sis_aluformas\\privada\\reportes\\templates\\rpt_perfiles_tipo_perfil.tpl',
-      1 => 1605970174,
+      1 => 1605986276,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5fb934eea29450_62600961 ($_smarty_tpl) {
+function content_5fb967ea204f94_92083006 ($_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -42,7 +42,7 @@ function content_5fb934eea29450_62600961 ($_smarty_tpl) {
 >
      </head>
      <body>
-          <br><br>
+          <br><br><br><br>
           <center>
                <h2> REPORTES DE PERFILES POR TIPO DE PERFIL</h2>
                <form name="formu" method="post">
