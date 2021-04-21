@@ -192,6 +192,11 @@ th{
 	padding: 10px;
 }
 
+input::placeholder{
+	font-size: 13px;
+	font-weight: bold;
+}
+
 input[type="button" i], input[type="reset" i]{
 	font-weight: bold;
 	color: black;

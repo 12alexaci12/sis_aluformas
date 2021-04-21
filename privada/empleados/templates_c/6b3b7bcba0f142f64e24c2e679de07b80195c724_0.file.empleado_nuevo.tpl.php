@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2020-08-02 19:50:34
+/* Smarty version 3.1.29, created on 2021-04-21 00:09:22
   from "D:\disenoWeb\www\sis_aluformas\privada\empleados\templates\empleado_nuevo.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5f27190aacba97_39640906',
+  'unifunc' => 'content_607f6d323fc160_32331868',
   'file_dependency' => 
   array (
     '6b3b7bcba0f142f64e24c2e679de07b80195c724' => 
     array (
       0 => 'D:\\disenoWeb\\www\\sis_aluformas\\privada\\empleados\\templates\\empleado_nuevo.tpl',
-      1 => 1596397371,
+      1 => 1618963758,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5f27190aacba97_39640906 ($_smarty_tpl) {
+function content_607f6d323fc160_32331868 ($_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html>
@@ -38,21 +38,15 @@ function content_5f27190aacba97_39640906 ($_smarty_tpl) {
 		<center>
 			<h2>REGISTRAR EMLEADO</h2>
 			<form action="empleado_nuevo1.php" method="post" name="formu">
-				<table>
+				<table align="center">
                     <tr>
-                        <th align="left">Nombres(*)</th>
-                        <th>:</th>
-                        <td><input type="text" name="nombre" onkeyup="this.value=this.value.toUpperCase()"></td>
+                        <th><input type="text" name="nombre" onkeyup="this.value=this.value.toUpperCase()" placeholder="nombres (*)"></th>
                     </tr>
 					<tr>
-						<th align="left">CI(*)</th>
-						<th>:</th>
-						<td><input type="text" name="ci" onkeyup="this.value=this.value.toUpperCase()"></td>
+						<th><input type="text" name="ci" onkeyup="this.value=this.value.toUpperCase()" placeholder="cedula de identidad (*)"></th>
 					</tr>
 					<tr>
-						<th align="left">Telefono</th>
-						<th>:</th>
-						<td><input type="text" name="telefono" onkeyup="this.value=this.value.toUpperCase()" maxlength="9"></td>
+						<th><input type="text" name="telefono" onkeyup="this.value=this.value.toUpperCase()" maxlength="9" placeholder="telefono (*)"></th>
 					</tr>
 					<tr>
 						<td align="center" colspan="3">

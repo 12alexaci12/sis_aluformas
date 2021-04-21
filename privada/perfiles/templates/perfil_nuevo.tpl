@@ -229,12 +229,11 @@
 								<table align="center">
 									<tr>
 										<td>
-											<table>
+											<table align="center">
 												<tr>
-													<td>
-														<b>nombre de perfil</b>
-														<input type="text" name="nombre" value="" size="10" onKeyup="buscar()">
-													</td>
+													<th>
+														<input type="text" name="nombre" value="" size="15" onKeyup="buscar()" placeholder="nombre de perfil (*)">
+													</th>
 												</tr>
 											</table>
 										</td>
@@ -284,12 +283,11 @@
 								<table align="center">
 									<tr>
 										<td>
-											<table>
+											<table align="center">
 												<tr>
-													<td>
-														<b>Color</b>
-														<input type="text" name="color" value="" size="10" onKeyup="buscar1()">
-													</td>
+													<th>
+														<input type="text" name="color" value="" size="15" onKeyup="buscar1()" placeholder="color (*)">
+													</th>
 												</tr>
 											</table>
 										</td>
@@ -339,12 +337,11 @@
 								<table align="center">
 									<tr>
 										<td>
-											<table>
+											<table align="center">
 												<tr>
-													<td>
-														<b>Linea</b>
-														<input type="text" name="linea" value="" size="10" onKeyup="buscar2()">
-													</td>
+													<th>
+														<input type="text" name="linea" value="" size="15" onKeyup="buscar2()" placeholder="linea (*)">
+													</th>
 												</tr>
 											</table>
 										</td>
@@ -389,16 +386,12 @@
 					</tr>
 					<tr>
 						<td>
-							<table>
+							<table align="center">
 				                    <tr>
-				                        <th align="left">largo(*)</th>
-				                        <th>:</th>
-				                        <td><input type="text" name="largo"></td>
+				                        <th><input type="text" name="largo" placeholder="Largo (*)"></th>
 				                    </tr>
 								<tr>
-									<th align="left">precio de perfil(*)</th>
-									<th>:</th>
-									<td><input type="text" name="precio"></td>
+									<th><input type="text" name="precio" placeholder="Precio (*)"></th>
 								</tr>
 								<tr>
 									<td align="center" colspan="3">

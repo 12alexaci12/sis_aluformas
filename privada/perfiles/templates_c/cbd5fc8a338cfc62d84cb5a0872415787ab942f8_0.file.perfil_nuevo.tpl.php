@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2020-11-21 18:19:11
+/* Smarty version 3.1.29, created on 2021-04-21 00:18:15
   from "D:\disenoWeb\www\sis_aluformas\privada\perfiles\templates\perfil_nuevo.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5fb95a1f865d74_88206714',
+  'unifunc' => 'content_607f6f47a452b5_79757366',
   'file_dependency' => 
   array (
     'cbd5fc8a338cfc62d84cb5a0872415787ab942f8' => 
     array (
       0 => 'D:\\disenoWeb\\www\\sis_aluformas\\privada\\perfiles\\templates\\perfil_nuevo.tpl',
-      1 => 1605982745,
+      1 => 1618964287,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5fb95a1f865d74_88206714 ($_smarty_tpl) {
+function content_607f6f47a452b5_79757366 ($_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html>
@@ -265,12 +265,11 @@ function content_5fb95a1f865d74_88206714 ($_smarty_tpl) {
 								<table align="center">
 									<tr>
 										<td>
-											<table>
+											<table align="center">
 												<tr>
-													<td>
-														<b>nombre de perfil</b>
-														<input type="text" name="nombre" value="" size="10" onKeyup="buscar()">
-													</td>
+													<th>
+														<input type="text" name="nombre" value="" size="15" onKeyup="buscar()" placeholder="nombre de perfil (*)">
+													</th>
 												</tr>
 											</table>
 										</td>
@@ -320,12 +319,11 @@ function content_5fb95a1f865d74_88206714 ($_smarty_tpl) {
 								<table align="center">
 									<tr>
 										<td>
-											<table>
+											<table align="center">
 												<tr>
-													<td>
-														<b>Color</b>
-														<input type="text" name="color" value="" size="10" onKeyup="buscar1()">
-													</td>
+													<th>
+														<input type="text" name="color" value="" size="15" onKeyup="buscar1()" placeholder="color (*)">
+													</th>
 												</tr>
 											</table>
 										</td>
@@ -375,12 +373,11 @@ function content_5fb95a1f865d74_88206714 ($_smarty_tpl) {
 								<table align="center">
 									<tr>
 										<td>
-											<table>
+											<table align="center">
 												<tr>
-													<td>
-														<b>Linea</b>
-														<input type="text" name="linea" value="" size="10" onKeyup="buscar2()">
-													</td>
+													<th>
+														<input type="text" name="linea" value="" size="15" onKeyup="buscar2()" placeholder="linea (*)">
+													</th>
 												</tr>
 											</table>
 										</td>
@@ -425,16 +422,12 @@ function content_5fb95a1f865d74_88206714 ($_smarty_tpl) {
 					</tr>
 					<tr>
 						<td>
-							<table>
+							<table align="center">
 				                    <tr>
-				                        <th align="left">largo(*)</th>
-				                        <th>:</th>
-				                        <td><input type="text" name="largo"></td>
+				                        <th><input type="text" name="largo" placeholder="Largo (*)"></th>
 				                    </tr>
 								<tr>
-									<th align="left">precio de perfil(*)</th>
-									<th>:</th>
-									<td><input type="text" name="precio"></td>
+									<th><input type="text" name="precio" placeholder="Precio (*)"></th>
 								</tr>
 								<tr>
 									<td align="center" colspan="3">

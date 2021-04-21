@@ -10,21 +10,15 @@
 		<center>
 			<h2>REGISTRAR EMLEADO</h2>
 			<form action="empleado_nuevo1.php" method="post" name="formu">
-				<table>
+				<table align="center">
                     <tr>
-                        <th align="left">Nombres(*)</th>
-                        <th>:</th>
-                        <td><input type="text" name="nombre" onkeyup="this.value=this.value.toUpperCase()"></td>
+                        <th><input type="text" name="nombre" onkeyup="this.value=this.value.toUpperCase()" placeholder="nombres (*)"></th>
                     </tr>
 					<tr>
-						<th align="left">CI(*)</th>
-						<th>:</th>
-						<td><input type="text" name="ci" onkeyup="this.value=this.value.toUpperCase()"></td>
+						<th><input type="text" name="ci" onkeyup="this.value=this.value.toUpperCase()" placeholder="cedula de identidad (*)"></th>
 					</tr>
 					<tr>
-						<th align="left">Telefono</th>
-						<th>:</th>
-						<td><input type="text" name="telefono" onkeyup="this.value=this.value.toUpperCase()" maxlength="9"></td>
+						<th><input type="text" name="telefono" onkeyup="this.value=this.value.toUpperCase()" maxlength="9" placeholder="telefono (*)"></th>
 					</tr>
 					<tr>
 						<td align="center" colspan="3">
