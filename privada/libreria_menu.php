@@ -71,9 +71,8 @@
                               foreach ($rs2 as $t => $fila2) {
                                    if ($grup == $fila2["grupo"]) {
                                         $dir_php = $_SERVER["PHP_SELF"];
-                                        $dir_selfx = explode("/", $_SERVER["PHP_SELF"]);
-                                        $dir_self = $dir_selfx[3];
-                                        if ($dir_self != "cuerpo.php")
+                                        $cuerp = strpos($dir_php, "cuerpo.php");
+                                        if ($cuerp == false or $cuerp == "")
                                              echo "<li><a onclick='location.href=\"../".$fila2["contenido"]."\"' target='cuerpo' style='cursor:pointer;'>".$fila2["opcion"]."</a></li>";
                                         else
                                              echo "<li><a onclick='location.href=\"".$fila2["contenido"]."\"' target='cuerpo' style='cursor:pointer;'>".$fila2["opcion"]."</a></li>";
@@ -84,7 +83,7 @@
                          }
                     }
 
-                         if ($dir_self != "cuerpo.php") {
+                         if ($cuerp != "cuerpo.php") {
 
                               echo "<li>
                                         <a onclick='location.href = \"../claves/\"' target='cuerpo' style='cursor:pointer;';>Cerrar Sesion</a>
