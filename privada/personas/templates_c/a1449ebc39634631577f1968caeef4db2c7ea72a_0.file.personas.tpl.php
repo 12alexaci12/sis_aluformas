@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2020-10-26 20:12:02
+/* Smarty version 3.1.29, created on 2021-05-05 01:33:11
   from "D:\disenoWeb\www\sis_aluformas\privada\personas\templates\personas.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5f972d923fa816_11057050',
+  'unifunc' => 'content_6091f5d71467a5_61966816',
   'file_dependency' => 
   array (
     'a1449ebc39634631577f1968caeef4db2c7ea72a' => 
     array (
       0 => 'D:\\disenoWeb\\www\\sis_aluformas\\privada\\personas\\templates\\personas.tpl',
-      1 => 1603743118,
+      1 => 1605754252,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5f972d923fa816_11057050 ($_smarty_tpl) {
+function content_6091f5d71467a5_61966816 ($_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html>

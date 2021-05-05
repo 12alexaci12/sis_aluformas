@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2021-04-20 02:14:08
+/* Smarty version 3.1.29, created on 2021-05-05 01:33:14
   from "D:\disenoWeb\www\sis_aluformas\privada\personas\templates\persona_nuevo.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_607e38f01b3e03_58193924',
+  'unifunc' => 'content_6091f5da74c611_83584601',
   'file_dependency' => 
   array (
     '4c6af4f7c127ab8bfd2bc84b853ca750fa829a54' => 
     array (
       0 => 'D:\\disenoWeb\\www\\sis_aluformas\\privada\\personas\\templates\\persona_nuevo.tpl',
-      1 => 1618884843,
+      1 => 1620178167,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_607e38f01b3e03_58193924 ($_smarty_tpl) {
+function content_6091f5da74c611_83584601 ($_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html>
@@ -43,7 +43,7 @@ function content_607e38f01b3e03_58193924 ($_smarty_tpl) {
 						<th><input type="text" name="ci" onkeyup="this.value=this.value.toUpperCase()" placeholder="carnet de identidad">(*)</th>
 					</tr>
 					<tr>
-						<th><input type="text" name="nombre" onkeyup="this.value=this.value.toUpperCase()" placeholder="nomnbre">(*)</th>
+						<th><input type="text" name="nombre" onkeyup="this.value=this.value.toUpperCase()" placeholder="nombre">(*)</th>
 					</tr>
 					<tr>
 						<th><input type="text" name="ap" onkeyup="this.value=this.value.toUpperCase()" placeholder="apellido paterno"></th>

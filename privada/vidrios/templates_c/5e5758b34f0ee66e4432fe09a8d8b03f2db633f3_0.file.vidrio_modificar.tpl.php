@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2021-04-30 02:31:05
+/* Smarty version 3.1.29, created on 2021-05-05 01:43:07
   from "D:\disenoWeb\www\sis_aluformas\privada\vidrios\templates\vidrio_modificar.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_608b6be90362d3_11334297',
+  'unifunc' => 'content_6091f82b3b47d2_16967997',
   'file_dependency' => 
   array (
     '5e5758b34f0ee66e4432fe09a8d8b03f2db633f3' => 
     array (
       0 => 'D:\\disenoWeb\\www\\sis_aluformas\\privada\\vidrios\\templates\\vidrio_modificar.tpl',
-      1 => 1619749857,
+      1 => 1620178953,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_608b6be90362d3_11334297 ($_smarty_tpl) {
+function content_6091f82b3b47d2_16967997 ($_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -36,7 +36,7 @@ function content_608b6be90362d3_11334297 ($_smarty_tpl) {
      <body>
           <br><br><br><br>
           <center>
-               <h2>MODIFICAR vidrios</h2>
+               <h2>MODIFICAR VIDRIO</h2>
                <form action="vidrio_modificar1.php" method="post" name="formu">
                     <table>
                          <tr>

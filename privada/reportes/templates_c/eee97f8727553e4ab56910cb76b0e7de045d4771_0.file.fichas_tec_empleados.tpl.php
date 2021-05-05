@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2020-10-28 22:46:36
+/* Smarty version 3.1.29, created on 2021-05-05 01:22:58
   from "D:\disenoWeb\www\sis_aluformas\privada\reportes\templates\fichas_tec_empleados.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5f99f4cc5d8163_57724257',
+  'unifunc' => 'content_6091f372ca2313_76553292',
   'file_dependency' => 
   array (
     'eee97f8727553e4ab56910cb76b0e7de045d4771' => 
     array (
       0 => 'D:\\disenoWeb\\www\\sis_aluformas\\privada\\reportes\\templates\\fichas_tec_empleados.tpl',
-      1 => 1603925183,
+      1 => 1605837773,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5f99f4cc5d8163_57724257 ($_smarty_tpl) {
+function content_6091f372ca2313_76553292 ($_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -60,7 +60,7 @@ function content_5f99f4cc5d8163_57724257 ($_smarty_tpl) {
      <body>
           <br><br><br>
           <center>
-               <h2> FICHAS TECNICAS DE empleadoS</h2>
+               <h2> FICHAS TECNICAS DE EMPLEADOS</h2>
                <form action="#" method="post" name="formu1">
                     <table width="50%">
                          <tr>

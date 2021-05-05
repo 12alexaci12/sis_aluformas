@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.29, created on 2020-08-02 19:26:00
+/* Smarty version 3.1.29, created on 2021-05-05 01:36:29
   from "D:\disenoWeb\www\sis_aluformas\privada\personas\templates\persona_modificar.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5f271348942d33_02167685',
+  'unifunc' => 'content_6091f69d061585_66231069',
   'file_dependency' => 
   array (
     'f033d1c3ca3da6609ac26e35ba6749c318b4424e' => 
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5f271348942d33_02167685 ($_smarty_tpl) {
+function content_6091f69d061585_66231069 ($_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">

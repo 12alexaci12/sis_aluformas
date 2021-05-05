@@ -15,7 +15,7 @@
 						<th><input type="text" name="ci" onkeyup="this.value=this.value.toUpperCase()" placeholder="carnet de identidad">(*)</th>
 					</tr>
 					<tr>
-						<th><input type="text" name="nombre" onkeyup="this.value=this.value.toUpperCase()" placeholder="nomnbre">(*)</th>
+						<th><input type="text" name="nombre" onkeyup="this.value=this.value.toUpperCase()" placeholder="nombre">(*)</th>
 					</tr>
 					<tr>
 						<th><input type="text" name="ap" onkeyup="this.value=this.value.toUpperCase()" placeholder="apellido paterno"></th>
