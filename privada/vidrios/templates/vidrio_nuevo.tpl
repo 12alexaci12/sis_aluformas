@@ -8,7 +8,7 @@
 	<body>
 		<br><br><br><br>
 		<center>
-			<h2>REGISTRAR vidrio</h2>
+			<h2>REGISTRAR VIDRIO</h2>
 			<form action="vidrio_nuevo1.php" method="post" name="formu">
 				<table align="center">
 					<tr>
@@ -35,7 +35,7 @@
 	                        <td colspan="3" align="center"><input type="text" name="ancho" placeholder="ancho (*)"></td>
 	                    </tr>
 					<tr>
-						<td colspan="3" align="center"><input type="text" name="alto" placeholder="largo (*)"></td>
+						<td colspan="3" align="center"><input type="text" name="alto" placeholder="alto (*)"></td>
 					</tr>
 					<tr>
 						<td align="center" colspan="3">

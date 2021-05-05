@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2021-04-30 02:55:37
+/* Smarty version 3.1.29, created on 2021-05-05 01:42:45
   from "D:\disenoWeb\www\sis_aluformas\privada\vidrios\templates\vidrio_nuevo.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_608b71a9dabbc4_26103175',
+  'unifunc' => 'content_6091f8151b9042_55122764',
   'file_dependency' => 
   array (
     '8b9710aed8a872e36a2f69a3b631669b6a06d1ab' => 
     array (
       0 => 'D:\\disenoWeb\\www\\sis_aluformas\\privada\\vidrios\\templates\\vidrio_nuevo.tpl',
-      1 => 1619751325,
+      1 => 1620178016,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_608b71a9dabbc4_26103175 ($_smarty_tpl) {
+function content_6091f8151b9042_55122764 ($_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html>
@@ -36,7 +36,7 @@ function content_608b71a9dabbc4_26103175 ($_smarty_tpl) {
 	<body>
 		<br><br><br><br>
 		<center>
-			<h2>REGISTRAR vidrio</h2>
+			<h2>REGISTRAR VIDRIO</h2>
 			<form action="vidrio_nuevo1.php" method="post" name="formu">
 				<table align="center">
 					<tr>

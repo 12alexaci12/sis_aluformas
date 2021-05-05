@@ -8,7 +8,7 @@
      <body>
           <br><br><br><br>
           <center>
-               <h2>MODIFICAR vidrios</h2>
+               <h2>MODIFICAR VIDRIO</h2>
                <form action="vidrio_modificar1.php" method="post" name="formu">
                     <table>
                          <tr>
