@@ -9,8 +9,8 @@
      $smarty = new Smarty;
 
      $sql = $db->Prepare("    SELECT *
-                              FROM clientes
-                              WHERE id_cliente = {$__id_cliente}
+                              FROM cotizaciones
+                              WHERE id_cliente = ?
                               AND estado <> '0'
      ");
      $rs = $db->GetAll($sql, array($__id_cliente));

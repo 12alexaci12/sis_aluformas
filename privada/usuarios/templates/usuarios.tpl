@@ -45,7 +45,7 @@
 						<td align="center">{$b}</td>
 						<td>{$r.usuario1}</td>
 						<!--<td>{$r.clave}</td>-->
-						<td>{$r.ap}{$r.am}{$r.nombre}</td>
+						<td>{$r.ap} {$r.am} {$r.nombre}</td>
 						<td align="center">
 							<form name="formModif{$r.id_usuario}" method="post" action="usuario_modificar.php">
 							<input type="hidden" name="id_usuario" value="{$r.id_usuario}">

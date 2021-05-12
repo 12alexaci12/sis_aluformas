@@ -13,7 +13,7 @@ paginacion("personas.php?", $smarty);
 
 $sql3 = $db->Prepare("	SELECT *
 					FROM personas
-					WHERE id_persona > 1
+					WHERE estado <> 0
 					ORDER BY id_persona DESC
 					LIMIT ? OFFSET ?");
 $smarty->assign("personas", $db->GetAll($sql3, array($nElem, $regIni)));

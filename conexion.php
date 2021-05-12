@@ -1,5 +1,6 @@
 <?php
 require_once("adodb/adodb.inc.php");
+error_reporting(E_ALL & ~E_DEPRECATED);
 
 $direc_css = "../css/style.css";
 $icon = "../css/img/bitmap1.svg";
