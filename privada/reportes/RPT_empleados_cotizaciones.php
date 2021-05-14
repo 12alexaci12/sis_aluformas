@@ -7,13 +7,11 @@
 
      $smarty = new Smarty;
 
-     $sql = $db->Prepare("    SELECT coti.fecha, coti.precio_final, emp.nombre as nombre_emp, cli.nombre as nombre_cli, cli.telefono
-                              FROM cotizaciones coti, empleados emp, clientes cli
-                              where coti.id_empleado = emp.id_empleado
-                              AND coti.id_cliente = cli.id_cliente
-                              AND coti.estado <> '0'
-                              AND emp.estado <> '0'
-                              AND cli.estado <> '0'
+     $sql = $db->Prepare("    SELECT emp.nombre, COUNT(cot.id_cotizacion) AS cant_cotizaciones, SUM(cot.precio_final) AS dinero_generado
+                              FROM empleados emp
+                              INNER JOIN cotizaciones cot ON emp.id_empleado = cot.id_cotizacion
+                              GROUP BY cot.id_empleado
+                              ORDER By dinero_generado DESC
      ");
      $rs = $db->GetAll($sql);
 

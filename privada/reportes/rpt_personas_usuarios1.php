@@ -6,12 +6,13 @@
 
      $smarty = new Smarty;
 
-     $sql = $db->Prepare("    SELECT emp.nombre, COUNT(cot.id_cotizacion) AS cant_cotizaciones, SUM(cot.precio_final) AS dinero_generado
-                              FROM empleados emp
-                              INNER JOIN cotizaciones cot ON emp.id_empleado = cot.id_cotizacion
-                              GROUP BY cot.id_empleado
-                              ORDER By dinero_generado DESC
-     ");
+     $sql = $db->Prepare("    SELECT CONCAT_WS(' ', p.nombre, p.ap, p.am) AS nombre, u.usuario1
+                              FROM personas p, usuarios u
+                              WHERE p.id_persona = u.id_persona
+                              AND p.estado <> '0'
+                              AND u.estado <> '0'
+                              ORDER BY (u.id_persona) DESC
+                         ");
      $rs = $db->GetAll($sql);
 
      $sql1 = $db->Prepare("   SELECT *
@@ -23,11 +24,11 @@
      $logo_agencia = $rs1[0]["logo_agencia"];
      $fecha = date("Y-m-d H:i:s");
 
-     $smarty->assign("RTP_empleados_cotizaciones", $rs);
+     $smarty->assign("rpt_personas_usuarios", $rs);
      $smarty->assign("logo_agencia", $logo_agencia);
      $smarty->assign("fecha", $fecha);
-     
+
      $smarty->assign("direc_css", $direc_css);
-     $smarty->display("RTP_empleados_cotizaciones1.tpl");
+     $smarty->display("rpt_personas_usuarios1.tpl");
 
 ?>

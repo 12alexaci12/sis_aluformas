@@ -5,10 +5,10 @@
           <script type="text/javascript">
                var ventanaCalendario = false;
                function imprimir(){
-                    ventanaCalendario = window.open("RPT_empleados_cotizaciones1.php", "calendario", "width=600, height=550, left=100, top=100, scrollbars=YES, menubars=NO, statusbar=NO, status=NO resizable=YES, location=NO");
+                    ventanaCalendario = window.open("rpt_personas_usuarios1", "calendario", "width=600, height=550, left=100, top=100, scrollbars=YES, menubars=NO, statusbar=NO, status=NO resizable=YES, location=NO");
                }
                function pdf(){
-                    ventanaCalendario = window.open("pdf_empleados_cotizaciones.php", "calendario", "width=600, height=550, left=100, top=100, scrollbars=YES, menubars=NO, statusbar=NO, status=NO resizable=YES, location=NO");
+                    ventanaCalendario = window.open("rpt_personas_usuarios1", "calendario", "width=600, height=550, left=100, top=100, scrollbars=YES, menubars=NO, statusbar=NO, status=NO resizable=YES, location=NO");
                }
           </script>
      </head>
@@ -23,7 +23,7 @@
                               </table>
                          </td>
                          <td align="center" width="33%">
-                              <h2>EMPLEADOS COTIZACIONES</h2>
+                              <h2>PERSONAS - USUARIOS</h2>
                          </td>
                          <td align="center" width="33%"></td>
                     </tr>
@@ -36,18 +36,16 @@
                          <thead>
                               <tr>
                                    <th>NRO</th>
-                                   <th>EMPLEADO</th>
-                                   <th>COT REALIZADAS</th>
-                                   <th>DINERO GENERADO</th>
+                                   <th>NOMBRE</th>
+                                   <th>USUARIO</th>
                               </tr>
                          </thead>
                          {assign var="b" value="1"}
-                         {foreach item=r from=$RTP_empleados_cotizaciones}
+                         {foreach item=r from=$rpt_personas_usuarios}
                               <tr>
                                    <td align="center">{$b}</td>
                                    <td>{$r.nombre}</td>
-                                   <td align="center">{$r.cant_cotizaciones}</td>
-                                   <td>{$r.dinero_generado}</td>
+                                   <td>{$r.usuario1}</td>
                               </tr>
                          {assign var="b" value="`$b+1`"}
                          {/foreach}
