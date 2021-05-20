@@ -16,7 +16,6 @@ $sql3 = $db->Prepare("	SELECT pe.id_perfil, tp.id_tipo_perfil, lp.id_linea_perfi
 					INNER JOIN tipo_perfil tp ON pe.id_tipo_perfil = tp.id_tipo_perfil
 					INNER JOIN linea_perfil lp ON pe.id_linea_perfil = lp.id_linea_perfil
 					INNER JOIN color co ON pe.id_color = co.id_color
-					WHERE id_perfil > 1
 					ORDER BY id_perfil DESC
 					LIMIT ? OFFSET ?");
 

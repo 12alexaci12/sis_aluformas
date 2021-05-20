@@ -7,9 +7,9 @@
      $smarty = new Smarty;
 
      $sql = $db->Prepare("    SELECT CONCAT_WS(' ', p.nombre, p.ap, p.am) AS nombre, u.usuario1
-                              FROM personas p, usuarios u
-                              WHERE p.id_persona = u.id_persona
-                              AND p.estado <> '0'
+                              FROM personas p
+                              INNER JOIN usuarios u ON u.id_persona = p.id_persona
+                              WHERE p.estado <> '0'
                               AND u.estado <> '0'
                               ORDER BY (u.id_persona) DESC
                          ");

@@ -83,8 +83,7 @@
                          }
                     }
 
-                         if ($cuerp != "cuerpo.php") {
-
+                         if ($cuerp == false or $cuerp == "") {
                               echo "<li>
                                         <a onclick='location.href = \"../claves/\"' target='cuerpo' style='cursor:pointer;';>Cerrar Sesion</a>
                                    </li>";
@@ -93,7 +92,6 @@
                                         <a onclick='location.href = \"claves/\"' target='cuerpo' style='cursor:pointer;'>Cerrar Sesion</a>
                                    </li>";
                          }
-
                          echo "</ul>";
                          echo "</div>";
                }

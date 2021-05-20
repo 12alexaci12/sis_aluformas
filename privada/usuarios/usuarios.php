@@ -12,9 +12,9 @@ contarRegistros($db, "usuarios");
 paginacion("usuarios.php?", $smarty);
 
 $sql3 = $db->Prepare("SELECT *
-					  FROM usuarios u, personas p
-					  WHERE u.id_persona = p.id_persona
-					  AND u.estado<>'0'
+					  FROM usuarios u
+					  INNER JOIN personas p ON u.id_persona = p.id_persona
+					  WHERE u.estado<>'0'
 					  AND p.estado<>'0'
 					  ORDER BY u.id_persona DESC
 					  LIMIT ? OFFSET ?
