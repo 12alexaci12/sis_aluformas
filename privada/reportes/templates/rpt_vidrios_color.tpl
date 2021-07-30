@@ -16,7 +16,7 @@
           </script>
      </head>
      <body>
-          <br><br>
+          <br><br><br><br>
           <center>
                <h2> REPORTES DE VIDRIOS POR COLOR</h2>
                <form name="formu" method="post">

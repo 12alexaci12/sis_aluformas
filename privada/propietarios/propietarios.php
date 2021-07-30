@@ -9,7 +9,7 @@ $smarty = new Smarty;
 $sql6 = $db->Prepare("   SELECT *
                          FROM propietarios
                          WHERE estado <> '0'
-                         AND id_propietario >= 1
+                         ORDER BY propietarios.fec_insercion DESC
 				  ");
 $rs6 = $db->GetAll($sql6);
 
