@@ -4,6 +4,8 @@ require_once("../../smarty/Smarty.class.php");
 require_once("../../conexion.php");
 require_once("../libreria_menu.php");
 
+
+
 $smarty = new Smarty;
 
 $sql = $db->Prepare("	SELECT *

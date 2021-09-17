@@ -5,10 +5,9 @@
           <meta charset="utf-8">
           <script type="text/javascript">
                function validar(){
-                    tipo_perfil = document.formu.tipo_perfil.value;
-                    if (document.formu.tipo_perfil.value == ""){
-                         alert("por favor seleccione la tipo_perfil de perfil");
-                         document.formu.tipo_perfil.focus();
+                    var tipo_perfil = document.formu.tipo_perfil.value;
+                    if (tipo_perfil == "") {
+                         alert("Debe especificar el parametro");
                          return;
                     }
                     ventanaCalendario = window.open("rpt_perfiles_tipo_perfil1.php?tipo_perfil=" + tipo_perfil , "calendario", "width=600, height=550, left=100, top=100, scrollbars=yes, menubars=no, statusbar=no, status=no, resizable=yes, location=no")

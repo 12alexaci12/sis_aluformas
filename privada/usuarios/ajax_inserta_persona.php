@@ -3,6 +3,8 @@
      require_once("../../smarty/Smarty.class.php");
      require_once("../../conexion.php");
 
+     $db->debug-true;
+
      $ap1 = $_POST["ap1"];
      $am1 = $_POST["am1"];
      $nombres1 = $_POST["nombres1"];

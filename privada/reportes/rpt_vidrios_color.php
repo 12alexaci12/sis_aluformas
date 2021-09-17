@@ -4,9 +4,11 @@
      require_once("../../conexion.php");
      require_once("../libreria_menu.php");
 
-     $sql = $db->Prepare("    SELECT *
-                              FROM color co
-                              WHERE co.estado <> '0'
+     $sql = $db->Prepare("    SELECT co.id_color, co.nombre
+                              FROM vidrios vi
+                              INNER JOIN color co ON vi.id_color = co.id_color
+                              WHERE vi.estado <> '0'
+                              GROUP BY vi.id_color
                          ");
      $rs = $db->GetAll($sql);
 

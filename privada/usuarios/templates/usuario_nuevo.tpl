@@ -71,7 +71,6 @@
 					d7 = "m";
 				else
 					d7 = "";
-
 				if (d4 == "") {
 					alert("El ci es incorrecto o el campo esta vacio");
 					document.formu.ci1.focus();
@@ -87,8 +86,8 @@
 					document.formu.nombre1.focus();
 					return;
 				}
-				if (d7 == "") {
-					alert("seleccione genero");
+				if (d5 == "") {
+					alert("ingrese direccion");
 					return;
 				}
 				ajax = nuevoAjax();
@@ -104,6 +103,7 @@
      				}
      			}
      			ajax.send(param);
+				buscar();
 			}
      	</script>
 	</head>
