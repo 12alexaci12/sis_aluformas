@@ -25,7 +25,6 @@ $sql3 = $db->Prepare("	SELECT *
 					 ");
 $rs3 = $db->GetAll($sql3);
 
-
 $smarty = new Smarty;
 $smarty->assign("tipo_perfil", $rs);
 $smarty->assign("colores", $rs2);

@@ -23,6 +23,7 @@ $smarty = new Smarty;
 	$reg["usuario"] = $_SESSION["sesion_id_usuario"];
 	$rs1 = $db->AutoExecute("perfiles",$reg, "INSERT");
 
+	
 if ($rs1){
 	header("Location: perfiles.php");
 	exit();
